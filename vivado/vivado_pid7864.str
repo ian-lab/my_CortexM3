@@ -1,0 +1,235 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 7864
+License: Customer
+
+Current time: 	Wed Mar 31 20:39:17 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 27 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/software/xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/software/xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	84308
+User home directory: C:/Users/84308
+User working directory: C:/Users/84308/Desktop/my_CortexM3/vivado
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/software/xilinx/Vivado
+HDI_APPROOT: C:/software/xilinx/Vivado/2018.3
+RDI_DATADIR: C:/software/xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/software/xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/84308/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/84308/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/84308/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/software/xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/84308/Desktop/my_CortexM3/vivado/vivado.log
+Vivado journal file location: 	C:/Users/84308/Desktop/my_CortexM3/vivado/vivado.jou
+Engine tmp dir: 	C:/Users/84308/Desktop/my_CortexM3/vivado/.Xil/Vivado-7864-DESKTOP-OFV538P
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/software/xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/software/xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/software/xilinx/Vivado/2018.3
+XILINX_SDK: C:/software/xilinx/SDK/2018.3
+XILINX_VIVADO: C:/software/xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/software/xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 576 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 66 MB (+66594kb) [00:00:17]
+// [Engine Memory]: 562 MB (+438307kb) [00:00:17]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\84308\Desktop\my_CortexM3\vivado\CortexM3.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 623 MB. GUI used memory: 58 MB. Current time: 3/31/21, 8:39:19 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/software/xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+27642kb) [00:00:30]
+// [Engine Memory]: 711 MB (+126734kb) [00:00:30]
+// WARNING: HEventQueue.dispatchEvent() is taking  6908 ms.
+// [GUI Memory]: 119 MB (+19133kb) [00:00:36]
+// [Engine Memory]: 752 MB (+4647kb) [00:00:36]
+// WARNING: HEventQueue.dispatchEvent() is taking  2351 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1153 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 771.988 ; gain = 173.785 
+// Project name: CortexM3; location: C:/Users/84308/Desktop/my_CortexM3/vivado; part: xc7z020clg400-2
+// WARNING: HEventQueue.dispatchEvent() is taking  1175 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 785 MB. GUI used memory: 94 MB. Current time: 3/31/21, 8:39:41 PM CST
+dismissDialog("Open Project"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1810 ms.
+// [Engine Memory]: 796 MB (+7484kb) [00:00:50]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 838 MB (+1596kb) [00:01:03]
+// Elapsed time: 83 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 6 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 31 20:41:12 2021] Launched synth_1... Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/synth_1/runme.log [Wed Mar 31 20:41:12 2021] Launched impl_1... Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 52 MB. Current time: 3/31/21, 8:41:16 PM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1144 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1642 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1218 ms. Increasing delay to 3654 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 53 MB. Current time: 3/31/21, 9:11:16 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  3256 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1939 ms. Increasing delay to 5817 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 534ms to process. Increasing delay to 3000 ms.
+// ah (cp): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 51 MB. Current time: 3/31/21, 9:41:17 PM CST
+// Elapsed time: 5162 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 50 MB. Current time: 3/31/21, 10:11:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 866 MB. GUI used memory: 50 MB. Current time: 3/31/21, 10:41:17 PM CST
+// Elapsed time: 3801 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2019 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  7307 ms.
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1734.879 ; gain = 851.066 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,285 MB. GUI used memory: 53 MB. Current time: 3/31/21, 11:11:01 PM CST
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,285 MB (+425518kb) [02:32:03]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 16 seconds
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// PAPropertyPanels.initPanels (xc7z020_1) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2019 ms. Increasing delay to 5000 ms.

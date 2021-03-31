@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Mar 31 20:00:50 2021">
+<application name="pa" timeStamp="Wed Mar 31 20:41:12 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="afdda5b3d314455393237b1139f84f88" type="ProjectID"/>
-<property name="ProjectIteration" value="25" type="ProjectIteration"/>
+<property name="ProjectIteration" value="26" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -30,7 +30,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenHardwareManager" value="14" type="JavaHandler"/>
 <property name="OpenRecentTarget" value="1" type="JavaHandler"/>
 <property name="ProgramDevice" value="4" type="JavaHandler"/>
-<property name="RunBitgen" value="20" type="JavaHandler"/>
+<property name="RunBitgen" value="21" type="JavaHandler"/>
 <property name="RunImplementation" value="7" type="JavaHandler"/>
 <property name="RunSchematic" value="3" type="JavaHandler"/>
 <property name="RunSynthesis" value="12" type="JavaHandler"/>
@@ -60,8 +60,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES" value="1" type="GuiHandlerData"/>
 <property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="21" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="89" type="GuiHandlerData"/>
-<property name="BaseDialog_YES" value="17" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="90" type="GuiHandlerData"/>
+<property name="BaseDialog_YES" value="18" type="GuiHandlerData"/>
 <property name="ClosePlanner_YES" value="1" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="10" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_ADD_FILES" value="3" type="GuiHandlerData"/>
@@ -77,7 +77,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FPGAChooser_PACKAGE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_SPEED" value="1" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="200" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="99" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="100" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="11" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_IN" value="9" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_OUT" value="1" type="GuiHandlerData"/>
@@ -152,11 +152,6 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="46" type="GuiHandlerData"/>
 <property name="WaveformView_GOTO_TIME_0" value="1" type="GuiHandlerData"/>
 <property name="WaveformView_NEXT_TRANSITION" value="127" type="GuiHandlerData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="25" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="14" type="TclMode"/>
 </item>
 </section>
 </application>

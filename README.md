@@ -11,6 +11,7 @@
     |--core               m3核
     |--peripheral         外设
     |--CortexM3         顶层代码
+|--picture              相关图片
 |--testbench            仿真代码
 |--vivado v             vivado工程
 |--xdc                  约束文件

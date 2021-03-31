@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Mar 30 22:36:58 2021
-# Process ID: 1868
+# Start of session at: Wed Mar 31 20:38:46 2021
+# Process ID: 7864
 # Current directory: C:/Users/84308/Desktop/my_CortexM3/vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13384 C:\Users\84308\Desktop\my_CortexM3\vivado\CortexM3.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10460 C:\Users\84308\Desktop\my_CortexM3\vivado\CortexM3.xpr
 # Log file: C:/Users/84308/Desktop/my_CortexM3/vivado/vivado.log
 # Journal file: C:/Users/84308/Desktop/my_CortexM3/vivado\vivado.jou
 #-----------------------------------------------------------
@@ -16,8 +16,14 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/software/xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:26 . Memory (MB): peak = 762.938 ; gain = 159.574
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 771.988 ; gain = 173.785
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 31 20:41:12 2021] Launched synth_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/synth_1/runme.log
+[Wed Mar 31 20:41:12 2021] Launched impl_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/runme.log
 open_hw
 connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -29,14 +35,13 @@ INFO: [Labtools 27-2221] Launch Output:
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 
-connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 942.395 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
-open_hw_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1744.488 ; gain = 802.094
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1734.879 ; gain = 851.066
 set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
 current_hw_device [get_hw_devices xc7z020_1]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
@@ -44,232 +49,3 @@ program_hw_devices [get_hw_devices xc7z020_1]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
 INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CortexM3
-INFO: [VRFC 10-2458] undeclared symbol TXEN, assumed default net type wire [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:717]
-INFO: [VRFC 10-2458] undeclared symbol BAUDTICK, assumed default net type wire [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:718]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/cmsdk_apb3_eg_slave_interface_led.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cmsdk_apb3_eg_slave_interface_led
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/cmsdk_apb3_eg_slave_led.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cmsdk_apb3_eg_slave_led
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/uart/cmsdk_apb_uart.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cmsdk_apb_uart
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cortexm3ds_logic
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/button/custom_apb_button.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module custom_apb_button
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/custom_apb_led.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module custom_apb_led
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1784.551 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/software/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 00fd80a47a124d36a3ffe54ee817e134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:408]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:423]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:438]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:462]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:502]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:541]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'PADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:736]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'paddr' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:758]
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v" Line 1. Module CortexM3(SimPresent=1) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v" Line 27. Module cortexm3ds_logic doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/uart/cmsdk_apb_uart.v" Line 53. Module cmsdk_apb_uart doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/cmsdk_apb3_eg_slave_led.v" Line 28. Module cmsdk_apb3_eg_slave_led doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/cmsdk_apb3_eg_slave_interface_led.v" Line 27. Module cmsdk_apb3_eg_slave_interface_led doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/custom_apb_led.v" Line 11. Module custom_apb_led doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/button/custom_apb_button.v" Line 1. Module custom_apb_button doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.cortexm3ds_logic
-Compiling module xil_defaultlib.L1_AHBInputstg
-Compiling module xil_defaultlib.L1_AHBMatrix_default_slave
-Compiling module xil_defaultlib.L1_AHBDecoderS0
-Compiling module xil_defaultlib.L1_AHBDecoderS1
-Compiling module xil_defaultlib.L1_AHBDecoderS2
-Compiling module xil_defaultlib.L1_AHBArbiterM0
-Compiling module xil_defaultlib.L1_AHBOutputStgM0
-Compiling module xil_defaultlib.L1_AHBArbiterM1
-Compiling module xil_defaultlib.L1_AHBOutputStgM1
-Compiling module xil_defaultlib.L1_AHBArbiterM2
-Compiling module xil_defaultlib.L1_AHBOutputStgM2
-Compiling module xil_defaultlib.L1_AHBMatrix
-Compiling module xil_defaultlib.cmsdk_ahb_to_sram
-Compiling module xil_defaultlib.cmsdk_fpga_sram(AW=14)
-Compiling module xil_defaultlib.cmsdk_ahb_to_apb(REGISTER_WDATA=...
-Compiling module xil_defaultlib.cmsdk_apb_slave_mux(PORT3_ENABLE...
-Compiling module xil_defaultlib.cmsdk_apb_uart
-Compiling module xil_defaultlib.cmsdk_apb3_eg_slave_interface_le...
-Compiling module xil_defaultlib.custom_apb_led
-Compiling module xil_defaultlib.cmsdk_apb3_eg_slave_led
-Compiling module xil_defaultlib.custom_apb_button
-Compiling module xil_defaultlib.CortexM3(SimPresent=1)
-Compiling module xil_defaultlib.tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_behav
-
-****** Webtalk v2018.3 (64-bit)
-  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Tue Mar 30 22:58:44 2021...
-run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:03:07 . Memory (MB): peak = 1784.551 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '187' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/Users/84308/Desktop/my_CortexM3/vivado/tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-open_wave_config C:/Users/84308/Desktop/my_CortexM3/vivado/tb_behav.wcfg
-source tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-run: Time (s): cpu = 00:00:34 ; elapsed = 00:05:59 . Memory (MB): peak = 1861.805 ; gain = 8.477
-INFO: [Common 17-344] 'run' was cancelled
-INFO: [Common 17-344] 'source' was cancelled
-xsim: Time (s): cpu = 00:00:41 ; elapsed = 00:06:05 . Memory (MB): peak = 1861.887 ; gain = 77.336
-INFO: [Common 17-344] 'xsim' was cancelled
-INFO: [Vivado 12-5357] 'simulate' step aborted
-launch_simulation: Time (s): cpu = 00:00:53 ; elapsed = 00:09:22 . Memory (MB): peak = 1861.887 ; gain = 77.699
-INFO: [Common 17-344] 'launch_simulation' was cancelled
-current_wave_config {tb_behav.wcfg}
-tb_behav.wcfg
-add_wave {{/tb/u_SOC/PSEL_APB_BUTTON}} {{/tb/u_SOC/PREADY_APB_BUTTON}} {{/tb/u_SOC/PRDATA_APB_BUTTON}} {{/tb/u_SOC/PSLVERR_APB_BUTTON}} 
-relaunch_sim
-suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2385.219 ; gain = 0.000
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/software/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 00fd80a47a124d36a3ffe54ee817e134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:408]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:423]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:438]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:462]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:502]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:541]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'PADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:736]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'paddr' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:758]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2385.219 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2385.219 ; gain = 0.000
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-run: Time (s): cpu = 00:00:22 ; elapsed = 00:01:23 . Memory (MB): peak = 2385.219 ; gain = 0.000
-INFO: [Common 17-344] 'run' was cancelled
-INFO: [Common 17-344] 'source' was cancelled
-relaunch_xsim_kernel: Time (s): cpu = 00:00:23 ; elapsed = 00:01:25 . Memory (MB): peak = 2385.219 ; gain = 0.000
-INFO: [Common 17-344] 'relaunch_xsim_kernel' was cancelled
-INFO: [Common 17-344] 'relaunch_sim' was cancelled
-run all
-run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 2385.219 ; gain = 0.000
-current_wave_config {tb_behav.wcfg}
-tb_behav.wcfg
-add_wave {{/tb/u_SOC/HSEL_apb_bridge}} {{/tb/u_SOC/HREADY_apb_bridge}} {{/tb/u_SOC/HTRANS_apb_bridge}} {{/tb/u_SOC/HSIZE_apb_bridge}} {{/tb/u_SOC/HPROT_apb_bridge}} {{/tb/u_SOC/HWRITE_apb_bridge}} {{/tb/u_SOC/HADDR_apb_bridge}} {{/tb/u_SOC/HWDATA_apb_bridge}} {{/tb/u_SOC/HREADYOUT_apb_bridge}} {{/tb/u_SOC/HRESP_apb_bridge}} {{/tb/u_SOC/HRDATA_apb_bridge}} {{/tb/u_SOC/HBURST_apb_bridge}} {{/tb/u_SOC/HMASTER_apb_bridge}} {{/tb/u_SOC/HMASTLOCK_apb_bridge}} 
-current_wave_config {tb_behav.wcfg}
-tb_behav.wcfg
-add_wave {{/tb/u_SOC/PSEL_APB_uart}} {{/tb/u_SOC/PREADY_APB_uart}} {{/tb/u_SOC/PRDATA_APB_uart}} {{/tb/u_SOC/PSLVERR_APB_uart}} {{/tb/u_SOC/PSEL_APB_LED}} {{/tb/u_SOC/PREADY_APB_LED}} {{/tb/u_SOC/PRDATA_APB_LED}} {{/tb/u_SOC/PSLVERR_APB_LED}} 
-relaunch_sim
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/software/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 00fd80a47a124d36a3ffe54ee817e134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:408]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:423]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:438]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:462]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:502]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:541]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'PADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:736]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'paddr' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:758]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2385.219 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2385.219 ; gain = 0.000
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-run: Time (s): cpu = 00:00:26 ; elapsed = 00:01:39 . Memory (MB): peak = 2385.219 ; gain = 0.000
-INFO: [Common 17-344] 'run' was cancelled
-INFO: [Common 17-344] 'source' was cancelled
-relaunch_xsim_kernel: Time (s): cpu = 00:00:27 ; elapsed = 00:01:42 . Memory (MB): peak = 2385.219 ; gain = 0.000
-INFO: [Common 17-344] 'relaunch_xsim_kernel' was cancelled
-INFO: [Common 17-344] 'relaunch_sim' was cancelled
-run all
-run: Time (s): cpu = 00:00:09 ; elapsed = 00:02:02 . Memory (MB): peak = 2385.219 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201706300081
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 31 20:00:57 2021...

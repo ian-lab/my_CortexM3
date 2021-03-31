@@ -1,50 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617012585">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617194472">
+  <File Type="BITSTR-BMM" Name="CortexM3_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="CortexM3_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="CortexM3_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="CortexM3_power_routed.rpt"/>
   <File Type="PA-TCL" Name="CortexM3.tcl"/>
-  <File Type="BITSTR-BMM" Name="CortexM3_bd.bmm"/>
+  <File Type="OPT-TIMING" Name="CortexM3_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="CortexM3_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="CortexM3_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="CortexM3_reports.tcl"/>
-  <File Type="OPT-DCP" Name="CortexM3_opt.dcp"/>
   <File Type="OPT-DRC" Name="CortexM3_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="CortexM3.hwdef"/>
   <File Type="PWROPT-DCP" Name="CortexM3_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="CortexM3_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="CortexM3_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="CortexM3_placed.dcp"/>
   <File Type="PLACE-IO" Name="CortexM3_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="CortexM3_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="CortexM3_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="CortexM3_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="CortexM3_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="CortexM3_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="CortexM3_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="CortexM3.bgn"/>
+  <File Type="PLACE-TIMING" Name="CortexM3_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="CortexM3_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="CortexM3.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="CortexM3_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="CortexM3_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="CortexM3_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="CortexM3.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="CortexM3_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="CortexM3_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="CortexM3_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="CortexM3_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="CortexM3_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="CortexM3_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="CortexM3_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="CortexM3.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="CortexM3_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="CortexM3_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="CortexM3.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CortexM3_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CortexM3_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CortexM3_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="CortexM3.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CortexM3_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="CortexM3_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="CortexM3_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="CortexM3_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="CortexM3_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="CortexM3_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="CortexM3_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CortexM3_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="CortexM3_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="CortexM3_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="CortexM3_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="CortexM3_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="CortexM3_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CortexM3_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CortexM3_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CortexM3_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CortexM3_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CortexM3_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CortexM3_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="CortexM3.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CortexM3_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="CortexM3.rbt"/>
   <File Type="BITSTR-NKY" Name="CortexM3.nky"/>
   <File Type="BG-DRC" Name="CortexM3.drc"/>

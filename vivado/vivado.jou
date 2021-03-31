@@ -2,41 +2,25 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Mar 30 22:36:58 2021
-# Process ID: 1868
+# Start of session at: Wed Mar 31 20:38:46 2021
+# Process ID: 7864
 # Current directory: C:/Users/84308/Desktop/my_CortexM3/vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13384 C:\Users\84308\Desktop\my_CortexM3\vivado\CortexM3.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10460 C:\Users\84308\Desktop\my_CortexM3\vivado\CortexM3.xpr
 # Log file: C:/Users/84308/Desktop/my_CortexM3/vivado/vivado.log
 # Journal file: C:/Users/84308/Desktop/my_CortexM3/vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xpr
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
 set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
 current_hw_device [get_hw_devices xc7z020_1]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-launch_simulation
-open_wave_config C:/Users/84308/Desktop/my_CortexM3/vivado/tb_behav.wcfg
-source tb.tcl
-current_wave_config {tb_behav.wcfg}
-add_wave {{/tb/u_SOC/PSEL_APB_BUTTON}} {{/tb/u_SOC/PREADY_APB_BUTTON}} {{/tb/u_SOC/PRDATA_APB_BUTTON}} {{/tb/u_SOC/PSLVERR_APB_BUTTON}} 
-relaunch_sim
-run all
-current_wave_config {tb_behav.wcfg}
-add_wave {{/tb/u_SOC/HSEL_apb_bridge}} {{/tb/u_SOC/HREADY_apb_bridge}} {{/tb/u_SOC/HTRANS_apb_bridge}} {{/tb/u_SOC/HSIZE_apb_bridge}} {{/tb/u_SOC/HPROT_apb_bridge}} {{/tb/u_SOC/HWRITE_apb_bridge}} {{/tb/u_SOC/HADDR_apb_bridge}} {{/tb/u_SOC/HWDATA_apb_bridge}} {{/tb/u_SOC/HREADYOUT_apb_bridge}} {{/tb/u_SOC/HRESP_apb_bridge}} {{/tb/u_SOC/HRDATA_apb_bridge}} {{/tb/u_SOC/HBURST_apb_bridge}} {{/tb/u_SOC/HMASTER_apb_bridge}} {{/tb/u_SOC/HMASTLOCK_apb_bridge}} 
-current_wave_config {tb_behav.wcfg}
-add_wave {{/tb/u_SOC/PSEL_APB_uart}} {{/tb/u_SOC/PREADY_APB_uart}} {{/tb/u_SOC/PRDATA_APB_uart}} {{/tb/u_SOC/PSLVERR_APB_uart}} {{/tb/u_SOC/PSEL_APB_LED}} {{/tb/u_SOC/PREADY_APB_LED}} {{/tb/u_SOC/PRDATA_APB_LED}} {{/tb/u_SOC/PSLVERR_APB_LED}} 
-relaunch_sim
-run all
-close_sim
 set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
