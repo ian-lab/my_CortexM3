@@ -154,7 +154,7 @@ wire            HMASTERLOCKS;
 
 
 //------------------------------------------------------------------------------
-// Instantiate Cortex-M3 processor 
+// Cortex-M3 processor 
 //------------------------------------------------------------------------------
 
 cortexm3ds_logic ulogic(
@@ -263,8 +263,8 @@ cortexm3ds_logic ulogic(
 );
 //------------------------------------------------------------------------------
 // AHB L1 总线矩阵
-// s0:M3-Dbus s1:M3-Ibus s2:M3-sysbus 
-// m0:DTCM m1:ITCM m2:APB_Bridge
+// s0:Dbus s1:Ibus s2:sysbus 
+// m0:ITCM m1:DTCM m2:APB_Bridge
 // s0 -> m0
 // s1 -> m0
 // s2 -> m1 m2
@@ -365,35 +365,35 @@ L1_AHBMatrix u_L1_AHBMatrix(
     .HREADYOUTS1 ( HREADYI   ),
     .HRESPS1     ( HRESPI    ),
  
-    .HSELS0      ( 1'b1      ),
-    .HADDRS0     ( HADDRD    ),
-    .HTRANSS0    ( HTRANSD   ),
-    .HWRITES0    ( HWRITED   ),
-    .HSIZES0     ( HSIZED    ),
-    .HBURSTS0    ( HBURSTD   ),
-    .HPROTS0     ( HPROTD    ),
-    .HMASTERS0   ( {2'b0,HMASTERD}   ),
-    .HWDATAS0    ( HWDATAD   ),
-    .HMASTLOCKS0 ( 1'b0      ),
-    .HREADYS0    ( HREADYD   ),
-    .HRDATAS0    ( HRDATAD   ),
-    .HREADYOUTS0 ( HREADYD   ),
-    .HRESPS0     ( HRESPD    ),
+    .HSELS0      ( 1'b1            ),
+    .HADDRS0     ( HADDRD          ),
+    .HTRANSS0    ( HTRANSD         ),
+    .HWRITES0    ( HWRITED         ),
+    .HSIZES0     ( HSIZED          ),
+    .HBURSTS0    ( HBURSTD         ),
+    .HPROTS0     ( HPROTD          ),
+    .HMASTERS0   ( {2'b0,HMASTERD} ),
+    .HWDATAS0    ( HWDATAD         ),
+    .HMASTLOCKS0 ( 1'b0            ),
+    .HREADYS0    ( HREADYD         ),
+    .HRDATAS0    ( HRDATAD         ),
+    .HREADYOUTS0 ( HREADYD         ),
+    .HRESPS0     ( HRESPD          ),
  
-    .HSELS2      ( 1'b1      ),
-    .HADDRS2     ( HADDRS    ),
-    .HTRANSS2    ( HTRANSS   ),
-    .HWRITES2    ( HWRITES   ),
-    .HSIZES2     ( HSIZES    ),
-    .HBURSTS2    ( HBURSTS   ),
-    .HPROTS2     ( HPROTS    ),
-    .HMASTERS2   ( {2'b0,HMASTERS}   ),
-    .HWDATAS2    ( HWDATAS   ),
-    .HMASTLOCKS2 ( HMASTERLOCKS      ),
-    .HREADYS2    ( HREADYS   ),
-    .HREADYOUTS2 ( HREADYS   ),
-    .HRDATAS2    ( HRDATAS   ),
-    .HRESPS2     ( HRESPS   ),       
+    .HSELS2      ( 1'b1            ),
+    .HADDRS2     ( HADDRS          ),
+    .HTRANSS2    ( HTRANSS         ),
+    .HWRITES2    ( HWRITES         ),
+    .HSIZES2     ( HSIZES          ),
+    .HBURSTS2    ( HBURSTS         ),
+    .HPROTS2     ( HPROTS          ),
+    .HMASTERS2   ( {2'b0,HMASTERS} ),
+    .HWDATAS2    ( HWDATAS         ),
+    .HMASTLOCKS2 ( HMASTERLOCKS    ),
+    .HREADYS2    ( HREADYS         ),
+    .HREADYOUTS2 ( HREADYS         ),
+    .HRDATAS2    ( HRDATAS         ),
+    .HRESPS2     ( HRESPS          ),       
  
     .HRDATAM0    ( HRDATA_ITCM    ),
     .HREADYOUTM0 ( HREADYOUT_ITCM ),
@@ -440,48 +440,48 @@ L1_AHBMatrix u_L1_AHBMatrix(
     .HMASTLOCKM2 ( HMASTLOCK_apb_bridge ),
     .HREADYMUXM2 ( HREADY_apb_bridge    ),
 
-    .SCANENABLE  (1'b0  ),
-    .SCANINHCLK  (1'b0  ),
-    .SCANOUTHCLK ()
+    .SCANENABLE  ( 1'b0  ),
+    .SCANINHCLK  ( 1'b0  ),
+    .SCANOUTHCLK (       )
 );
 //------------------------------------------------------------------------------
 // AHB ITCM
 // AHB总线M0
 //------------------------------------------------------------------------------
 cmsdk_ahb_to_sram #(
-    .AW    (16)
-)   AhbItcm (
-    .HCLK        (clk),
-    .HRESETn     (cpuresetn),
-
-    .HSEL        (HSEL_ITCM),
-    .HREADY      (HREADY_ITCM),
-    .HTRANS      (HTRANS_ITCM),
-    .HSIZE       (HSIZE_ITCM),
-    .HWRITE      (HWRITE_ITCM),
-    .HADDR       (HADDR_ITCM),
-    .HWDATA      (HWDATA_ITCM),
-    .HREADYOUT   (HREADYOUT_ITCM),
-    .HRESP       (HRESP_ITCM[0]),
-    .HRDATA      (HRDATA_ITCM),
-
-    .SRAMRDATA   (ITCMRDATA),
-    .SRAMADDR    (ITCMADDR),
-    .SRAMWEN     (ITCMWRITE),
-    .SRAMWDATA   (ITCMWDATA),
-    .SRAMCS      (ITCMCS)
+    .AW  (16)
+) AhbItcm (
+    .HCLK        ( clk            ),
+    .HRESETn     ( cpuresetn      ),
+ 
+    .HSEL        ( HSEL_ITCM      ),
+    .HREADY      ( HREADY_ITCM    ),
+    .HTRANS      ( HTRANS_ITCM    ),
+    .HSIZE       ( HSIZE_ITCM     ),
+    .HWRITE      ( HWRITE_ITCM    ),
+    .HADDR       ( HADDR_ITCM     ),
+    .HWDATA      ( HWDATA_ITCM    ),
+    .HREADYOUT   ( HREADYOUT_ITCM ),
+    .HRESP       ( HRESP_ITCM[0]  ),
+    .HRDATA      ( HRDATA_ITCM    ),
+ 
+    .SRAMRDATA   ( ITCMRDATA      ),
+    .SRAMADDR    ( ITCMADDR       ),
+    .SRAMWEN     ( ITCMWRITE      ),
+    .SRAMWDATA   ( ITCMWDATA      ),
+    .SRAMCS      ( ITCMCS         )   
 );
-assign  HRESP_ITCM[1]    =   1'b0;
+assign  HRESP_ITCM[1] = 1'b0;
 
 cmsdk_fpga_sram #(
-    .AW        (14)
+    .AW  (14)
 ) ITCM (
-    .CLK       (clk),
-    .ADDR      (ITCMADDR),
-    .WDATA     (ITCMWDATA),
-    .WREN      (ITCMWRITE),
-    .CS        (ITCMCS),
-    .RDATA     (ITCMRDATA)
+    .CLK       ( clk       ),
+    .ADDR      ( ITCMADDR  ),
+    .WDATA     ( ITCMWDATA ),
+    .WREN      ( ITCMWRITE ),
+    .CS        ( ITCMCS    ),
+    .RDATA     ( ITCMRDATA )
 );
 
 //------------------------------------------------------------------------------
@@ -489,39 +489,39 @@ cmsdk_fpga_sram #(
 // AHB总线M1
 //------------------------------------------------------------------------------
 cmsdk_ahb_to_sram #(
-    .AW                                 (16)
-)   AhbDtcm (
-    .HCLK                               (clk),
-    .HRESETn                            (cpuresetn),
-
-    .HSEL                               (HSEL_DTCM),
-    .HREADY                             (HREADY_DTCM),
-    .HTRANS                             (HTRANS_DTCM),
-    .HSIZE                              (HSIZE_DTCM),
-    .HWRITE                             (HWRITE_DTCM),
-    .HADDR                              (HADDR_DTCM),
-    .HWDATA                             (HWDATA_DTCM),
-    .HREADYOUT                          (HREADYOUT_DTCM),
-    .HRESP                              (HRESP_DTCM[0]),
-    .HRDATA                             (HRDATA_DTCM),
-
-    .SRAMRDATA                          (DTCMRDATA),
-    .SRAMADDR                           (DTCMADDR),
-    .SRAMWEN                            (DTCMWRITE),
-    .SRAMWDATA                          (DTCMWDATA),
-    .SRAMCS                             (DTCMCS)
+    .AW   (16)
+) AhbDtcm (
+    .HCLK        ( clk            ),
+    .HRESETn     ( cpuresetn      ),
+ 
+    .HSEL        ( HSEL_DTCM      ),
+    .HREADY      ( HREADY_DTCM    ),
+    .HTRANS      ( HTRANS_DTCM    ),
+    .HSIZE       ( HSIZE_DTCM     ),
+    .HWRITE      ( HWRITE_DTCM    ),
+    .HADDR       ( HADDR_DTCM     ),
+    .HWDATA      ( HWDATA_DTCM    ),
+    .HREADYOUT   ( HREADYOUT_DTCM ),
+    .HRESP       ( HRESP_DTCM[0]  ),
+    .HRDATA      ( HRDATA_DTCM    ),
+ 
+    .SRAMRDATA   ( DTCMRDATA      ),
+    .SRAMADDR    ( DTCMADDR       ),
+    .SRAMWEN     ( DTCMWRITE      ),
+    .SRAMWDATA   ( DTCMWDATA      ),
+    .SRAMCS      ( DTCMCS         )
 );
 assign  HRESP_DTCM[1]    =   1'b0;
 
 cmsdk_fpga_sram #(
-    .AW                                 (14)
-)   DTCM    (
-    .CLK                                (clk),
-    .ADDR                               (DTCMADDR),
-    .WDATA                              (DTCMWDATA),
-    .WREN                               (DTCMWRITE),
-    .CS                                 (DTCMCS),
-    .RDATA                              (DTCMRDATA)
+    .AW       (14)
+) DTCM    (
+    .CLK         ( clk       ),
+    .ADDR        ( DTCMADDR  ),
+    .WDATA       ( DTCMWDATA ),
+    .WREN        ( DTCMWRITE ),
+    .CS          ( DTCMCS    ),
+    .RDATA       ( DTCMRDATA )
 );
 
 //------------------------------------------------------------------------------
@@ -532,7 +532,7 @@ cmsdk_ahb_to_apb #(
     .ADDRWIDTH      (16),
     .REGISTER_RDATA (1),
     .REGISTER_WDATA (1)
-)u_cmsdk_ahb_to_apb(
+) u_cmsdk_ahb_to_apb(
     .HCLK      ( clk         ),
     .HRESETn   ( cpuresetn   ),
     .PCLKEN    ( 1'b1        ),
@@ -567,10 +567,10 @@ assign  HRESP_apb_bridge[1]    =   1'b0;
 // APB slave mux
 //------------------------------------------------------------------------------
 //apb uart 端口
-wire            PSEL_APB_uart;
-wire            PREADY_APB_uart;
-wire    [31:0]  PRDATA_APB_uart;
-wire            PSLVERR_APB_uart;
+wire            PSEL_APB_UART;
+wire            PREADY_APB_UART;
+wire    [31:0]  PRDATA_APB_UART;
+wire            PSLVERR_APB_UART;
 //apb led 端口
 wire            PSEL_APB_LED;
 wire            PREADY_APB_LED;
@@ -583,9 +583,9 @@ wire    [31:0]  PRDATA_APB_BUTTON;
 wire            PSLVERR_APB_BUTTON;
 
 cmsdk_apb_slave_mux #(
-    .PORT0_ENABLE  (1), //uart
-    .PORT1_ENABLE  (1), //LED
-    .PORT2_ENABLE  (1), //BUTTON
+    .PORT0_ENABLE  (1), // UART
+    .PORT1_ENABLE  (1), // LED
+    .PORT2_ENABLE  (1), // BUTTON
     .PORT3_ENABLE  (0),
     .PORT4_ENABLE  (0),
     .PORT5_ENABLE  (0),
@@ -603,10 +603,10 @@ cmsdk_apb_slave_mux #(
     .DECODE4BIT ( PADDR[15:12] ),
     .PSEL       ( PSEL         ),
 
-    .PSEL0      ( PSEL_APB_uart    ),
-    .PREADY0    ( PREADY_APB_uart  ),
-    .PRDATA0    ( PRDATA_APB_uart  ),
-    .PSLVERR0   ( PSLVERR_APB_uart ),
+    .PSEL0      ( PSEL_APB_UART    ),
+    .PREADY0    ( PREADY_APB_UART  ),
+    .PRDATA0    ( PRDATA_APB_UART  ),
+    .PSLVERR0   ( PSLVERR_APB_UART ),
  
     .PSEL1      ( PSEL_APB_LED    ),
     .PREADY1    ( PREADY_APB_LED  ),
@@ -687,6 +687,7 @@ cmsdk_apb_slave_mux #(
     .PRDATA     ( PRDATA  ),
     .PSLVERR    ( PSLVERR )
 );
+
 //------------------------------------------------------------------------------
 // APB UART
 //------------------------------------------------------------------------------
@@ -702,15 +703,15 @@ cmsdk_apb_uart #(
     .PCLK      ( clk              ),
     .PCLKG     ( clk              ),
     .PRESETn   ( cpuresetn        ),
-    .PSEL      ( PSEL_APB_uart    ),
+    .PSEL      ( PSEL_APB_UART    ),
     .PADDR     ( PADDR[11:2]      ),
     .PENABLE   ( PENABLE          ),
     .PWRITE    ( PWRITE           ),
     .PWDATA    ( PWDATA           ),
     .ECOREVNUM ( 4'b0             ),
-    .PRDATA    ( PRDATA_APB_uart  ),
-    .PREADY    ( PREADY_APB_uart  ),
-    .PSLVERR   ( PSLVERR_APB_uart ),
+    .PRDATA    ( PRDATA_APB_UART  ),
+    .PREADY    ( PREADY_APB_UART  ),
+    .PSLVERR   ( PSLVERR_APB_UART ),
  
     .RXD       ( RXD       ),
     .TXD       ( TXD       ),
@@ -722,14 +723,13 @@ cmsdk_apb_uart #(
     .RXOVRINT  ( RXOVRINT  ),
     .UARTINT   ( UARTINT   )
 );
+
 //------------------------------------------------------------------------------
 // APB LED
 //------------------------------------------------------------------------------
-
 cmsdk_apb3_eg_slave_led #(
     .ADDRWIDTH (12 )
-)
-u_cmsdk_apb3_eg_slave_led(
+) u_cmsdk_apb3_eg_slave_led(
     .PCLK      ( clk             ),
     .PRESETn   ( cpuresetn       ),
     .PSEL      ( PSEL_APB_LED    ),
@@ -744,14 +744,13 @@ u_cmsdk_apb3_eg_slave_led(
 
     .ledNumOut (ledNumOut )
 );
+
 //------------------------------------------------------------------------------
 // APB BUTTON
 //------------------------------------------------------------------------------
-
 custom_apb_button #(
     .ADDRWIDTH (12 )
-)
-u_custom_apb_button(
+) u_custom_apb_button(
     .pclk    ( clk                ),
     .presetn ( cpuresetn          ),
     .psel    ( PSEL_APB_BUTTON    ),
@@ -763,7 +762,7 @@ u_custom_apb_button(
     .pready  ( PREADY_APB_BUTTON  ),
     .pslverr ( PSLVERR_APB_BUTTON ),
 
-    .state1  (BUTTON  )
+    .state1  ( BUTTON             )
 );
 
 //------------------------------------------------------------------------------
