@@ -1,0 +1,15 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/software/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 00fd80a47a124d36a3ffe54ee817e134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:408]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:423]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:438]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:462]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:502]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:541]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'PADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:736]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'paddr' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:758]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

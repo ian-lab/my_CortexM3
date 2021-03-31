@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 25 12:24:49 2021
+# Process ID: 4088
+# Current directory: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8944 C:\Users\84308\Desktop\my_CortexM3\vivado_demo1_\CortexM3.xpr
+# Log file: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/vivado.log
+# Journal file: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix_default_slave.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM1.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM0.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM2.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM0.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS0.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS1.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS2.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM2.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM1.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+add_files -norecurse {C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/84308/Desktop/my_CortexM3/testbench/testbench.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+open_run synth_1 -name synth_1
+launch_simulation
+source tb.tcl
+current_wave_config {}
+add_wave {{/tb/u_SOC/HADDRI}} {{/tb/u_SOC/HTRANSI}} {{/tb/u_SOC/HSIZEI}} {{/tb/u_SOC/HBURSTI}} {{/tb/u_SOC/HPROTI}} {{/tb/u_SOC/HRDATAI}} {{/tb/u_SOC/HREADYI}} {{/tb/u_SOC/HRESPI}} {{/tb/u_SOC/HADDRD}} {{/tb/u_SOC/HTRANSD}} {{/tb/u_SOC/HSIZED}} {{/tb/u_SOC/HBURSTD}} {{/tb/u_SOC/HPROTD}} {{/tb/u_SOC/HWDATAD}} {{/tb/u_SOC/HWRITED}} {{/tb/u_SOC/HRDATAD}} {{/tb/u_SOC/HREADYD}} {{/tb/u_SOC/HRESPD}} {{/tb/u_SOC/HMASTERD}} {{/tb/u_SOC/HADDRS}} {{/tb/u_SOC/HTRANSS}} {{/tb/u_SOC/HWRITES}} {{/tb/u_SOC/HSIZES}} {{/tb/u_SOC/HWDATAS}} {{/tb/u_SOC/HBURSTS}} {{/tb/u_SOC/HPROTS}} {{/tb/u_SOC/HREADYS}} {{/tb/u_SOC/HRDATAS}} {{/tb/u_SOC/HRESPS}} {{/tb/u_SOC/HMASTERS}} {{/tb/u_SOC/HMASTERLOCKS}} 
+relaunch_sim
+save_wave_config {C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/tb_behav.wcfg
+set_property xsim.view C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/tb_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtx.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbMtx.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/cmsdk_ahb_to_ahb_sync.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_default_slave.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_ahb_to_apb.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_to_sram.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_apb_slave_mux.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_fpga_sram.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtx.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbMtx.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/cmsdk_ahb_to_ahb_sync.v C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_default_slave.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_ahb_to_apb.v C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_to_sram.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_apb_slave_mux.v C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_fpga_sram.v}
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS3.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS4.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM3.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM4.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbDecS0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbOutStg.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS0.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS1.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS2.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS3.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS4.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM0.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM1.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM2.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM3.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM4.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbDecS0.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbOutStg.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v}
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtx_default_slave.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbArb.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbMtx_default_slave.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM2.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtx_default_slave.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbArb.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbMtx_default_slave.v}
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/84308/Desktop/my_CortexM3/xdc/CortexM3.xdc
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v] -no_script -reset -force -quiet
+remove_files  C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v
+add_files -norecurse C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/uart/cmsdk_apb_uart.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_apb_uart.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/core/cortexm3ds_logic.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_apb_uart.v C:/Users/84308/Desktop/my_CortexM3/RTL/core/cortexm3ds_logic.v}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

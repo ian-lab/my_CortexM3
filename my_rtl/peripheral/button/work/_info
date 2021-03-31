@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/84308/Desktop/DetectHumanFaces-master/hardware/peripheral/btn
+vcustom_apb_button
+!s110 1617114911
+!i10b 1
+!s100 6f0ZLMkSgdP]Ti^]_EMG:3
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I<5P=^g9OQNQW3F46c0M=j1
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/button
+w1617114911
+8c:\users\84308\appdata\local\temp\tmpp3xulo.v
+Fc:\users\84308\appdata\local\temp\tmpp3xulo.v
+!i122 2
+L0 1 46
+OL;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1617114911.000000
+!s107 c:\users\84308\appdata\local\temp\tmpp3xulo.v|
+!s90 c:\users\84308\appdata\local\temp\tmpp3xulo.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

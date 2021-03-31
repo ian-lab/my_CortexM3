@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../my_rtl/CortexM3.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM0.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM1.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM2.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS0.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS1.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS2.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix_default_slave.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM0.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM1.v" \
+"../../../../../my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM2.v" \
+"../../../../../my_rtl/bus/apb/cmsdk_ahb_to_apb.v" \
+"../../../../../my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v" \
+"../../../../../my_rtl/peripheral/led/cmsdk_apb3_eg_slave_interface_led.v" \
+"../../../../../my_rtl/peripheral/led/cmsdk_apb3_eg_slave_led.v" \
+"../../../../../my_rtl/bus/apb/cmsdk_apb_slave_mux.v" \
+"../../../../../my_rtl/peripheral/uart/cmsdk_apb_uart.v" \
+"../../../../../my_rtl/peripheral/sram/cmsdk_fpga_sram.v" \
+"../../../../../my_rtl/core/cortexm3ds_logic.v" \
+"../../../../../my_rtl/peripheral/button/custom_apb_button.v" \
+"../../../../../my_rtl/peripheral/led/custom_apb_led.v" \
+"../../../../../testbench/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

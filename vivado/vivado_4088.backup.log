@@ -1,0 +1,417 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 25 12:24:49 2021
+# Process ID: 4088
+# Current directory: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8944 C:\Users\84308\Desktop\my_CortexM3\vivado_demo1_\CortexM3.xpr
+# Log file: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/vivado.log
+# Journal file: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/software/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 764.133 ; gain = 156.031
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix_default_slave.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM1.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM0.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM2.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM0.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS0.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS1.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS2.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM2.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM1.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Mar 25 12:29:00 2021] Launched synth_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Mar 25 13:03:51 2021] Launched impl_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/impl_1/runme.log
+add_files -norecurse {C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_ahb_to_apb' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v:31]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_ahb_to_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_apb_slave_mux' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_fpga_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v:27]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_ahb_to_apb()' found in library 'xil_defaultlib'
+Duplicate found at line 31 of file C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_ahb_to_apb.v
+	(Active) Duplicate found at line 31 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_ahb_to_sram()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_to_sram.v
+	(Active) Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_apb_slave_mux()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_apb_slave_mux.v
+	(Active) Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_fpga_sram()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_fpga_sram.v
+	(Active) Duplicate found at line 27 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v
+[Thu Mar 25 13:08:08 2021] Launched synth_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_ahb_to_apb' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v:31]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_ahb_to_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_apb_slave_mux' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_fpga_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v:27]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_ahb_to_apb()' found in library 'xil_defaultlib'
+Duplicate found at line 31 of file C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_ahb_to_apb.v
+	(Active) Duplicate found at line 31 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_ahb_to_sram()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_to_sram.v
+	(Active) Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_apb_slave_mux()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_apb_slave_mux.v
+	(Active) Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_fpga_sram()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_fpga_sram.v
+	(Active) Duplicate found at line 27 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v
+[Thu Mar 25 13:09:09 2021] Launched synth_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_ahb_to_apb' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v:31]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_ahb_to_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_apb_slave_mux' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'cmsdk_fpga_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v:27]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_ahb_to_apb()' found in library 'xil_defaultlib'
+Duplicate found at line 31 of file C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_ahb_to_apb.v
+	(Active) Duplicate found at line 31 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_ahb_to_sram()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_to_sram.v
+	(Active) Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_apb_slave_mux()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_apb_slave_mux.v
+	(Active) Duplicate found at line 26 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'cmsdk_fpga_sram()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_fpga_sram.v
+	(Active) Duplicate found at line 27 of file C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v
+[Thu Mar 25 14:08:42 2021] Launched synth_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1/runme.log
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/84308/Desktop/my_CortexM3/testbench/testbench.v
+update_compile_order -fileset sim_1
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Netlist 29-17] Analyzing 348 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'CortexM3' is not ideal for floorplanning, since the cellview 'cortexm3ds_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xdc]
+Finished Parsing XDC File [C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1174.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1282.766 ; gain = 236.656
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CortexM3
+INFO: [VRFC 10-2458] undeclared symbol TXEN, assumed default net type wire [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:705]
+INFO: [VRFC 10-2458] undeclared symbol BAUDTICK, assumed default net type wire [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:706]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBArbiterM0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBArbiterM1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBArbiterM2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBDecoderS0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBDecoderS1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBDecoderS2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBInputstg
+WARNING: [VRFC 10-3507] macro 'TRN_IDLE' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:113]
+WARNING: [VRFC 10-3507] macro 'TRN_BUSY' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:114]
+WARNING: [VRFC 10-3507] macro 'TRN_NONSEQ' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:115]
+WARNING: [VRFC 10-3507] macro 'TRN_SEQ' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:116]
+WARNING: [VRFC 10-3507] macro 'BUR_SINGLE' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:119]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:120]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP4' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:121]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR4' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:122]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP8' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:123]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR8' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:124]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP16' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:125]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR16' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:126]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBMatrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix_default_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBMatrix_default_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBOutputStgM0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBOutputStgM1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBOutputStgM2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb_slave_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_apb_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_fpga_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/RTL/core/cortexm3ds_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cortexm3ds_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/testbench/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/software/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 00fd80a47a124d36a3ffe54ee817e134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:407]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:422]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:437]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:461]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:501]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:540]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v" Line 1. Module CortexM3(SimPresent=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cortexm3ds_logic
+Compiling module xil_defaultlib.L1_AHBInputstg
+Compiling module xil_defaultlib.L1_AHBMatrix_default_slave
+Compiling module xil_defaultlib.L1_AHBDecoderS0
+Compiling module xil_defaultlib.L1_AHBDecoderS1
+Compiling module xil_defaultlib.L1_AHBDecoderS2
+Compiling module xil_defaultlib.L1_AHBArbiterM0
+Compiling module xil_defaultlib.L1_AHBOutputStgM0
+Compiling module xil_defaultlib.L1_AHBArbiterM1
+Compiling module xil_defaultlib.L1_AHBOutputStgM1
+Compiling module xil_defaultlib.L1_AHBArbiterM2
+Compiling module xil_defaultlib.L1_AHBOutputStgM2
+Compiling module xil_defaultlib.L1_AHBMatrix
+Compiling module xil_defaultlib.cmsdk_ahb_to_sram
+Compiling module xil_defaultlib.cmsdk_fpga_sram(AW=14)
+Compiling module xil_defaultlib.cmsdk_ahb_to_apb(REGISTER_WDATA=...
+Compiling module xil_defaultlib.cmsdk_apb_slave_mux(PORT1_ENABLE...
+Compiling module xil_defaultlib.cmsdk_apb_uart
+Compiling module xil_defaultlib.CortexM3(SimPresent=1)
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 25 14:46:17 2021...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:01:48 . Memory (MB): peak = 1812.215 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '108' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:43 . Memory (MB): peak = 1886.891 ; gain = 3.125
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1886.891 ; gain = 72.930
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:26 ; elapsed = 00:02:41 . Memory (MB): peak = 1886.891 ; gain = 74.676
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_wave_config {}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration ''.
+Untitled 1
+add_wave {{/tb/u_SOC/HADDRI}} {{/tb/u_SOC/HTRANSI}} {{/tb/u_SOC/HSIZEI}} {{/tb/u_SOC/HBURSTI}} {{/tb/u_SOC/HPROTI}} {{/tb/u_SOC/HRDATAI}} {{/tb/u_SOC/HREADYI}} {{/tb/u_SOC/HRESPI}} {{/tb/u_SOC/HADDRD}} {{/tb/u_SOC/HTRANSD}} {{/tb/u_SOC/HSIZED}} {{/tb/u_SOC/HBURSTD}} {{/tb/u_SOC/HPROTD}} {{/tb/u_SOC/HWDATAD}} {{/tb/u_SOC/HWRITED}} {{/tb/u_SOC/HRDATAD}} {{/tb/u_SOC/HREADYD}} {{/tb/u_SOC/HRESPD}} {{/tb/u_SOC/HMASTERD}} {{/tb/u_SOC/HADDRS}} {{/tb/u_SOC/HTRANSS}} {{/tb/u_SOC/HWRITES}} {{/tb/u_SOC/HSIZES}} {{/tb/u_SOC/HWDATAS}} {{/tb/u_SOC/HBURSTS}} {{/tb/u_SOC/HPROTS}} {{/tb/u_SOC/HREADYS}} {{/tb/u_SOC/HRDATAS}} {{/tb/u_SOC/HRESPS}} {{/tb/u_SOC/HMASTERS}} {{/tb/u_SOC/HMASTERLOCKS}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1957.887 ; gain = 1.422
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/software/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 00fd80a47a124d36a3ffe54ee817e134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:407]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:422]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:437]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:461]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:501]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v:540]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1957.887 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1957.887 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 1966.043 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+relaunch_xsim_kernel: Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 1966.043 ; gain = 8.156
+INFO: [Common 17-344] 'relaunch_xsim_kernel' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+save_wave_config {C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/tb_behav.wcfg
+set_property xsim.view C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1975.230 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.165 . Memory (MB): peak = 1975.230 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1975.230 ; gain = 0.000
+[Thu Mar 25 14:49:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/impl_1/runme.log
+close_design
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtx.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbMtx.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/cmsdk_ahb_to_ahb_sync.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_default_slave.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_ahb_to_apb.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_to_sram.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_apb_slave_mux.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_fpga_sram.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtx.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbMtx.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/cmsdk_ahb_to_ahb_sync.v C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_default_slave.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_ahb_to_apb.v C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_ahb_to_sram.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_apb/cmsdk_apb_slave_mux.v C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_fpga_sram.v}
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS3.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS4.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM3.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM4.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbDecS0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbOutStg.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS0.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS1.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS2.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS3.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS4.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM0.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM1.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM2.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM3.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM4.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbDecS0.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbOutStg.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v}
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtx_default_slave.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbArb.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbMtx_default_slave.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM2.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L1AhbMtx/L1AhbMtx_default_slave.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbArb.v C:/Users/84308/Desktop/my_CortexM3/RTL/bus/sys_ahb/L2AhbMtx/L2AhbMtx_default_slave.v}
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2646.461 ; gain = 671.230
+set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/84308/Desktop/my_CortexM3/xdc/CortexM3.xdc
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v] -no_script -reset -force -quiet
+remove_files  C:/Users/84308/Desktop/my_CortexM3/RTL/CortexM3.v
+add_files -norecurse C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/uart/cmsdk_apb_uart.v C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_apb_uart.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/84308/Desktop/my_CortexM3/RTL/core/cortexm3ds_logic.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/84308/Desktop/my_CortexM3/RTL/peripheral/cmsdk_apb_uart.v C:/Users/84308/Desktop/my_CortexM3/RTL/core/cortexm3ds_logic.v}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Mar 25 22:19:16 2021] Launched synth_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/synth_1/runme.log
+[Thu Mar 25 22:19:16 2021] Launched impl_1...
+Run output will be captured here: C:/Users/84308/Desktop/my_CortexM3/vivado_demo1_/CortexM3.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 25 23:28:36 2021...

@@ -1,0 +1,363 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Mar 29 18:51:30 2021
+| Host         : DESKTOP-OFV538P running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CortexM3_control_sets_placed.rpt
+| Design       : CortexM3
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   284 |
+| Unused register locations in slices containing registers |   710 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            8 |
+|      2 |            2 |
+|      3 |            5 |
+|      4 |           36 |
+|      5 |           20 |
+|      6 |           22 |
+|      7 |           11 |
+|      8 |           72 |
+|      9 |           16 |
+|     10 |            4 |
+|     11 |            7 |
+|     12 |            4 |
+|     13 |            1 |
+|     14 |            3 |
+|     15 |            2 |
+|    16+ |           71 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             626 |          328 |
+| No           | No                    | Yes                    |            1754 |          951 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1598 |          632 |
+| Yes          | No                    | Yes                    |            1512 |          599 |
+| Yes          | Yes                   | No                     |              16 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------------------------------------------------------+------------------------------+------------------+----------------+
+|    Clock Signal   |                                 Enable Signal                                |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-------------------+------------------------------------------------------------------------------+------------------------------+------------------+----------------+
+|  SWCLK_IBUF_BUFG  |                                                                              | ulogic/Jkdoz6_i_2_n_0        |                1 |              1 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/reg_baud_cntr_i[15]_i_1_n_0                                 | cpuresetn_reg_inv_rep__0_n_0 |                1 |              1 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/reg_baud_cntr_i[15]_i_1_n_0                                 | cpuresetn_reg_inv_rep_n_0    |                1 |              1 |
+|  SWCLK_IBUF_BUFG  | ulogic/Pqthw6                                                                | ulogic/Xh3nz6_i_1_n_0        |                1 |              1 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_l1_ahbdecoders2/E[0]                                        | cpuresetn_reg_inv_rep__0_n_0 |                1 |              1 |
+|  CLK50m_IBUF_BUFG | ulogic/Z8ha17_i_1_n_0                                                        | ulogic/Klgg07_i_2_n_0        |                1 |              1 |
+|  SWCLK_IBUF_BUFG  | ulogic/G7kzz6_i_1_n_0                                                        | ulogic/G71g07_i_2_n_0        |                1 |              1 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/reg_baud_cntr_f0                                            | cpuresetn_reg_inv_rep__1_n_0 |                1 |              1 |
+|  SWCLK_IBUF_BUFG  | ulogic/Imhoz6_i_1_n_0                                                        | ulogic/Xh3nz6_i_1_n_0        |                1 |              2 |
+|  SWCLK_IBUF_BUFG  |                                                                              | ulogic/RSTn                  |                1 |              2 |
+|  SWCLK_IBUF_BUFG  | ulogic/G7kzz6_i_1_n_0                                                        | ulogic/Xh3nz6_i_1_n_0        |                1 |              3 |
+|  SWCLK_IBUF_BUFG  | ulogic/Myyiy6                                                                | ulogic/Xh3nz6_i_1_n_0        |                1 |              3 |
+|  SWCLK_IBUF_BUFG  | ulogic/Toxhw6                                                                | ulogic/Xh3nz6_i_1_n_0        |                1 |              3 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/reg_baud_cntr_f0                                            | cpuresetn_reg_inv_rep__2_n_0 |                1 |              3 |
+|  SWCLK_IBUF_BUFG  | ulogic/Pqthw6                                                                | ulogic/G71g07_i_2_n_0        |                2 |              3 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/rx_tick_cnt[3]_i_1_n_0                                      | cpuresetn_reg_inv_rep__0_n_0 |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Q01jy6                                                                |                              |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Atws07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/p_12275_in                                                            |                              |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/G11jy6                                                                |                              |                1 |              4 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_L1_AHBInputstg_2/bound_en                                   | cpuresetn_reg_inv_rep__0_n_0 |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/p_4876_in                                                             | ulogic/Klgg07_i_2_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Cwciw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_L1_AHBInputstg_2/E[0]                                       | cpuresetn_reg_inv_rep__2_n_0 |                3 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Efhov6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/At8m17_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Avciw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/K31jy6                                                                |                              |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Fotnz6_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/U21jy6                                                                |                              |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Fknov6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Muciw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Ktciw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Na3nv6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/B4nzz6_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                3 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Vainz6_i_1_n_0                                                        |                              |                3 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Ytciw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Vfeiw6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Qwciw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Wsciw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Ovciw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_l1_ahbdecoders2/E[0]                                        | cpuresetn_reg_inv_rep__2_n_0 |                2 |              4 |
+|  SWCLK_IBUF_BUFG  | ulogic/Imhoz6_i_1_n_0                                                        | ulogic/G71g07_i_2_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/tx_state_update                                             | cpuresetn_reg_inv_rep__0_n_0 |                2 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Ljfu07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Kkmoz6_i_1_n_0                                                        | ulogic/Klgg07_i_2_n_0        |                1 |              4 |
+|  SWCLK_IBUF_BUFG  | ulogic/Imhoz6_i_1_n_0                                                        | ulogic/Y3roz6_i_2_n_0        |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Rconv6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Zdo7v6                                                                | ulogic/Yo2nz6_i_1_n_0        |                1 |              4 |
+|  SWCLK_IBUF_BUFG  | ulogic/Toxhw6                                                                | ulogic/G71g07_i_2_n_0        |                2 |              4 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/rx_state_update                                             | cpuresetn_reg_inv_rep__0_n_0 |                1 |              4 |
+|  CLK50m_IBUF_BUFG | ulogic/Z73iw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              5 |
+|  SWCLK_IBUF_BUFG  | ulogic/Toxhw6                                                                | ulogic/Y3roz6_i_2_n_0        |                2 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/C82h07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                3 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Hglhw6                                                                | ulogic/Klgg07_i_2_n_0        |                4 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Cjliy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Udkov6                                                                | ulogic/Klgg07_i_2_n_0        |                4 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/F9mg07_i_1_n_0                                                        |                              |                3 |              5 |
+|  SWCLK_IBUF_BUFG  | ulogic/Vedoz6_i_1_n_0                                                        | ulogic/Jkdoz6_i_2_n_0        |                5 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Sblov6                                                                |                              |                3 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/S31jy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Gaog07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                3 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Gecov6                                                                |                              |                2 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Fftnv6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Alo7x6                                                                |                              |                1 |              5 |
+|  CLK50m_IBUF_BUFG |                                                                              | cpuresetn_reg_inv_rep_n_0    |                2 |              5 |
+|  SWCLK_IBUF_BUFG  | ulogic/Jcqhw6                                                                | ulogic/G71g07_i_2_n_0        |                2 |              5 |
+|  CLK50m_IBUF_BUFG |                                                                              | cpuresetn_reg_inv_rep__2_n_0 |                2 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/p_8434_in                                                             | ulogic/Yo2nz6_i_1_n_0        |                2 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/M21jy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                1 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/L2joz6_i_1_n_0                                                        | ulogic/Klgg07_i_2_n_0        |                1 |              5 |
+|  CLK50m_IBUF_BUFG | ulogic/Peciw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Zabu07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                3 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Duhzz6_i_1_n_0                                                        |                              |                5 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Mhbiw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Fhbiw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Dfciw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Vibiw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Thbiw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Bgah07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Beciw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Vfmov6                                                                | ulogic/Klgg07_i_2_n_0        |                4 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Cjbiw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Rfciw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Oibiw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Rabov6                                                                |                              |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Ieciw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Yfciw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  SWCLK_IBUF_BUFG  | ulogic/G7kzz6_i_1_n_0                                                        | ulogic/Y3roz6_i_2_n_0        |                3 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Hibiw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Aibiw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Kfciw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              6 |
+|  CLK50m_IBUF_BUFG | ulogic/Weciw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              6 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/reg_baud_tick_reg_n_0                                       | cpuresetn_reg_inv_rep__0_n_0 |                3 |              7 |
+|  CLK50m_IBUF_BUFG | ulogic/p_3584_in                                                             | ulogic/Yo2nz6_i_1_n_0        |                2 |              7 |
+|  CLK50m_IBUF_BUFG | ulogic/p_7995_in                                                             | ulogic/Klgg07_i_2_n_0        |                4 |              7 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_ahb_to_apb/addr_reg_reg[2]_2[0]                                      | cpuresetn_reg_inv_rep__2_n_0 |                2 |              7 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/p_0_in19_out                                                | cpuresetn_reg_inv_rep__0_n_0 |                1 |              7 |
+|  CLK50m_IBUF_BUFG | ulogic/Cwnzz6_i_1_n_0                                                        |                              |                6 |              7 |
+|  CLK50m_IBUF_BUFG | ulogic/Y81jy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                4 |              7 |
+|  SWCLK_IBUF_BUFG  | ulogic/Q0yiy6                                                                | ulogic/G71g07_i_2_n_0        |                2 |              7 |
+|  CLK50m_IBUF_BUFG | ulogic/Eq2nz6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              7 |
+|  CLK50m_IBUF_BUFG | ulogic/Rem7x6                                                                | ulogic/Klgg07_i_2_n_0        |                4 |              7 |
+|  CLK50m_IBUF_BUFG | ulogic/Q5wf07_i_1_n_0                                                        |                              |                6 |              7 |
+|  CLK50m_IBUF_BUFG | ulogic/Ne5ov6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ng5xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | AhbItcm/buf_data_reg022_out                                                  |                              |                7 |              8 |
+|  CLK50m_IBUF_BUFG | AhbItcm/buf_data_reg018_out                                                  |                              |                5 |              8 |
+|  CLK50m_IBUF_BUFG | AhbItcm/buf_data_reg020_out                                                  |                              |                5 |              8 |
+|  CLK50m_IBUF_BUFG | AhbItcm/buf_data_reg0                                                        |                              |                5 |              8 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/tx_shift_buf0                                               | cpuresetn_reg_inv_rep__0_n_0 |                1 |              8 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/E[0]                                                        | cpuresetn_reg_inv_rep__0_n_0 |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ns7xx6                                                                |                              |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/O3ciw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/On9xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Or5xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Me9g07_i_1_n_0                                                        | ulogic/Klgg07_i_2_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Le6xx6                                                                |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/M46xx6                                                                |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Mh67x6                                                                |                              |                8 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Fp2b17_i_1_n_0                                                        |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Fujiw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ge5ov6                                                                | ulogic/Yo2nz6_i_1_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Gs7xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Alo7x6                                                                | ulogic/Aaz917_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Alo7x6                                                                | ulogic/Dpz917_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Aw1jy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/B22yx6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/B57iw6                                                                |                              |                5 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Bh5xx6                                                                |                              |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Blea17_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Byvzz6_i_1_n_0                                                        |                              |                8 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/C71jy6                                                                |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Cp8xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Cr2b17_i_1_n_0                                                        |                              |                1 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Cs5xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/D12yx6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/D45xx6                                                                |                              |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Dg4iw6                                                                |                              |                6 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ee6xx6                                                                |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/F2ciw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/F46xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Zr7xx6                                                                |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/H3ciw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/J4ciw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Jh4nz6_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Jp8xx6                                                                |                              |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/K1ciw6                                                                | ulogic/Klgg07_i_2_n_0        |                5 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/K45xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Knniy6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ktjiw6                                                                | ulogic/Klgg07_i_2_n_0        |                1 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ps5iw6                                                                |                              |                6 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Qp8xx6                                                                |                              |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Qogu07_i_1_n_0                                                        | ulogic/Klgg07_i_2_n_0        |                1 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/R1ciw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Qxbiw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/R45xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Rgbiw6                                                                |                              |                8 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Sv1jy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/T46xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/T2ciw6                                                                | ulogic/Klgg07_i_2_n_0        |                3 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ug5xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ue5ov6                                                                | ulogic/Yo2nz6_i_1_n_0        |                1 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Vr5xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/W92jy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Wtziy6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Xd6xx6                                                                |                              |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Ytjiw6                                                                | ulogic/Klgg07_i_2_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG |                                                                              | ulogic/RSTn                  |                3 |              8 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_ahb_to_apb/read_enable                                               | cpuresetn_reg_inv_rep__1_n_0 |                3 |              8 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_ahb_to_apb/addr_reg_reg[2]_1[0]                                      | cpuresetn_reg_inv_rep__2_n_0 |                1 |              8 |
+|  CLK50m_IBUF_BUFG | AhbDtcm/buf_data_reg020_out                                                  |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | AhbDtcm/buf_data_reg0                                                        |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | AhbDtcm/buf_data_reg022_out                                                  |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | AhbDtcm/buf_data_reg018_out                                                  |                              |                4 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/Mu1jy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                2 |              8 |
+|  CLK50m_IBUF_BUFG | ulogic/L96yx6                                                                |                              |                2 |              9 |
+|  SWCLK_IBUF_BUFG  | ulogic/Myyiy6                                                                | ulogic/Y3roz6_i_2_n_0        |                2 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Loem17_i_1_n_0                                                        |                              |                2 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Pz5yx6                                                                |                              |                2 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Ahem17_i_1_n_0                                                        |                              |                2 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/H3fm17_i_1_n_0                                                        |                              |                2 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Kboh07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                3 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Maznz6_i_1_n_0                                                        |                              |                3 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Ljem17_i_1_n_0                                                        |                              |                2 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Lh6yx6                                                                |                              |                3 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Qu1ov6                                                                | ulogic/Klgg07_i_2_n_0        |                4 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Wvem17_i_1_n_0                                                        |                              |                2 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Oaqh07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                4 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Ld6yx6                                                                |                              |                2 |              9 |
+|  SWCLK_IBUF_BUFG  | ulogic/Jcqhw6                                                                | ulogic/Xh3nz6_i_1_n_0        |                3 |              9 |
+|  SWCLK_IBUF_BUFG  | ulogic/Q0yiy6                                                                | ulogic/Xh3nz6_i_1_n_0        |                4 |              9 |
+|  CLK50m_IBUF_BUFG | ulogic/Q52et6                                                                | ulogic/Klgg07_i_2_n_0        |                6 |             10 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_l1_ahbdecoders2/E[0]                                        | cpuresetn_reg_inv_rep__1_n_0 |                6 |             10 |
+|  CLK50m_IBUF_BUFG | ulogic/Mphiw6                                                                |                              |                4 |             10 |
+|  CLK50m_IBUF_BUFG | ulogic/Kniiw6                                                                |                              |                4 |             10 |
+|  CLK50m_IBUF_BUFG | ulogic/P9get6                                                                | ulogic/Klgg07_i_2_n_0        |                4 |             11 |
+|  CLK50m_IBUF_BUFG | ulogic/Wvd917_i_1_n_0                                                        |                              |                4 |             11 |
+|  CLK50m_IBUF_BUFG | ulogic/Lidiw6                                                                | ulogic/Klgg07_i_2_n_0        |                9 |             11 |
+|  CLK50m_IBUF_BUFG | ulogic/Yk9g07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                2 |             11 |
+|  CLK50m_IBUF_BUFG | ulogic/U61jy6                                                                |                              |                3 |             11 |
+|  CLK50m_IBUF_BUFG | ulogic/Ua1jy6                                                                |                              |                3 |             11 |
+|  CLK50m_IBUF_BUFG | ulogic/M61jy6                                                                |                              |                5 |             11 |
+|  CLK50m_IBUF_BUFG | ulogic/Ammhw6                                                                |                              |                6 |             12 |
+|  CLK50m_IBUF_BUFG | ulogic/Ac2t07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |                3 |             12 |
+|  CLK50m_IBUF_BUFG | ulogic/Ut4ov6                                                                | ulogic/Yo2nz6_i_1_n_0        |                4 |             12 |
+|  CLK50m_IBUF_BUFG |                                                                              | cpuresetn_reg_inv_rep__0_n_0 |                7 |             12 |
+|  CLK50m_IBUF_BUFG | ulogic/Dvhiw6                                                                | ulogic/Yo2nz6_i_1_n_0        |                6 |             13 |
+|  CLK50m_IBUF_BUFG | ulogic/O91jy6                                                                | ulogic/Yo2nz6_i_1_n_0        |                8 |             14 |
+|  SWCLK_IBUF_BUFG  |                                                                              | ulogic/Y3roz6_i_2_n_0        |                8 |             14 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_apb_uart/reg_baud_cntr_i[15]_i_1_n_0                                 | cpuresetn_reg_inv_rep__2_n_0 |                5 |             14 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_L1_AHBInputstg_2/bound_en                                   | cpuresetn_reg_inv_rep__2_n_0 |                5 |             15 |
+|  SWCLK_IBUF_BUFG  | ulogic/Ueyiy6                                                                | ulogic/Xh3nz6_i_1_n_0        |                5 |             15 |
+|  CLK50m_IBUF_BUFG |                                                                              | cpuresetn_reg_inv_n_0        |                9 |             16 |
+|  CLK50m_IBUF_BUFG | ulogic/Ehfhw6                                                                | ulogic/Klgg07_i_2_n_0        |                5 |             16 |
+|  CLK50m_IBUF_BUFG | ulogic/G91jy6                                                                |                              |                6 |             16 |
+|  CLK50m_IBUF_BUFG | ulogic/p_5476_in                                                             | ulogic/Yo2nz6_i_1_n_0        |               10 |             16 |
+|  CLK50m_IBUF_BUFG | ulogic/Sdo7v6                                                                | ulogic/Yo2nz6_i_1_n_0        |                8 |             17 |
+|  SWCLK_IBUF_BUFG  | ulogic/Ueyiy6                                                                | ulogic/Y3roz6_i_2_n_0        |                6 |             17 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_L1_AHBInputstg_2/bound_en                                   | cpuresetn_reg_inv_rep__1_n_0 |                9 |             17 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_L1_AHBInputstg_2/no_port_reg_0[0]                           | cpuresetn_reg_inv_rep__1_n_0 |                4 |             18 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_l1_ahboutputstgm0_0/u_output_arb/i_addr_in_port_reg[0]_4[0] | cpuresetn_reg_inv_n_0        |                7 |             18 |
+|  CLK50m_IBUF_BUFG |                                                                              | cpuresetn_reg_inv_rep__1_n_0 |                9 |             18 |
+|  SWCLK_IBUF_BUFG  | ulogic/Jcqhw6                                                                | ulogic/Y3roz6_i_2_n_0        |                4 |             18 |
+|  SWCLK_IBUF_BUFG  | ulogic/Q0yiy6                                                                | ulogic/Y3roz6_i_2_n_0        |                3 |             18 |
+|  CLK50m_IBUF_BUFG | ulogic/Cabzz6_i_1_n_0                                                        |                              |                8 |             18 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_ahb_to_apb/addr_reg_reg[1]_0[0]                                      | cpuresetn_reg_inv_rep__1_n_0 |                6 |             20 |
+|  CLK50m_IBUF_BUFG | ulogic/G8eh07_i_1_n_0                                                        | ulogic/Yo2nz6_i_1_n_0        |               15 |             23 |
+|  CLK50m_IBUF_BUFG | ulogic/Qq3u07_i_1_n_0                                                        | ulogic/Klgg07_i_2_n_0        |               13 |             24 |
+|  CLK50m_IBUF_BUFG | ulogic/Qnot07_i_1_n_0                                                        | ulogic/Klgg07_i_2_n_0        |               11 |             24 |
+|  CLK50m_IBUF_BUFG | ulogic/Fuciw6                                                                | ulogic/Klgg07_i_2_n_0        |               19 |             24 |
+|  CLK50m_IBUF_BUFG | ulogic/Jwciw6                                                                | ulogic/Klgg07_i_2_n_0        |               16 |             24 |
+|  CLK50m_IBUF_BUFG | ulogic/Rtciw6                                                                | ulogic/Klgg07_i_2_n_0        |               17 |             24 |
+|  CLK50m_IBUF_BUFG | ulogic/L4kiw6                                                                |                              |               10 |             24 |
+|  CLK50m_IBUF_BUFG | ulogic/Tiiu07_i_1_n_0                                                        |                              |                6 |             25 |
+|  CLK50m_IBUF_BUFG | ulogic/U6ciw6                                                                | ulogic/Klgg07_i_2_n_0        |               14 |             25 |
+|  CLK50m_IBUF_BUFG | ulogic/Dtciw6                                                                | ulogic/Klgg07_i_2_n_0        |               14 |             27 |
+|  CLK50m_IBUF_BUFG | ulogic/F8kiw6                                                                |                              |               11 |             27 |
+|  CLK50m_IBUF_BUFG | ulogic/B7ciw6                                                                | ulogic/Klgg07_i_2_n_0        |               14 |             27 |
+|  CLK50m_IBUF_BUFG | ulogic/A9kiw6                                                                |                              |               10 |             27 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_L1_AHBInputstg_1/load_reg                                   | cpuresetn_reg_inv_n_0        |               10 |             28 |
+|  CLK50m_IBUF_BUFG | ulogic/Q4yiy6                                                                | ulogic/Yo2nz6_i_1_n_0        |               10 |             28 |
+|  CLK50m_IBUF_BUFG | ulogic/R7kiw6                                                                |                              |                9 |             29 |
+|  CLK50m_IBUF_BUFG | ulogic/N5kiw6                                                                |                              |               10 |             29 |
+|  CLK50m_IBUF_BUFG | ulogic/B6kiw6                                                                |                              |                6 |             29 |
+|  CLK50m_IBUF_BUFG | ulogic/p_7007_in                                                             | ulogic/Klgg07_i_2_n_0        |                9 |             29 |
+|  CLK50m_IBUF_BUFG | ulogic/P6kiw6                                                                |                              |                9 |             29 |
+|  CLK50m_IBUF_BUFG | ulogic/D7kiw6                                                                |                              |                6 |             29 |
+|  CLK50m_IBUF_BUFG | ulogic/Z4kiw6                                                                |                              |                6 |             29 |
+|  CLK50m_IBUF_BUFG | ulogic/Ebyiw6                                                                |                              |               16 |             30 |
+|  CLK50m_IBUF_BUFG | ulogic/Kkm007_i_1_n_0                                                        |                              |               19 |             30 |
+|  CLK50m_IBUF_BUFG | ulogic/Hn5yx6                                                                |                              |                7 |             31 |
+|  CLK50m_IBUF_BUFG | ulogic/Ag9u07_i_1_n_0                                                        | ulogic/Klgg07_i_2_n_0        |                8 |             31 |
+|  CLK50m_IBUF_BUFG | ulogic/Pdyiw6                                                                |                              |                9 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/W11jy6                                                                |                              |               14 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Dbt007_i_1_n_0                                                        |                              |               12 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Ykziw6                                                                |                              |               11 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Gyh007_i_1_n_0                                                        |                              |               15 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Klyiw6                                                                |                              |               13 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/K3b007_i_1_n_0                                                        |                              |               15 |             32 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_ahb_to_apb/addr_reg_reg[12]_0[0]                                     | cpuresetn_reg_inv_rep__2_n_0 |                7 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/G1r007_i_1_n_0                                                        |                              |               14 |             32 |
+|  CLK50m_IBUF_BUFG | u_cmsdk_ahb_to_apb/rwdata_reg[31]_i_1_n_0                                    | cpuresetn_reg_inv_rep__0_n_0 |                9 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Xux007_i_1_n_0                                                        |                              |               12 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Me0iw6                                                                | ulogic/Yo2nz6_i_1_n_0        |                9 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Enf007_i_1_n_0                                                        |                              |               13 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/A41jy6                                                                |                              |               13 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Tmyiw6                                                                |                              |               12 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/I9k007_i_1_n_0                                                        |                              |               13 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Wj1ov6                                                                | ulogic/Klgg07_i_2_n_0        |               14 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/I41jy6                                                                |                              |               16 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/F0eiw6                                                                |                              |                9 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Qoyiw6                                                                |                              |               13 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Hdd007_i_1_n_0                                                        |                              |               14 |             32 |
+|  CLK50m_IBUF_BUFG | u_L1_AHBMatrix/u_L1_AHBInputstg_0/load_reg                                   | cpuresetn_reg_inv_n_0        |                9 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/E21jy6                                                                |                              |               15 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Pkyiw6                                                                |                              |               13 |             32 |
+|  CLK50m_IBUF_BUFG | ulogic/Bq4yx6                                                                |                              |               17 |             40 |
+|  SWCLK_IBUF_BUFG  |                                                                              |                              |               20 |             41 |
+|  SWCLK_IBUF_BUFG  |                                                                              | ulogic/Xh3nz6_i_1_n_0        |               18 |             46 |
+|  SWCLK_IBUF_BUFG  |                                                                              | ulogic/G71g07_i_2_n_0        |               34 |             67 |
+|  CLK50m_IBUF_BUFG |                                                                              | ulogic/Yo2nz6_i_1_n_0        |              226 |            492 |
+|  CLK50m_IBUF_BUFG |                                                                              |                              |              308 |            585 |
+|  CLK50m_IBUF_BUFG |                                                                              | ulogic/Klgg07_i_2_n_0        |              631 |           1068 |
++-------------------+------------------------------------------------------------------------------+------------------------------+------------------+----------------+
+
+

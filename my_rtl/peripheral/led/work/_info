@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/84308/Desktop/DetectHumanFaces-master/hardware/peripheral/led
+vcmsdk_apb3_eg_slave_interface_led
+!s110 1616768046
+!i10b 1
+!s100 B[AR74gWgTNGY]M=@`B@L1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IeUTc^=KfSIo7l`2_eM1Pb1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led
+w1616768046
+8c:\users\84308\appdata\local\temp\tmpsn88du.v
+Fc:\users\84308\appdata\local\temp\tmpsn88du.v
+!i122 8
+L0 27 87
+Z4 OL;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1616768046.000000
+!s107 c:\users\84308\appdata\local\temp\tmpsn88du.v|
+!s90 c:\users\84308\appdata\local\temp\tmpsn88du.v|
+!i113 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vcmsdk_apb3_eg_slave_led
+!s110 1616768049
+!i10b 1
+!s100 hRQ7OL4<LbcdakhM50ch?0
+R1
+IVlmTD:AEFS4F:N6nnaU_^3
+R2
+R3
+w1616768048
+8c:\users\84308\appdata\local\temp\tmpqs6ent.v
+Fc:\users\84308\appdata\local\temp\tmpqs6ent.v
+!i122 9
+L0 28 122
+R4
+r1
+!s85 0
+31
+!s108 1616768049.000000
+!s107 c:\users\84308\appdata\local\temp\tmpqs6ent.v|
+!s90 c:\users\84308\appdata\local\temp\tmpqs6ent.v|
+!i113 0
+R5
+R6
+vcustom_apb_led
+!s110 1616727060
+!i10b 1
+!s100 N;_ce:6Ef9nX^o5i4GSAT2
+R1
+I@]zePN<RTVS6B79fzil8:2
+R2
+R0
+w1616727060
+8c:\users\84308\appdata\local\temp\tmpq5a6_w.v
+Fc:\users\84308\appdata\local\temp\tmpq5a6_w.v
+!i122 5
+L0 11 19
+R4
+r1
+!s85 0
+31
+!s108 1616727060.000000
+!s107 c:\users\84308\appdata\local\temp\tmpq5a6_w.v|
+!s90 c:\users\84308\appdata\local\temp\tmpq5a6_w.v|
+!i113 0
+R5
+R6
