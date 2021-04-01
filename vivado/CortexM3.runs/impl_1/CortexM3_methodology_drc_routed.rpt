@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Mar 31 21:26:37 2021
+| Date         : Thu Apr  1 12:50:23 2021
 | Host         : DESKTOP-OFV538P running 64-bit major release  (build 9200)
 | Command      : report_methodology -file CortexM3_methodology_drc_routed.rpt -pb CortexM3_methodology_drc_routed.pb -rpx CortexM3_methodology_drc_routed.rpx
 | Design       : CortexM3
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 391
+             Violations found: 389
 +-----------+----------+--------------------------------------------+------------+
 | Rule      | Severity | Description                                | Violations |
 +-----------+----------+--------------------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert               | 1          |
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 25         |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 23         |
 | SYNTH-10  | Warning  | Wide multiplier                            | 3          |
 | SYNTH-15  | Warning  | Byte wide write enable not inferred        | 32         |
 | TIMING-17 | Warning  | Non-clocked sequential cell                | 322        |
@@ -39,7 +39,7 @@ Table of Contents
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell ulogic/Klgg07_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ulogic/A09nz6_reg/CLR, ulogic/A10h07_reg/CLR, ulogic/A13nz6_reg/CLR, ulogic/A3cm17_reg/CLR, ulogic/A5yt07_reg/CLR, ulogic/A63nz6_reg/CLR, ulogic/A6ut07_reg/CLR, ulogic/A79u07_reg/CLR, ulogic/A7au07_reg/CLR, ulogic/A89g07_reg/CLR, ulogic/A8xf07_reg/CLR, ulogic/A96oz6_reg/CLR, ulogic/A9b917_reg/CLR, ulogic/Aa8oz6_reg/CLR, ulogic/Aacg07_reg/CLR (the first 15 of 1729 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ulogic/Klgg07_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ulogic/A09nz6_reg/CLR, ulogic/A10h07_reg/CLR, ulogic/A13nz6_reg/CLR, ulogic/A13nz6_reg_rep/CLR, ulogic/A13nz6_reg_rep__0/CLR, ulogic/A3cm17_reg/CLR, ulogic/A5yt07_reg/CLR, ulogic/A63nz6_reg/CLR, ulogic/A6ut07_reg/CLR, ulogic/A79u07_reg/CLR, ulogic/A7au07_reg/CLR, ulogic/A89g07_reg/CLR, ulogic/A8xf07_reg/CLR, ulogic/A96oz6_reg/CLR, ulogic/A9b917_reg/CLR (the first 15 of 1730 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-6#1 Warning
@@ -49,122 +49,112 @@ Related violations: <none>
 
 SYNTH-6#2 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance DTCM/BRAM_reg_1_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_0_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#3 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance DTCM/BRAM_reg_2_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_0_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#4 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance DTCM/BRAM_reg_2_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_0_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#5 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance DTCM/BRAM_reg_2_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_1_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#6 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance DTCM/BRAM_reg_2_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_1_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#7 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance DTCM/BRAM_reg_3_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_1_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#8 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance DTCM/BRAM_reg_3_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_1_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#9 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance DTCM/BRAM_reg_3_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_2_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#10 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_0_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_2_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#11 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_0_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_2_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#12 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_0_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_2_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#13 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_0_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_3_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#14 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_1_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_3_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#15 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_1_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_3_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#16 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_1_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance DTCM/BRAM_reg_3_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#17 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_1_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance ITCM/BRAM_reg_0_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#18 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_2_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance ITCM/BRAM_reg_0_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#19 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_2_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance ITCM/BRAM_reg_1_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#20 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_2_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance ITCM/BRAM_reg_1_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#21 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_2_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance ITCM/BRAM_reg_1_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#22 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_3_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance ITCM/BRAM_reg_2_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#23 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_3_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
-Related violations: <none>
-
-SYNTH-6#24 Warning
-Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_3_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
-Related violations: <none>
-
-SYNTH-6#25 Warning
-Timing of a block RAM might be sub-optimal  
-The timing for the instance ITCM/BRAM_reg_3_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance ITCM/BRAM_reg_2_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-10#1 Warning

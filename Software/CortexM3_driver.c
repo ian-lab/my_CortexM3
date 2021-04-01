@@ -257,17 +257,21 @@ void delay(uint32_t time)
 }
 
 
-/**************************************LED*******************************************/
-void send2LED( uint32_t cnt){
-      LED_TypeDef* led = LED;
-      led -> LEDS = cnt;
+void delay_1ms()
+{
+	delay(50000);
 }
-/**************************************PUSH_BTN**************************************/
-int getPushBtn( APB_BTN_TypeDef* apb_btn){
-//       while (!(apb_btn -> BTN0)) ;       // extra while loop to avoid multi-accumulation when long pressing BTN
-//       while (( apb_btn -> BTN0)) ;
-//      return 1;
-		return (apb_btn -> BTN0);
+
+/**************************************LED*******************************************/
+void send2LED( uint32_t cnt)
+{
+		APB_LED -> LEDS = cnt;
+}
+/**************************************KEY**************************************/
+
+int getKEY()
+{
+		return (APB_KEY -> KEYState);
 }
 
 

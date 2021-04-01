@@ -4,7 +4,7 @@
 ```
 文件目录
 |--Keil                 keil工程
-|--Sofetware            软件代码
+|--Software            软件代码
 |--cmsdk_ahb_busmatrix  生成AHB总线矩阵
 |--my_rtl               verilog代码
     |--bus                总线相关代码

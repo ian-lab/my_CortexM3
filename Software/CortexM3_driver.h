@@ -90,8 +90,17 @@ extern void Set_SysTick_VALUE(uint32_t value);
 extern void Set_SysTick_CALIB(uint32_t calib);
 extern uint32_t Timer_Ini(void);
 extern uint8_t Timer_Stop(uint32_t *duration_t,uint32_t start_t);
-
+extern void delay_1ms();
+ /**************************************LED*******************************************/
 extern void send2LED( uint32_t cnt);
-extern int getPushBtn( APB_BTN_TypeDef* apb_btn);
+
+ /**************************************KEY*******************************************/
+#define KEY_DOWN  0x00 // 按键按下
+#define KEY_UP    0x01 // 按键抬起
+extern int getKEY();
 
 #endif
+
+
+
+

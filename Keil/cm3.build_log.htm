@@ -28,25 +28,27 @@ Project File Date:  03/31/2021
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\software\keil5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 compiling handler.c...
-..\Software\CortexM3.h(143): warning:  #1-D: last line of file ends without a newline
-  #endif
 ..\Software\handler.c(36): warning:  #223-D: function "Set_SysTick_CTRL" declared implicitly
       Set_SysTick_CTRL(0);
-..\Software\handler.c: 2 warnings, 0 errors
-compiling main.c...
-..\Software\CortexM3.h(143): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Software\main.c(13): warning:  #223-D: function "printf" declared implicitly
-  	printf("***********************\n");
-..\Software\main.c: 2 warnings, 0 errors
+..\Software\handler.c: 1 warning, 0 errors
 compiling CortexM3_driver.c...
-..\Software\CortexM3.h(143): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Software\CortexM3_driver.c: 1 warning, 0 errors
+..\Software\CortexM3_driver.h(93): warning:  #1295-D: Deprecated declaration delay_1ms - give arg types
+  extern void delay_1ms();
+..\Software\CortexM3_driver.h(100): warning:  #1295-D: Deprecated declaration getKEY - give arg types
+  extern int getKEY();
+..\Software\CortexM3_driver.c: 2 warnings, 0 errors
+compiling main.c...
+..\Software\CortexM3_driver.h(93): warning:  #1295-D: Deprecated declaration delay_1ms - give arg types
+  extern void delay_1ms();
+..\Software\CortexM3_driver.h(100): warning:  #1295-D: Deprecated declaration getKEY - give arg types
+  extern int getKEY();
+..\Software\main.c(9): warning:  #223-D: function "printf" declared implicitly
+  	printf("***********************\n");
+..\Software\main.c(6): warning:  #177-D: variable "led"  was declared but never referenced
+  	uint32_t led = 0x01;
+..\Software\main.c: 4 warnings, 0 errors
 assembling startup_CM3DS.s...
 compiling Retarget.c...
-..\Software\CortexM3.h(143): warning:  #1-D: last line of file ends without a newline
-  #endif
 ..\Software\Retarget.c(28): warning:  #223-D: function "uart_SendChar" declared implicitly
     if(ch == '\n') uart_SendChar(UART,'\r');
 ..\Software\Retarget.c(29): warning:  #223-D: function "uart_SendChar" declared implicitly
@@ -57,15 +59,13 @@ compiling Retarget.c...
     uart_SendChar(UART,buf);
 ..\Software\Retarget.c(49): warning:  #223-D: function "uart_SendChar" declared implicitly
     uart_SendChar(UART,ch);
-..\Software\Retarget.c: 6 warnings, 0 errors
+..\Software\Retarget.c: 5 warnings, 0 errors
 compiling system.c...
-..\Software\CortexM3.h(143): warning:  #1-D: last line of file ends without a newline
-  #endif
 ..\Software\system.c(52): warning:  #223-D: function "uart_init" declared implicitly
     uart_init ( UART, (SystemCoreClock / 115200), 1,1,0,0,0,0 );
-..\Software\system.c: 2 warnings, 0 errors
+..\Software\system.c: 1 warning, 0 errors
 linking...
-Program Size: Code=1132 RO-data=108 RW-data=12 ZI-data=32772  
+Program Size: Code=1172 RO-data=108 RW-data=12 ZI-data=32772  
 After Build - User command #1: fromelf -cvf .\cm3.axf --vhx --32x1 -o image.hex
 After Build - User command #2: fromelf -cvf .\cm3.axf -o image.txt
 ".\cm3.axf" - 0 Error(s), 13 Warning(s).

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Mar 31 21:26:52 2021
+| Date             : Thu Apr  1 12:50:41 2021
 | Host             : DESKTOP-OFV538P running 64-bit major release  (build 9200)
 | Command          : report_power -file CortexM3_power_routed.rpt -pb CortexM3_power_summary_routed.pb -rpx CortexM3_power_routed.rpx
 | Design           : CortexM3
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.015 |        3 |       --- |             --- |
-| Slice Logic    |     0.021 |    22510 |       --- |             --- |
-|   LUT as Logic |     0.020 |    14707 |     53200 |           27.64 |
+| Slice Logic    |     0.018 |    22741 |       --- |             --- |
+|   LUT as Logic |     0.017 |    14810 |     53200 |           27.84 |
 |   CARRY4       |    <0.001 |      295 |     13300 |            2.22 |
 |   Register     |    <0.001 |     5506 |    106400 |            5.17 |
-|   F7/F8 Muxes  |    <0.001 |       17 |     53200 |            0.03 |
+|   F7/F8 Muxes  |    <0.001 |       20 |     53200 |            0.04 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       34 |       --- |             --- |
-| Signals        |     0.031 |    20130 |       --- |             --- |
-| Block RAM      |     0.020 |       32 |       140 |           22.86 |
-| DSPs           |     0.001 |        3 |       220 |            1.36 |
+| Signals        |     0.026 |    20327 |       --- |             --- |
+| Block RAM      |     0.028 |       32 |       140 |           22.86 |
+| DSPs           |    <0.001 |        3 |       220 |            1.36 |
 | I/O            |    <0.001 |       11 |       125 |            8.80 |
 | Static Power   |     0.109 |          |           |                 |
 | Total          |     0.197 |          |           |                 |
@@ -84,7 +84,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.003 |       0.002 |      0.002 |
+| Vccbram   |       1.000 |     0.004 |       0.002 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -148,13 +148,14 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------+-----------+
-| Name     | Power (W) |
-+----------+-----------+
-| CortexM3 |     0.088 |
-|   DTCM   |     0.015 |
-|   ITCM   |     0.006 |
-|   ulogic |     0.065 |
-+----------+-----------+
++------------------+-----------+
+| Name             | Power (W) |
++------------------+-----------+
+| CortexM3         |     0.088 |
+|   DTCM           |     0.014 |
+|   ITCM           |     0.015 |
+|   u_L1_AHBMatrix |     0.001 |
+|   ulogic         |     0.058 |
++------------------+-----------+
 
 

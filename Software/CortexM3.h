@@ -115,13 +115,13 @@ typedef struct
 typedef struct
 {
   volatile      uint32_t  LEDS;
-} LED_TypeDef;
+} APB_LED_TypeDef;
 
 
 typedef struct 
 {
-  volatile      uint32_t  BTN0;
-} APB_BTN_TypeDef;
+  volatile      uint32_t  KEYState;
+} APB_KEY_TypeDef;
 
 /******************************************************************************/
 /*                         Peripheral memory map                              */
@@ -129,15 +129,17 @@ typedef struct
 /* Peripheral and SRAM base address */
 #define APB_BASE         (0x40000000UL)
 #define APB_UART_BASE    (APB_BASE)
-#define LED_BASE         (APB_BASE + 0x1000UL)
-#define BUTTON_BASE      (APB_BASE + 0x2000UL)
+#define APB_LED_BASE     (APB_BASE + 0x1000UL)
+#define APB_KEY_BASE     (APB_BASE + 0x2000UL)
 
 /******************************************************************************/
 /*                         Peripheral declaration                             */
 /******************************************************************************/
 #define UART             ((UART_TypeDef    *) APB_UART_BASE   )
-#define LED              ((LED_TypeDef     *) LED_BASE    )
-#define BUTTON           ((APB_BTN_TypeDef *) BUTTON_BASE    )
+#define APB_LED          ((APB_LED_TypeDef *) APB_LED_BASE    )
+#define APB_KEY          ((APB_KEY_TypeDef *) APB_KEY_BASE    )
 
 
 #endif
+
+

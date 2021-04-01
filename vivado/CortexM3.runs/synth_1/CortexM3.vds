@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Mar 31 20:41:17 2021
-# Process ID: 5652
+# Start of session at: Thu Apr  1 12:01:09 2021
+# Process ID: 2624
 # Current directory: C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/synth_1
 # Command line: vivado.exe -log CortexM3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CortexM3.tcl
 # Log file: C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/synth_1/CortexM3.vds
@@ -15,7 +15,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7480 
+INFO: Helper process launched with PID 17216 
 WARNING: [Synth 8-2306] macro TRN_IDLE redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:113]
 WARNING: [Synth 8-2306] macro TRN_BUSY redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:114]
 WARNING: [Synth 8-2306] macro TRN_NONSEQ redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:115]
@@ -29,7 +29,7 @@ WARNING: [Synth 8-2306] macro BUR_INCR8 redefined [C:/Users/84308/Desktop/my_Cor
 WARNING: [Synth 8-2306] macro BUR_WRAP16 redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:125]
 WARNING: [Synth 8-2306] macro BUR_INCR16 redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:126]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 491.012 ; gain = 156.152
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 489.832 ; gain = 155.703
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'CortexM3' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:1]
 	Parameter SimPresent bound to: 0 - type: integer 
@@ -65,19 +65,19 @@ INFO: [Synth 8-6155] done synthesizing module 'L1_AHBArbiterM2' (11#1) [C:/Users
 INFO: [Synth 8-6155] done synthesizing module 'L1_AHBOutputStgM2' (12#1) [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM2.v:38]
 WARNING: [Synth 8-3848] Net SCANOUTHCLK in module/entity L1_AHBMatrix does not have driver. [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix.v:300]
 INFO: [Synth 8-6155] done synthesizing module 'L1_AHBMatrix' (13#1) [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix.v:47]
-WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM0' does not match port width (4) of module 'L1_AHBMatrix' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:408]
-WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM1' does not match port width (4) of module 'L1_AHBMatrix' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:423]
-WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM2' does not match port width (4) of module 'L1_AHBMatrix' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:438]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM0' does not match port width (4) of module 'L1_AHBMatrix' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:411]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM1' does not match port width (4) of module 'L1_AHBMatrix' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:426]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM2' does not match port width (4) of module 'L1_AHBMatrix' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:441]
 INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v:26]
 	Parameter AW bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_to_sram' (14#1) [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v:26]
-WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:462]
+WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:465]
 INFO: [Synth 8-6157] synthesizing module 'cmsdk_fpga_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v:27]
 	Parameter AW bound to: 14 - type: integer 
 	Parameter AWT bound to: 16383 - type: integer 
 INFO: [Synth 8-3876] $readmem data file 'C:/Users/84308/Desktop/my_CortexM3/keil/image.hex' is read successfully [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v:55]
 INFO: [Synth 8-6155] done synthesizing module 'cmsdk_fpga_sram' (15#1) [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v:27]
-WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:502]
+WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_sram' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:505]
 INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_apb' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v:31]
 	Parameter ADDRWIDTH bound to: 16 - type: integer 
 	Parameter REGISTER_RDATA bound to: 1 - type: integer 
@@ -92,7 +92,7 @@ INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_apb' [C:/Users/84308/Desk
 	Parameter ST_APB_ERR2 bound to: 3'b110 
 	Parameter ST_ILLEGAL bound to: 3'b111 
 INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_to_apb' (16#1) [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v:31]
-WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_apb' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:541]
+WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_apb' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:544]
 INFO: [Synth 8-6157] synthesizing module 'cmsdk_apb_slave_mux' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v:26]
 	Parameter PORT0_ENABLE bound to: 1 - type: integer 
 	Parameter PORT1_ENABLE bound to: 1 - type: integer 
@@ -241,7 +241,7 @@ WARNING: [Synth 8-3331] design cmsdk_apb_slave_mux has unconnected port PRDATA3[
 WARNING: [Synth 8-3331] design cmsdk_apb_slave_mux has unconnected port PRDATA3[8]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1595.168 ; gain = 1260.309
+Finished RTL Elaboration : Time (s): cpu = 00:01:45 ; elapsed = 00:02:01 . Memory (MB): peak = 1593.805 ; gain = 1259.676
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -254,10 +254,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:45 ; elapsed = 00:01:50 . Memory (MB): peak = 1595.168 ; gain = 1260.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:08 ; elapsed = 00:02:27 . Memory (MB): peak = 1593.805 ; gain = 1259.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:45 ; elapsed = 00:01:50 . Memory (MB): peak = 1595.168 ; gain = 1260.309
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:08 ; elapsed = 00:02:27 . Memory (MB): peak = 1593.805 ; gain = 1259.676
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -268,17 +268,17 @@ Parsing XDC File [C:/Users/84308/Desktop/my_CortexM3/xdc/CortexM3.xdc]
 Finished Parsing XDC File [C:/Users/84308/Desktop/my_CortexM3/xdc/CortexM3.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/84308/Desktop/my_CortexM3/xdc/CortexM3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CortexM3_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/CortexM3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1595.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1593.805 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1595.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1595.078 ; gain = 0.406
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1595.168 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1595.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1595.078 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1595.078 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:28 ; elapsed = 00:02:43 . Memory (MB): peak = 1595.168 ; gain = 1260.309
+Finished Constraint Validation : Time (s): cpu = 00:02:59 ; elapsed = 00:03:34 . Memory (MB): peak = 1595.867 ; gain = 1261.738
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -286,13 +286,13 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:28 ; elapsed = 00:02:43 . Memory (MB): peak = 1595.168 ; gain = 1260.309
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:59 ; elapsed = 00:03:34 . Memory (MB): peak = 1595.867 ; gain = 1261.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:28 ; elapsed = 00:02:43 . Memory (MB): peak = 1595.168 ; gain = 1260.309
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:59 ; elapsed = 00:03:34 . Memory (MB): peak = 1595.867 ; gain = 1261.738
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'Et2nz6_reg' into 'Er2nz6_reg' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v:7214]
 INFO: [Synth 8-4471] merging register 'Hs2nz6_reg' into 'Su2nz6_reg' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v:7213]
@@ -326,7 +326,7 @@ WARNING: [Synth 8-6841] Block RAM (BRAM_reg) originally specified as a Byte Wide
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'cmsdk_ahb_to_apb'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:37 ; elapsed = 00:06:56 . Memory (MB): peak = 1595.168 ; gain = 1260.309
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:07:56 ; elapsed = 00:09:00 . Memory (MB): peak = 1595.867 ; gain = 1261.738
 ---------------------------------------------------------------------------------
 RAM Pipeline Warning: Read Address Register Found For RAM BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
@@ -839,13 +839,16 @@ INFO: [Synth 8-3886] merging instance 'ulogici_1/Gxps07_reg' (FDE) to 'ulogici_1
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ulogici_1/Nyqs07_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ulogici_1/Yg3nz6_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ulogici_1/Q83t07_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ulogici_1/Z7ua17_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ulogici_1/Pa3t07_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ulogici_1/Pc3t07_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ulogici_1/S84g07_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ulogici_1/Etbnz6_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u_L1_AHBMatrix/u_L1_AHBInputstg_1/reg_addr_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u_L1_AHBMatrix/u_L1_AHBInputstg_0/reg_addr_reg[31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:15:25 ; elapsed = 00:15:52 . Memory (MB): peak = 1791.934 ; gain = 1457.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:16:04 ; elapsed = 00:17:34 . Memory (MB): peak = 1790.105 ; gain = 1455.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -911,7 +914,7 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |cortexm3ds_logic__GB0 |           1|     33798|
+|1     |cortexm3ds_logic__GB0 |           1|     33900|
 |2     |cortexm3ds_logic__GB1 |           1|     21875|
 |3     |CortexM3__GC0         |           1|      2140|
 +------+----------------------+------------+----------+
@@ -919,13 +922,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:15:46 ; elapsed = 00:16:13 . Memory (MB): peak = 1791.934 ; gain = 1457.074
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:16:29 ; elapsed = 00:18:00 . Memory (MB): peak = 1790.105 ; gain = 1455.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:34:36 ; elapsed = 00:35:50 . Memory (MB): peak = 2692.598 ; gain = 2357.738
+Finished Timing Optimization : Time (s): cpu = 00:37:31 ; elapsed = 00:40:06 . Memory (MB): peak = 2662.789 ; gain = 2328.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -948,7 +951,7 @@ Report RTL Partitions:
 |      |RTL Partition |Replication |Instances |
 +------+--------------+------------+----------+
 |1     |CortexM3__GC0 |           1|      2140|
-|2     |CortexM3_GT0  |           1|     55551|
+|2     |CortexM3_GT0  |           1|     55644|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -986,7 +989,7 @@ INFO: [Synth 8-6837] The timing for the instance DTCM/BRAM_reg_3_1 (implemented 
 INFO: [Synth 8-6837] The timing for the instance DTCM/BRAM_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance DTCM/BRAM_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:35:26 ; elapsed = 00:36:44 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Finished Technology Mapping : Time (s): cpu = 00:38:17 ; elapsed = 00:40:56 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1011,7 +1014,7 @@ INFO: [Synth 8-5365] Flop cpuresetn_reg is being inverted and renamed to cpurese
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:35:34 ; elapsed = 00:36:52 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Finished IO Insertion : Time (s): cpu = 00:38:23 ; elapsed = 00:41:03 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1024,7 +1027,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:35:34 ; elapsed = 00:36:52 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Finished Renaming Generated Instances : Time (s): cpu = 00:38:24 ; elapsed = 00:41:03 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1036,25 +1039,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:35:37 ; elapsed = 00:36:55 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:38:28 ; elapsed = 00:41:08 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:35:37 ; elapsed = 00:36:56 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Finished Renaming Generated Ports : Time (s): cpu = 00:38:28 ; elapsed = 00:41:08 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:35:40 ; elapsed = 00:36:58 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Finished Handling Custom Attributes : Time (s): cpu = 00:38:31 ; elapsed = 00:41:11 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:35:40 ; elapsed = 00:36:58 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Finished Renaming Generated Nets : Time (s): cpu = 00:38:31 ; elapsed = 00:41:12 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1073,13 +1076,13 @@ Report Cell Usage:
 |1     |BUFG        |     2|
 |2     |CARRY4      |   295|
 |3     |DSP48E1     |     3|
-|4     |LUT1        |   223|
-|5     |LUT2        |  1185|
-|6     |LUT3        |  1372|
-|7     |LUT4        |  2472|
-|8     |LUT5        |  3308|
-|9     |LUT6        |  8174|
-|10    |MUXF7       |    16|
+|4     |LUT1        |   249|
+|5     |LUT2        |  1202|
+|6     |LUT3        |  1416|
+|7     |LUT4        |  2550|
+|8     |LUT5        |  3385|
+|9     |LUT6        |  8199|
+|10    |MUXF7       |    19|
 |11    |MUXF8       |     1|
 |12    |RAMB36E1    |     2|
 |13    |RAMB36E1_1  |     2|
@@ -1109,15 +1112,15 @@ Report Instance Areas:
 +------+-----------------------------------+----------------------------------+------+
 |      |Instance                           |Module                            |Cells |
 +------+-----------------------------------+----------------------------------+------+
-|1     |top                                |                                  | 22600|
-|2     |  AhbDtcm                          |cmsdk_ahb_to_sram                 |   135|
+|1     |top                                |                                  | 22870|
+|2     |  AhbDtcm                          |cmsdk_ahb_to_sram                 |   134|
 |3     |  AhbItcm                          |cmsdk_ahb_to_sram_0               |   163|
 |4     |  DTCM                             |cmsdk_fpga_sram                   |    17|
 |5     |  ITCM                             |cmsdk_fpga_sram_1                 |    17|
-|6     |  u_L1_AHBMatrix                   |L1_AHBMatrix                      |   356|
-|7     |    u_L1_AHBInputstg_0             |L1_AHBInputstg                    |    65|
+|6     |  u_L1_AHBMatrix                   |L1_AHBMatrix                      |   358|
+|7     |    u_L1_AHBInputstg_0             |L1_AHBInputstg                    |    66|
 |8     |    u_L1_AHBInputstg_1             |L1_AHBInputstg_2                  |    47|
-|9     |    u_L1_AHBInputstg_2             |L1_AHBInputstg_3                  |   128|
+|9     |    u_L1_AHBInputstg_2             |L1_AHBInputstg_3                  |   129|
 |10    |    u_l1_ahbdecoders0              |L1_AHBDecoderS0                   |     3|
 |11    |      u_L1_AHBMatrix_default_slave |L1_AHBMatrix_default_slave_5      |     2|
 |12    |    u_l1_ahbdecoders1              |L1_AHBDecoderS1                   |     6|
@@ -1136,33 +1139,32 @@ Report Instance Areas:
 |25    |    u_custom_apb_led               |custom_apb_led                    |     4|
 |26    |  u_cmsdk_apb_uart                 |cmsdk_apb_uart                    |   230|
 |27    |  u_custom_apb_button              |custom_apb_button                 |     2|
-|28    |  ulogic                           |cortexm3ds_logic                  | 21463|
+|28    |  ulogic                           |cortexm3ds_logic                  | 21732|
 +------+-----------------------------------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:35:40 ; elapsed = 00:36:58 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Finished Writing Synthesis Report : Time (s): cpu = 00:38:31 ; elapsed = 00:41:12 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:33:26 ; elapsed = 00:36:22 . Memory (MB): peak = 3128.875 ; gain = 2794.016
-Synthesis Optimization Complete : Time (s): cpu = 00:35:40 ; elapsed = 00:37:01 . Memory (MB): peak = 3128.875 ; gain = 2794.016
+Synthesis Optimization Runtime : Time (s): cpu = 00:35:50 ; elapsed = 00:40:31 . Memory (MB): peak = 3104.582 ; gain = 2768.391
+Synthesis Optimization Complete : Time (s): cpu = 00:38:32 ; elapsed = 00:41:17 . Memory (MB): peak = 3104.582 ; gain = 2770.453
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 348 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 351 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'CortexM3' is not ideal for floorplanning, since the cellview 'cortexm3ds_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3128.875 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3104.582 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-273 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+276 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:35:49 ; elapsed = 00:37:10 . Memory (MB): peak = 3128.875 ; gain = 2806.559
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3128.875 ; gain = 0.000
+synth_design: Time (s): cpu = 00:38:43 ; elapsed = 00:41:30 . Memory (MB): peak = 3104.582 ; gain = 2782.770
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3104.582 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/synth_1/CortexM3.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3128.875 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file CortexM3_utilization_synth.rpt -pb CortexM3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 31 21:18:40 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  1 12:42:56 2021...

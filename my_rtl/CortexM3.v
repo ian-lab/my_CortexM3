@@ -176,9 +176,12 @@ cortexm3ds_logic ulogic(
     .TRACECLKIN                         (1'b0),
 
     // SYSTICK
-    .STCLK                              (1'b0),
-    .STCALIB                            (26'b0),
-    .AUXFAULT                           (32'b0),
+    // .STCLK                              (1'b0),
+    // .STCALIB                            (26'b0),
+    // .AUXFAULT                           (32'b0),
+    .STCLK                              (1'b1),                                   
+    .STCALIB                            ({1'b1, 1'b0, 24'h003D08F}),// [23:0] -> 10ms需要的脉冲数
+    .AUXFAULT                           (32'b0),   
 
     // CONFIG - SYSTEM
     .BIGEND                             (1'b0),
