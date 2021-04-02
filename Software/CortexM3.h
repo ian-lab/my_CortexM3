@@ -27,6 +27,7 @@ typedef enum IRQn
   UARTTX_IRQn                   = 0,       /* UART 0 RX and TX Combined Interrupt   */
   UARTRX_IRQn                   = 1,       /* Undefined                             */
   UARTOVR_IRQn                  = 2,       /* UART 1 RX and TX Combined Interrupt   */
+	KEY_IRQn                      = 3,       /* KEY Interrupt                         */
 } IRQn_Type;
 
 /*

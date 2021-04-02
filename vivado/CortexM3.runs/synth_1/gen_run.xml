@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617249662">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617371789">
   <File Type="PA-TCL" Name="CortexM3.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="CortexM3_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="CortexM3_reports.tcl"/>

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Apr  1 12:50:41 2021
+| Date             : Fri Apr  2 22:35:33 2021
 | Host             : DESKTOP-OFV538P running 64-bit major release  (build 9200)
 | Command          : report_power -file CortexM3_power_routed.rpt -pb CortexM3_power_summary_routed.pb -rpx CortexM3_power_routed.rpx
 | Design           : CortexM3
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.197        |
+| Total On-Chip Power (W)  | 0.204        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.088        |
+| Dynamic (W)              | 0.095        |
 | Device Static (W)        | 0.109        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 82.7         |
-| Junction Temperature (C) | 27.3         |
+| Max Ambient (C)          | 82.6         |
+| Junction Temperature (C) | 27.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.015 |        3 |       --- |             --- |
-| Slice Logic    |     0.018 |    22741 |       --- |             --- |
-|   LUT as Logic |     0.017 |    14810 |     53200 |           27.84 |
-|   CARRY4       |    <0.001 |      295 |     13300 |            2.22 |
-|   Register     |    <0.001 |     5506 |    106400 |            5.17 |
-|   F7/F8 Muxes  |    <0.001 |       20 |     53200 |            0.04 |
+| Slice Logic    |     0.020 |    22701 |       --- |             --- |
+|   LUT as Logic |     0.019 |    14629 |     53200 |           27.50 |
+|   CARRY4       |    <0.001 |      301 |     13300 |            2.26 |
+|   Register     |    <0.001 |     5527 |    106400 |            5.19 |
+|   F7/F8 Muxes  |    <0.001 |       24 |     53200 |            0.05 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       34 |       --- |             --- |
-| Signals        |     0.026 |    20327 |       --- |             --- |
-| Block RAM      |     0.028 |       32 |       140 |           22.86 |
-| DSPs           |    <0.001 |        3 |       220 |            1.36 |
+|   Others       |     0.000 |       35 |       --- |             --- |
+| Signals        |     0.029 |    20308 |       --- |             --- |
+| Block RAM      |     0.029 |       32 |       140 |           22.86 |
+| DSPs           |     0.001 |        3 |       220 |            1.36 |
 | I/O            |    <0.001 |       11 |       125 |            8.80 |
 | Static Power   |     0.109 |          |           |                 |
-| Total          |     0.197 |          |           |                 |
+| Total          |     0.204 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.094 |       0.086 |      0.008 |
+| Vccint    |       1.000 |     0.101 |       0.093 |      0.008 |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +84,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.004 |       0.002 |      0.002 |
+| Vccbram   |       1.000 |     0.004 |       0.003 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -148,14 +148,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------+-----------+
-| Name             | Power (W) |
-+------------------+-----------+
-| CortexM3         |     0.088 |
-|   DTCM           |     0.014 |
-|   ITCM           |     0.015 |
-|   u_L1_AHBMatrix |     0.001 |
-|   ulogic         |     0.058 |
-+------------------+-----------+
++----------+-----------+
+| Name     | Power (W) |
++----------+-----------+
+| CortexM3 |     0.095 |
+|   DTCM   |     0.015 |
+|   ITCM   |     0.015 |
+|   ulogic |     0.064 |
++----------+-----------+
 
 

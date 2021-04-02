@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Apr  1 12:50:09 2021
+| Date         : Fri Apr  2 22:35:04 2021
 | Host         : DESKTOP-OFV538P running 64-bit major release  (build 9200)
 | Command      : report_drc -file CortexM3_drc_routed.rpt -pb CortexM3_drc_routed.pb -rpx CortexM3_drc_routed.rpx
 | Design       : CortexM3
@@ -162,32 +162,32 @@ Related violations: <none>
 
 REQP-1839#10 Warning
 RAMB36 async control check  
-The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#11 Warning
 RAMB36 async control check  
-The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[25]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#12 Warning
 RAMB36 async control check  
-The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#13 Warning
 RAMB36 async control check  
-The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#14 Warning
 RAMB36 async control check  
-The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#15 Warning
 RAMB36 async control check  
-The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#16 Warning

@@ -269,10 +269,10 @@ void send2LED( uint32_t cnt)
 }
 /**************************************KEY**************************************/
 
-int getKEY()
-{
-		return (APB_KEY -> KEYState);
-}
+//int getKEY()
+//{
+//		return (APB_KEY -> KEYState);
+//}
 
 
 

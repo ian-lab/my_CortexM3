@@ -16,7 +16,7 @@ module CortexM3 #(
     output      wire [3:0]      ledNumOut,
 
     //BUTTON
-    input                       BUTTON
+    input                       KEY
 );
 
 //------------------------------------------------------------------------------
@@ -745,12 +745,13 @@ cmsdk_apb3_eg_slave_led #(
     .PREADY    ( PREADY_APB_LED  ),
     .PSLVERR   ( PSLVERR_APB_LED ),
 
-    .ledNumOut (ledNumOut )
+    .ledNumOut ( ledNumOut       )
 );
 
 //------------------------------------------------------------------------------
 // APB BUTTON
 //------------------------------------------------------------------------------
+wire KEY_IRQ; 
 custom_apb_button #(
     .ADDRWIDTH (12 )
 ) u_custom_apb_button(
@@ -765,13 +766,14 @@ custom_apb_button #(
     .pready  ( PREADY_APB_BUTTON  ),
     .pslverr ( PSLVERR_APB_BUTTON ),
 
-    .state1  ( BUTTON             )
+    .key     ( KEY                ),
+    .KEY_IRQ ( KEY_IRQ            )
 );
 
 //------------------------------------------------------------------------------
 // INTERRUPT 
 //------------------------------------------------------------------------------
-assign  IRQ     =   {237'b0,TXOVRINT|RXOVRINT,TXINT,RXINT};
+assign  IRQ     =   {236'b0,KEY_IRQ,TXOVRINT|RXOVRINT,TXINT,RXINT};
 
 
 endmodule

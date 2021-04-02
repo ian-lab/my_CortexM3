@@ -1,5 +1,5 @@
 #include "CortexM3.h"
-
+#include "CortexM3_driver.h"
 void NMIHandler(void) {
     ;
 }
@@ -48,4 +48,8 @@ void UARTTXHandler(void) {
 
 void UARTOVRHandler(void) {
     ;
+}
+
+void KEYHandler(void) {
+    printf("***** KEY IRQ *****\n");
 }

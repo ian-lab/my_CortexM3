@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date                      : Thu Apr  1 12:46:25 2021
+| Date                      : Fri Apr  2 22:31:58 2021
 | Host                      : DESKTOP-OFV538P running 64-bit major release  (build 9200)
 | Command                   : report_io -file CortexM3_io_placed.rpt
 | Design                    : CortexM3
@@ -150,7 +150,7 @@ Table of Contents
 | F13        |              |            | PS_MIO44_501            | PSS IO      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F14        |              |            | PS_MIO21_501            | PSS IO      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F15        |              |            | PS_MIO25_501            | PSS IO      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| F16        | BUTTON       | High Range | IO_L6P_T0_35            | INPUT       | LVCMOS33    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| F16        | KEY          | High Range | IO_L6P_T0_35            | INPUT       | LVCMOS33    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | F17        |              | High Range | IO_L6N_T0_VREF_35       | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F18        |              | High Range | VCCO_35                 | VCCO        |             |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | F19        |              | High Range | IO_L15P_T2_DQS_AD12P_35 | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

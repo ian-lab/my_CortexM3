@@ -81,7 +81,8 @@ __Vectors       DCD     __initial_sp              ; Top of Stack
                 DCD     UARTRX_Handler            ; UART RX Handler
                 DCD     UARTTX_Handler            ; UART TX Handler
                 DCD     UARTOVR_Handler           ; UART RX and TX OVERRIDE Handler
-                
+			    DCD     KEY_Handler               ; KEY Handler
+                 
 __Vectors_End
 
 __Vectors_Size  EQU     __Vectors_End - __Vectors
@@ -201,7 +202,14 @@ UARTOVR_Handler PROC
                 BL      UARTOVRHandler 
                 POP     {PC}
                 ENDP
-
+					
+KEY_Handler PROC
+                EXPORT  KEY_Handler             [WEAK]
+                IMPORT  KEYHandler 
+                PUSH    {LR}
+                BL      KEYHandler 
+                POP     {PC}
+                ENDP
                 ALIGN
 
 

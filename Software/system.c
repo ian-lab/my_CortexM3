@@ -48,7 +48,7 @@ void SystemInit (void)
   SystemCoreClock = __SYSTEM_CLOCK;
 
   NVIC_EnableIRQ(SysTick_IRQn);
-
+	NVIC_EnableIRQ(KEY_IRQn);
   uart_init ( UART, (SystemCoreClock / 115200), 1,1,0,0,0,0 );
 
 
