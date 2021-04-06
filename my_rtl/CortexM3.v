@@ -584,12 +584,16 @@ wire            PSEL_APB_BUTTON;
 wire            PREADY_APB_BUTTON;
 wire    [31:0]  PRDATA_APB_BUTTON;
 wire            PSLVERR_APB_BUTTON;
-
+//apb hdmi 端口
+wire            PSEL_APB_HDMI;
+wire            PREADY_APB_HDMI;
+wire    [31:0]  PRDATA_APB_HDMI;
+wire            PSLVERR_APB_HDMI;
 cmsdk_apb_slave_mux #(
     .PORT0_ENABLE  (1), // UART
     .PORT1_ENABLE  (1), // LED
     .PORT2_ENABLE  (1), // BUTTON
-    .PORT3_ENABLE  (0),
+    .PORT3_ENABLE  (1), // HDMI
     .PORT4_ENABLE  (0),
     .PORT5_ENABLE  (0),
     .PORT6_ENABLE  (0),
@@ -621,10 +625,10 @@ cmsdk_apb_slave_mux #(
     .PRDATA2    ( PRDATA_APB_BUTTON  ),
     .PSLVERR2   ( PSLVERR_APB_BUTTON ),
 
-    .PSEL3      (       ),
-    .PREADY3    (1'b0   ),
-    .PRDATA3    (32'b0  ),
-    .PSLVERR3   (1'b0   ),
+    .PSEL3      ( PSEL_APB_HDMI     ),
+    .PREADY3    ( PREADY_APB_HDMI   ),
+    .PRDATA3    ( PRDATA_APB_HDMI   ),
+    .PSLVERR3   ( PSLVERR_APB_HDMI  ),
 
     .PSEL4      (       ),
     .PREADY4    (1'b0   ),
@@ -768,6 +772,24 @@ custom_apb_button #(
 
     .key     ( KEY                ),
     .KEY_IRQ ( KEY_IRQ            )
+);
+//------------------------------------------------------------------------------
+// APB HDMI
+//------------------------------------------------------------------------------
+custom_apb_hdmi #(
+    .memory_depth (784 )
+)
+u_custom_apb_hdmi(
+    .PCLK    ( clk                ),
+    .PRESETN ( cpuresetn          ),
+    .PSEL    ( PSEL_APB_HDMI      ),
+    .PADDR   ( PADDR[11:2]        ),
+    .PENABLE ( PENABLE            ),
+    .PWRITE  ( PWRITE             ),
+    .PWDATA  ( PWDATA             ),
+    .PRDATA  ( PRDATA_APB_HDMI    ),
+    .PREDAY  ( PREADY_APB_HDMI    ),
+    .PSELVER ( PSLVERR_APB_HDMI   )
 );
 
 //------------------------------------------------------------------------------

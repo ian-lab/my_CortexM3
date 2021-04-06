@@ -17,9 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param tcl.collectionResultDisplayLimit 0
-set_param general.maxThreads 4
-set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg400-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -53,6 +51,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v
   C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v
   C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/button/custom_apb_button.v
+  C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/hdmi/custom_apb_hdmi.v
   C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/custom_apb_led.v
   C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v
 }
@@ -70,7 +69,7 @@ set_property used_in_implementation false [get_files C:/Users/84308/Desktop/my_C
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top CortexM3 -part xc7z020clg400-2
+synth_design -top CortexM3 -part xc7z020clg400-2 -flatten_hierarchy none
 
 
 # disable binary constraint mode for synth run checkpoints

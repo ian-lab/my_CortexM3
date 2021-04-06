@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617371789">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617536766">
   <File Type="PA-TCL" Name="CortexM3.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="CortexM3_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="CortexM3_reports.tcl"/>
@@ -158,6 +158,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../my_rtl/peripheral/hdmi/custom_apb_hdmi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../my_rtl/peripheral/led/custom_apb_led.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -199,6 +206,8 @@
   </FileSet>
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-    <Step Id="synth_design"/>
+    <Step Id="synth_design">
+      <Option Id="FlattenHierarchy">1</Option>
+    </Step>
   </Strategy>
 </GenRun>

@@ -1,0 +1,66 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CortexM3
+INFO: [VRFC 10-2458] undeclared symbol TXEN, assumed default net type wire [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:725]
+INFO: [VRFC 10-2458] undeclared symbol BAUDTICK, assumed default net type wire [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:726]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBArbiterM0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBArbiterM1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBArbiterM2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBArbiterM2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBDecoderS0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBDecoderS1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBDecoderS2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBDecoderS2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBInputstg
+WARNING: [VRFC 10-3507] macro 'TRN_IDLE' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:113]
+WARNING: [VRFC 10-3507] macro 'TRN_BUSY' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:114]
+WARNING: [VRFC 10-3507] macro 'TRN_NONSEQ' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:115]
+WARNING: [VRFC 10-3507] macro 'TRN_SEQ' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:116]
+WARNING: [VRFC 10-3507] macro 'BUR_SINGLE' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:119]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:120]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP4' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:121]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR4' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:122]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP8' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:123]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR8' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:124]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP16' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:125]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR16' redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:126]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBMatrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBMatrix_default_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBMatrix_default_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBOutputStgM0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBOutputStgM1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBOutputStgM2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1_AHBOutputStgM2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_ahb_to_apb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_ahb_to_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/cmsdk_apb3_eg_slave_interface_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb3_eg_slave_interface_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/cmsdk_apb3_eg_slave_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb3_eg_slave_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/apb/cmsdk_apb_slave_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb_slave_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/uart/cmsdk_apb_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/sram/cmsdk_fpga_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_fpga_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cortexm3ds_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/button/custom_apb_button.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module custom_apb_button
+INFO: [VRFC 10-2458] undeclared symbol key_edge, assumed default net type wire [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/button/custom_apb_button.v:77]
+INFO: [VRFC 10-2458] undeclared symbol key_pulse, assumed default net type wire [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/button/custom_apb_button.v:109]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/hdmi/custom_apb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module custom_apb_hdmi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/led/custom_apb_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module custom_apb_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/84308/Desktop/my_CortexM3/testbench/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

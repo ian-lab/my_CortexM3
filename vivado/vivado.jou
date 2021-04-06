@@ -2,339 +2,43 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Apr  1 22:49:14 2021
-# Process ID: 14244
+# Start of session at: Sun Apr  4 18:21:48 2021
+# Process ID: 17960
 # Current directory: C:/Users/84308/Desktop/my_CortexM3/vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent272 C:\Users\84308\Desktop\my_CortexM3\vivado\CortexM3.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11188 C:\Users\84308\Desktop\my_CortexM3\vivado\CortexM3.xpr
 # Log file: C:/Users/84308/Desktop/my_CortexM3/vivado/vivado.log
 # Journal file: C:/Users/84308/Desktop/my_CortexM3/vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_run impl_1
+launch_simulation
+open_wave_config C:/Users/84308/Desktop/my_CortexM3/vivado/tb_behav.wcfg
+source tb.tcl
+run all
+run all
+close_sim
+launch_simulation -mode post-synthesis -type functional
+launch_simulation
+open_wave_config C:/Users/84308/Desktop/my_CortexM3/vivado/tb_behav.wcfg
+source tb.tcl
+run all
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/u_SOC/HREADYS}} 
+relaunch_sim
+relaunch_sim
 open_run synth_1 -name synth_1
-close_design
-close_design
-open_run impl_1
-close_design
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-open_run synth_1 -name synth_1
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-startgroup 
-set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
-set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
-endgroup
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list CLK50m_IBUF_BUFG ]]
-set_property port_width 1 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {IRQ[3]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {PRDATA_APB_BUTTON[0]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list KEY_IBUF ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list TXD_OBUF ]]
+delete_debug_core [get_debug_cores {u_ila_0 }]
 save_constraints
 reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-get_param general.maxThreads
-set_param general.maxThreads 4
-get_param general.maxThreads
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-refresh_design
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
-set_property PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.ltx} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes KEY_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-save_wave_config {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-set_property PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.ltx} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-set_property PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {IRQ} {KEY_IBUF} {PRDATA_APB_BUTTON} {TXD_OBUF} }
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-set_property CONTROL.TRIGGER_POSITION 512 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-set_property CONTROL.TRIGGER_POSITION 2 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-save_wave_config {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw
-delete_debug_core [get_debug_cores {u_ila_0 }]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 131072 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-startgroup 
-set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
-set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
-endgroup
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list CLK50m_IBUF_BUFG ]]
-set_property port_width 1 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {PRDATA_APB_BUTTON[0]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {IRQ[3]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list KEY_IBUF ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list TXD_OBUF ]]
-save_constraints
 reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-get_param general.maxThreads
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
+close_design
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-set_property PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-startgroup 
-set_property CONTROL.DATA_DEPTH 256 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-set_property CONTROL.WINDOW_COUNT 5 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-endgroup
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-set_property CORE_REFRESH_RATE_MS 5 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-startgroup 
-set_property CONTROL.DATA_DEPTH 2048 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-set_property CONTROL.WINDOW_COUNT 1 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-endgroup
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-delete_debug_core [get_debug_cores {u_ila_0 }]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 131072 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-startgroup 
-set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
-set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
-endgroup
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list CLK50m_IBUF_BUFG ]]
-set_property port_width 1 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {PRDATA_APB_BUTTON[0]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {IRQ[3]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list KEY_IBUF ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list TXD_OBUF ]]
-save_constraints -force
-delete_debug_core [get_debug_cores {u_ila_0 }]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 131072 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-startgroup 
-set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
-set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
-endgroup
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list CLK50m_IBUF_BUFG ]]
-set_property port_width 1 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {PRDATA_APB_BUTTON[0]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {IRQ[3]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list KEY_IBUF ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list TXD_OBUF ]]
-save_constraints -force
-delete_debug_core [get_debug_cores {u_ila_0 }]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 131072 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-startgroup 
-set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
-set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
-set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
-endgroup
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list CLK50m_IBUF_BUFG ]]
-set_property port_width 1 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {PRDATA_APB_BUTTON[0]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {IRQ[3]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list KEY_IBUF ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list TXD_OBUF ]]
-save_constraints -force
-refresh_design
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
-program_hw_devices [get_hw_devices xc7z020_1]
-refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
-set_property CONTROL.DATA_DEPTH 131072 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-save_wave_config {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw
-delete_debug_core [get_debug_cores {u_ila_0 }]
-save_constraints -force
-refresh_design
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-refresh_design
+save_wave_config {C:/Users/84308/Desktop/my_CortexM3/vivado/tb_behav.wcfg}
+close_sim
 open_hw
 connect_hw_server
 open_hw_target
@@ -344,3 +48,4 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property PROGRAM.FILE {C:/Users/84308/Desktop/my_CortexM3/vivado/CortexM3.runs/impl_1/CortexM3.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw

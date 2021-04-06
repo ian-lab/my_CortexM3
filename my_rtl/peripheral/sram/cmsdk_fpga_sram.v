@@ -52,7 +52,7 @@ localparam AWT = ((1<<(AW-0))-1);
 
 
     initial begin
-      $readmemh("C:/Users/84308/Desktop/my_CortexM3/keil/image.hex",BRAM);
+      $readmemh("C:/Users/84308/Desktop/my_CortexM3/Keil/image.hex",BRAM);
     end
   
   // Internal signals

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617371789">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617536766">
   <File Type="BITSTR-BMM" Name="CortexM3_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="CortexM3_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="CortexM3_timing_summary_init.rpt"/>
@@ -212,6 +212,13 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../my_rtl/peripheral/button/custom_apb_button.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../my_rtl/peripheral/hdmi/custom_apb_hdmi.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
