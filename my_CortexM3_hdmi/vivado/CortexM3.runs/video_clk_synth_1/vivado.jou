@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  5 13:09:39 2021
+# Process ID: 16536
+# Current directory: C:/Users/84308/Desktop/my_CortexM3_hdmi/vivado/CortexM3.runs/video_clk_synth_1
+# Command line: vivado.exe -log video_clk.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_clk.tcl
+# Log file: C:/Users/84308/Desktop/my_CortexM3_hdmi/vivado/CortexM3.runs/video_clk_synth_1/video_clk.vds
+# Journal file: C:/Users/84308/Desktop/my_CortexM3_hdmi/vivado/CortexM3.runs/video_clk_synth_1\vivado.jou
+#-----------------------------------------------------------
+source video_clk.tcl -notrace

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  The confidential and proprietary information contained in this file   -->
+<!--  may only be used by a person authorised under and to the extent       -->
+<!--  permitted by a subsisting licensing agreement from ARM Limited.       -->
+<!--                                                                        -->
+<!--             (C) COPYRIGHT 2001-2013 ARM Limited.                       -->
+<!--                 ALL RIGHTS RESERVED                                    -->
+<!--                                                                        -->
+<!--  This entire notice must be reproduced on all copies of this file      -->
+<!--  and copies of this file may only be made by a person if such person   -->
+<!--  is permitted to do so under the terms of a subsisting license         -->
+<!--  agreement from ARM Limited.                                           -->
+<!--                                                                        -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  Version and Release Control Information:                              -->
+<!--                                                                        -->
+<!--  Checked In          : $Date: 2013-04-10 14:52:50 +0100 (Wed, 10 Apr 2013) $ -->
+<!--                                                                        -->
+<!--  Revision            : $Revision: 243490 $                             -->
+<!--                                                                        -->
+<!--  Release Information : Cortex-M System Design Kit-r1p0-01rel0
+<!--                                                                        -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  Purpose             : Example XML file, defining an interconnect for  -->
+<!--                        2 AHB Masters and 3 AHB Slaves.                 -->
+<!--                                                                        -->
+<!--  Note                : This information will overwrite parameters      -->
+<!--                         specified on the command line                  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<cfgfile>
+
+  <!-- - - - - *** DO NOT MODIFY ABOVE THIS LINE *** - - - - - - - - - - -  -->
+
+  <!-- Global definitions -->
+
+  <architecture_version>ahb2</architecture_version>
+  <arbitration_scheme>burst</arbitration_scheme>
+  <routing_data_width>32</routing_data_width>
+  <routing_address_width>32</routing_address_width>
+  <user_signal_width>0</user_signal_width>
+  <bus_matrix_name>L1_AHBMatrix</bus_matrix_name>
+  <input_stage_name>L1_AHBInputstg</input_stage_name>
+  <matrix_decode_name>L1_AHBDecoder</matrix_decode_name>
+  <output_arbiter_name>L1_AHBArbiter</output_arbiter_name>
+  <output_stage_name>L1_AHBOutputStg</output_stage_name>
+
+
+<!-- Slave interface definitions -->
+
+<!-- DCODE SLAVE -->
+  <slave_interface name="S0">
+    <sparse_connect interface="M0"/>
+    <address_region interface="M0" mem_lo="00000000" mem_hi="0000ffff" remapping='none'/>
+  </slave_interface>
+
+<!-- ICODE SLAVE -->
+  <slave_interface name="S1">
+    <sparse_connect interface="M0"/>
+    <address_region interface="M0" mem_lo="00000000" mem_hi="0000ffff" remapping='none'/>
+  </slave_interface>
+  
+<!-- SYS SLAVE -->
+  <slave_interface name="S2">
+    <sparse_connect interface="M1"/>
+    <sparse_connect interface="M2"/>
+    <address_region interface="M1" mem_lo="20000000" mem_hi="2000ffff" remapping='none'/>
+    <address_region interface="M2" mem_lo="40000000" mem_hi="4fffffff" remapping='none'/>
+  </slave_interface>
+
+  <!-- Master interface definitions -->
+
+  <!-- ITCM MASTER -->
+  <master_interface name="M0"/>
+  <!-- DTCM MASTER -->
+  <master_interface name="M1"/>
+  <!-- APBBRIDGE MASTER -->
+  <master_interface name="M2"/>
+
+  <!-- - - - - *** DO NOT MODIFY BELOW THIS LINE *** - - - - - - - - - - - -->
+
+</cfgfile>

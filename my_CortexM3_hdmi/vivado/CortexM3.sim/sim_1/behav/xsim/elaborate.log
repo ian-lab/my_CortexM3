@@ -1,0 +1,45 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/software/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 00fd80a47a124d36a3ffe54ee817e134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:411]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:426]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:441]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:465]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:505]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:544]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'PADDR' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:743]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'paddr' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:765]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v" Line 1. Module CortexM3(SimPresent=1) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cortexm3ds_logic
+Compiling module xil_defaultlib.L1_AHBInputstg
+Compiling module xil_defaultlib.L1_AHBMatrix_default_slave
+Compiling module xil_defaultlib.L1_AHBDecoderS0
+Compiling module xil_defaultlib.L1_AHBDecoderS1
+Compiling module xil_defaultlib.L1_AHBDecoderS2
+Compiling module xil_defaultlib.L1_AHBArbiterM0
+Compiling module xil_defaultlib.L1_AHBOutputStgM0
+Compiling module xil_defaultlib.L1_AHBArbiterM1
+Compiling module xil_defaultlib.L1_AHBOutputStgM1
+Compiling module xil_defaultlib.L1_AHBArbiterM2
+Compiling module xil_defaultlib.L1_AHBOutputStgM2
+Compiling module xil_defaultlib.L1_AHBMatrix
+Compiling module xil_defaultlib.cmsdk_ahb_to_sram
+Compiling module xil_defaultlib.cmsdk_fpga_sram(AW=14)
+Compiling module xil_defaultlib.cmsdk_ahb_to_apb(REGISTER_WDATA=...
+Compiling module xil_defaultlib.cmsdk_apb_slave_mux(PORT4_ENABLE...
+Compiling module xil_defaultlib.cmsdk_apb_uart
+Compiling module xil_defaultlib.cmsdk_apb3_eg_slave_interface_le...
+Compiling module xil_defaultlib.custom_apb_led
+Compiling module xil_defaultlib.cmsdk_apb3_eg_slave_led
+Compiling module xil_defaultlib.custom_apb_button
+Compiling module xil_defaultlib.custom_apb_hdmi
+Compiling module xil_defaultlib.CortexM3(SimPresent=1)
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
