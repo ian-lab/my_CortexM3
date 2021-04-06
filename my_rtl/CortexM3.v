@@ -175,7 +175,7 @@ cortexm3ds_logic ulogic(
     .HCLK                               (clk),
     .TRACECLKIN                         (1'b0),
 
-    // SYSTICK
+    // SYSTICK  
     // .STCLK                              (1'b0),
     // .STCALIB                            (26'b0),
     // .AUXFAULT                           (32'b0),
