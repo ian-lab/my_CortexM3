@@ -30,34 +30,14 @@ Build target 'Target 1'
 compiling main.c...
 ..\Software\CortexM3_driver.h(93): warning:  #1295-D: Deprecated declaration delay_1ms - give arg types
   extern void delay_1ms();
-..\Software\main.c(5): warning:  #144-D: a value of type "int" cannot be used to initialize an entity of type "uint32_t *"
-  uint32_t* hdmi_0 = 0x40003000;
-..\Software\main.c(5): warning:  #152-D: conversion of nonzero integer to pointer
-  uint32_t* hdmi_0 = 0x40003000;
-..\Software\main.c(6): warning:  #144-D: a value of type "int" cannot be used to initialize an entity of type "uint32_t *"
-  uint32_t* hdmi_1 = 0x40003004;
-..\Software\main.c(6): warning:  #152-D: conversion of nonzero integer to pointer
-  uint32_t* hdmi_1 = 0x40003004;
-..\Software\main.c(7): warning:  #144-D: a value of type "int" cannot be used to initialize an entity of type "uint32_t *"
-  uint32_t* hdmi_2 = 0x40003008;
-..\Software\main.c(7): warning:  #152-D: conversion of nonzero integer to pointer
-  uint32_t* hdmi_2 = 0x40003008;
-..\Software\main.c(8): warning:  #144-D: a value of type "int" cannot be used to initialize an entity of type "uint32_t *"
-  uint32_t* hdmi_3 = 0x4000300c;
-..\Software\main.c(8): warning:  #152-D: conversion of nonzero integer to pointer
-  uint32_t* hdmi_3 = 0x4000300c;
-..\Software\main.c(9): warning:  #144-D: a value of type "int" cannot be used to initialize an entity of type "uint32_t *"
-  uint32_t* addr_hdmi = 0x40003000;
-..\Software\main.c(9): warning:  #152-D: conversion of nonzero integer to pointer
-  uint32_t* addr_hdmi = 0x40003000;
-..\Software\main.c(15): warning:  #223-D: function "printf" declared implicitly
+..\Software\main.c(6): warning:  #223-D: function "printf" declared implicitly
   	printf("***********************\n");
-..\Software\main.c: 12 warnings, 0 errors
+..\Software\main.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=1364 RO-data=112 RW-data=48 ZI-data=32768  
+Program Size: Code=872 RO-data=112 RW-data=12 ZI-data=32772  
 After Build - User command #1: fromelf -cvf .\cm3.axf --vhx --32x1 -o image.hex
 After Build - User command #2: fromelf -cvf .\cm3.axf -o image.txt
-".\cm3.axf" - 0 Error(s), 12 Warning(s).
+".\cm3.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 

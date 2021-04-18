@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Apr 18 17:41:48 2021
+# Process ID: 17140
+# Current directory: C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/synth_1
+# Command line: vivado.exe -log CortexM3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CortexM3.tcl
+# Log file: C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/synth_1/CortexM3.vds
+# Journal file: C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CortexM3.tcl -notrace

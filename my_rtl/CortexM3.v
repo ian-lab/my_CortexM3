@@ -1,22 +1,57 @@
 module CortexM3 #(
-    parameter                   SimPresent = 0
-)   (
-    input       wire            CLK50m,
-    input       wire            RSTn,
+    parameter SimPresent = 0
+)   
+(
+    // 全局时钟与复位
+    input                 CLK50m       ,
+    input                 RSTn         ,
 
     // SWD
-   inout       wire            SWDIO,
-   input       wire            SWCLK,
+    inout                 SWDIO        ,
+    input                 SWCLK        ,
 
     // UART
-    output      wire            TXD,
-    input       wire            RXD,
+    output                TXD          ,
+    input                 RXD          ,
 
-    //LED
-    output      wire [3:0]      ledNumOut,
+    // LED
+    output  [3:0]         ledNumOut    ,
+ 
+    // KEY
+    input                 KEY          ,
 
-    //BUTTON
-    input                       KEY
+     //摄像头接口                 
+    input                 cam_pclk     ,  //cmos 数据像素时钟
+    input                 cam_vsync    ,  //cmos 场同步信号
+    input                 cam_href     ,  //cmos 行同步信号
+    input   [7:0]         cam_data     ,  //cmos 数据
+    output                cam_rst_n    ,  //cmos 复位信号，低电平有效
+    output                cam_pwdn     ,  //电源休眠模式选择 0：正常模式 1：电源休眠模式
+    output                cam_scl      ,  //cmos SCCB_SCL线
+    inout                 cam_sda      ,  //cmos SCCB_SDA线 
+
+    // DDR3                            
+    inout   [31:0]        ddr3_dq      ,  //DDR3 数据
+    inout   [3:0]         ddr3_dqs_n   ,  //DDR3 dqs负
+    inout   [3:0]         ddr3_dqs_p   ,  //DDR3 dqs正  
+    output  [13:0]        ddr3_addr    ,  //DDR3 地址   
+    output  [2:0]         ddr3_ba      ,  //DDR3 banck 选择
+    output                ddr3_ras_n   ,  //DDR3 行选择
+    output                ddr3_cas_n   ,  //DDR3 列选择
+    output                ddr3_we_n    ,  //DDR3 读写选择
+    output                ddr3_reset_n ,  //DDR3 复位
+    output  [0:0]         ddr3_ck_p    ,  //DDR3 时钟正
+    output  [0:0]         ddr3_ck_n    ,  //DDR3 时钟负
+    output  [0:0]         ddr3_cke     ,  //DDR3 时钟使能
+    output  [0:0]         ddr3_cs_n    ,  //DDR3 片选
+    output  [3:0]         ddr3_dm      ,  //DDR3_dm
+    output  [0:0]         ddr3_odt     ,  //DDR3_odt	
+    								        
+    //hdmi接口                           
+    output                tmds_clk_p   ,  // TMDS 时钟通道
+    output                tmds_clk_n   ,
+    output  [2:0]         tmds_data_p  ,  // TMDS 数据通道
+    output  [2:0]         tmds_data_n  
 );
 
 //------------------------------------------------------------------------------
@@ -26,25 +61,23 @@ module CortexM3 #(
 wire            clk;
 wire            swck;
 
-// generate 
-//         if(SimPresent) begin : SimClock
+generate 
+    if(SimPresent) begin : SimClock
+        assign swck = SWCLK;
+        assign clk  = CLK50m;
+    end 
+    else begin : SynClock
+        BUFG sw_clk(
+            .I     (SWCLK),
+            .O     (swck)
+        );
 
-                assign swck = SWCLK;
-                assign clk  = CLK50m;
-        
-//         end else begin : SynClock
-
-//                 BUFG sw_clk(
-//                         .I                   (SWCLK),
-//                         .O                   (swck)
-//                 );
-
-//                 BUFG sys_clk(
-//                         .I                   (CLK50m),
-//                         .O                   (clk)
-//                 );                
-//         end    
-// endgenerate         
+        BUFG sys_clk(
+            .I     (CLK50m),
+            .O     (clk)
+        );                
+        end    
+endgenerate         
 
 
 //------------------------------------------------------------------------------
@@ -54,30 +87,28 @@ wire            SWDO;
 wire            SWDOEN;
 wire            SWDI;
 
-// generate
-//     if(SimPresent) begin : SimIOBuf
-
+generate
+    if(SimPresent) begin : SimIOBuf
         assign SWDI = SWDIO;
         assign SWDIO = (SWDOEN) ?  SWDO : 1'bz;
+    end 
+    else begin : SynIOBuf
+        IOBUF SWIOBUF(
+            .I   (SWDO),
+            .T   (~SWDOEN),
+            .O   (SWDI),
+            .IO  (SWDIO)
+        );
+    end
+endgenerate
 
-//     end else begin : SynIOBuf
-
-//         IOBUF SWIOBUF(
-//             .I   (SWDO),
-//             .T   (SWDOEN),
-//             .O   (SWDI),
-//             .IO  (SWDIO)
-//         );
-
-//     end
-// endgenerate
 
 //------------------------------------------------------------------------------
 // RESET
 //------------------------------------------------------------------------------
 
-wire            SYSRESETREQ;
-reg             cpuresetn;
+wire  SYSRESETREQ;
+reg   cpuresetn;
 
 always @(posedge clk or negedge RSTn)begin
     if (~RSTn) 
@@ -88,14 +119,15 @@ always @(posedge clk or negedge RSTn)begin
         cpuresetn <= 1'b1;
 end
 
-wire        SLEEPing;
+wire SLEEPing;
+
 
 //------------------------------------------------------------------------------
 // DEBUG CONFIG
 //------------------------------------------------------------------------------
 
-wire            CDBGPWRUPREQ;
-reg             CDBGPWRUPACK;
+wire CDBGPWRUPREQ;
+reg  CDBGPWRUPACK;
 
 always @(posedge clk or negedge RSTn)begin
     if (~RSTn) 
@@ -104,11 +136,12 @@ always @(posedge clk or negedge RSTn)begin
         CDBGPWRUPACK <= CDBGPWRUPREQ;
 end
 
+
 //------------------------------------------------------------------------------
 // INTERRUPT 
 //------------------------------------------------------------------------------
 
-wire    [239:0] IRQ;
+wire [239:0] IRQ;
 
 
 //------------------------------------------------------------------------------
@@ -152,118 +185,119 @@ wire    [1:0]   HRESPS;
 wire    [1:0]   HMASTERS;
 wire            HMASTERLOCKS;
 
-
 //------------------------------------------------------------------------------
 // Cortex-M3 processor 
 //------------------------------------------------------------------------------
 
 cortexm3ds_logic ulogic(
     // PMU
-    .ISOLATEn                           (1'b1),
-    .RETAINn                            (1'b1),
+    .ISOLATEn             ( 1'b1 ),
+    .RETAINn              ( 1'b1 ),
 
     // RESETS
-    .PORESETn                           (RSTn),
-    .SYSRESETn                          (cpuresetn),
-    .SYSRESETREQ                        (SYSRESETREQ),
-    .RSTBYPASS                          (1'b0),
-    .CGBYPASS                           (1'b0),
-    .SE                                 (1'b0),
+    .PORESETn             ( RSTn        ),
+    .SYSRESETn            ( cpuresetn   ),
+    .SYSRESETREQ          ( SYSRESETREQ ),
+    .RSTBYPASS            ( 1'b0        ),
+    .CGBYPASS             ( 1'b0        ),
+    .SE                   ( 1'b0        ),
 
     // CLOCKS
-    .FCLK                               (clk),
-    .HCLK                               (clk),
-    .TRACECLKIN                         (1'b0),
+    .FCLK                 ( clk  ),
+    .HCLK                 ( clk  ),
+    .TRACECLKIN           ( 1'b0 ),
 
     // SYSTICK  
-    // .STCLK                              (1'b0),
-    // .STCALIB                            (26'b0),
-    // .AUXFAULT                           (32'b0),
-    .STCLK                              (1'b1),                                   
-    .STCALIB                            ({1'b1, 1'b0, 24'h003D08F}),// [23:0] -> 10ms需要的脉冲数
-    .AUXFAULT                           (32'b0),   
+    // .STCLK               (1'b0),
+    // .STCALIB             (26'b0),
+    // .AUXFAULT            (32'b0),
+    .STCLK                ( 1'b1                      ),                                   
+    .STCALIB              ( {1'b1, 1'b0, 24'h003D08F} ),// [23:0] -> 计时10ms需要的输入时钟的脉冲数
+    .AUXFAULT             ( 32'b0                     ),   
 
     // CONFIG - SYSTEM
-    .BIGEND                             (1'b0),
-    .DNOTITRANS                         (1'b1),
+    .BIGEND               ( 1'b0 ),
+    .DNOTITRANS           ( 1'b1 ),
     
     // SWJDAP
-    .nTRST                              (1'b1),
-    .SWDITMS                            (SWDI),
-    .SWCLKTCK                           (swck),
-    .TDI                                (1'b0),
-    .CDBGPWRUPACK                       (CDBGPWRUPACK),
-    .CDBGPWRUPREQ                       (CDBGPWRUPREQ),
-    .SWDO                               (SWDO),
-    .SWDOEN                             (SWDOEN),
+    .nTRST                ( 1'b1         ),
+    .SWDITMS              ( SWDI         ),
+    .SWCLKTCK             ( swck         ),
+    .TDI                  ( 1'b0         ),
+    .CDBGPWRUPACK         ( CDBGPWRUPACK ),
+    .CDBGPWRUPREQ         ( CDBGPWRUPREQ ),
+    .SWDO                 ( SWDO         ),
+    .SWDOEN               ( SWDOEN       ),
 
     // IRQS
-    .INTISR                             (IRQ),
-    .INTNMI                             (1'b0),
+    .INTISR               ( IRQ  ),
+    .INTNMI               ( 1'b0 ),
     
     // I-CODE BUS
-    .HREADYI                            (HREADYI),
-    .HRDATAI                            (HRDATAI),
-    .HRESPI                             (HRESPI),
-    .IFLUSH                             (1'b0),
-    .HADDRI                             (HADDRI),
-    .HTRANSI                            (HTRANSI),
-    .HSIZEI                             (HSIZEI),
-    .HBURSTI                            (HBURSTI),
-    .HPROTI                             (HPROTI),
+    .HREADYI              ( HREADYI ),
+    .HRDATAI              ( HRDATAI ),
+    .HRESPI               ( HRESPI  ),
+    .IFLUSH               ( 1'b0    ),
+    .HADDRI               ( HADDRI  ),
+    .HTRANSI              ( HTRANSI ),
+    .HSIZEI               ( HSIZEI  ),
+    .HBURSTI              ( HBURSTI ),
+    .HPROTI               ( HPROTI  ),
 
     // D-CODE BUS
-    .HREADYD                            (HREADYD),
-    .HRDATAD                            (HRDATAD),
-    .HRESPD                             (HRESPD),
-    .EXRESPD                            (1'b0),
-    .HADDRD                             (HADDRD),
-    .HTRANSD                            (HTRANSD),
-    .HSIZED                             (HSIZED),
-    .HBURSTD                            (HBURSTD),
-    .HPROTD                             (HPROTD),
-    .HWDATAD                            (HWDATAD),
-    .HWRITED                            (HWRITED),
-    .HMASTERD                           (HMASTERD),
+    .HREADYD              ( HREADYD  ),
+    .HRDATAD              ( HRDATAD  ),
+    .HRESPD               ( HRESPD   ),
+    .EXRESPD              ( 1'b0     ),
+    .HADDRD               ( HADDRD   ),
+    .HTRANSD              ( HTRANSD  ),
+    .HSIZED               ( HSIZED   ),
+    .HBURSTD              ( HBURSTD  ),
+    .HPROTD               ( HPROTD   ),
+    .HWDATAD              ( HWDATAD  ),
+    .HWRITED              ( HWRITED  ),
+    .HMASTERD             ( HMASTERD ),
 
     // SYSTEM BUS
-    .HREADYS                            (HREADYS),
-    .HRDATAS                            (HRDATAS),
-    .HRESPS                             (HRESPS),
-    .EXRESPS                            (1'b0),
-    .HADDRS                             (HADDRS),
-    .HTRANSS                            (HTRANSS),
-    .HSIZES                             (HSIZES),
-    .HBURSTS                            (HBURSTS),
-    .HPROTS                             (HPROTS),
-    .HWDATAS                            (HWDATAS),
-    .HWRITES                            (HWRITES),
-    .HMASTERS                           (HMASTERS),
-    .HMASTLOCKS                         (HMASTERLOCKS),
+    .HREADYS              ( HREADYS      ),
+    .HRDATAS              ( HRDATAS      ),
+    .HRESPS               ( HRESPS       ),
+    .EXRESPS              ( 1'b0         ),
+    .HADDRS               ( HADDRS       ),
+    .HTRANSS              ( HTRANSS      ),
+    .HSIZES               ( HSIZES       ),
+    .HBURSTS              ( HBURSTS      ),
+    .HPROTS               ( HPROTS       ),
+    .HWDATAS              ( HWDATAS      ),
+    .HWRITES              ( HWRITES      ),
+    .HMASTERS             ( HMASTERS     ),
+    .HMASTLOCKS           ( HMASTERLOCKS ),
 
     // SLEEP
-    .RXEV                               (1'b0),
-    .SLEEPHOLDREQn                      (1'b1),
-    .SLEEPING                           (SLEEPing),
+    .RXEV                 ( 1'b0     ),
+    .SLEEPHOLDREQn        ( 1'b1     ),
+    .SLEEPING             ( SLEEPing ),
     
     // EXTERNAL DEBUG REQUEST
-    .EDBGRQ                             (1'b0),
-    .DBGRESTART                         (1'b0),
-    
-    // DAP HMASTER OVERRIDE
-    .FIXMASTERTYPE                      (1'b0),
-
-    // WIC
-    .WICENREQ                           (1'b0),
-
-    // TIMESTAMP INTERFACE
-    .TSVALUEB                           (48'b0),
+    .EDBGRQ               ( 1'b0 ),
+    .DBGRESTART           ( 1'b0 ),
+     
+    // DAP HMASTER OVERRIDE 
+    .FIXMASTERTYPE        ( 1'b0 ),
+ 
+    // WIC 
+    .WICENREQ             ( 1'b0 ),
+ 
+    // TIMESTAMP INTERFACE 
+    .TSVALUEB             ( 48'b0 ),
 
     // CONFIG - DEBUG
-    .DBGEN                              (1'b1),
-    .NIDEN                              (1'b1),
-    .MPUDISABLE                         (1'b0)
+    .DBGEN                ( 1'b1 ),
+    .NIDEN                ( 1'b1 ),
+    .MPUDISABLE           ( 1'b0 )
 );
+
+
 //------------------------------------------------------------------------------
 // AHB L1 总线矩阵
 // s0:Dbus s1:Ibus s2:sysbus 
@@ -589,6 +623,7 @@ wire            PSEL_APB_HDMI;
 wire            PREADY_APB_HDMI;
 wire    [31:0]  PRDATA_APB_HDMI;
 wire            PSLVERR_APB_HDMI;
+
 cmsdk_apb_slave_mux #(
     .PORT0_ENABLE  (1), // UART
     .PORT1_ENABLE  (1), // LED
@@ -697,6 +732,7 @@ cmsdk_apb_slave_mux #(
 
 //------------------------------------------------------------------------------
 // APB UART
+// 0x4000_0000
 //------------------------------------------------------------------------------
 wire            TXINT;
 wire            RXINT;
@@ -704,9 +740,7 @@ wire            TXOVRINT;
 wire            RXOVRINT;
 wire            UARTINT;  
 
-cmsdk_apb_uart #(
-    
-)u_cmsdk_apb_uart(
+cmsdk_apb_uart u_cmsdk_apb_uart(
     .PCLK      ( clk              ),
     .PCLKG     ( clk              ),
     .PRESETn   ( cpuresetn        ),
@@ -733,6 +767,7 @@ cmsdk_apb_uart #(
 
 //------------------------------------------------------------------------------
 // APB LED
+// 0x4000_1000
 //------------------------------------------------------------------------------
 cmsdk_apb3_eg_slave_led #(
     .ADDRWIDTH (12 )
@@ -754,6 +789,7 @@ cmsdk_apb3_eg_slave_led #(
 
 //------------------------------------------------------------------------------
 // APB BUTTON
+// 0x4000_2000
 //------------------------------------------------------------------------------
 wire KEY_IRQ; 
 custom_apb_button #(
@@ -775,27 +811,57 @@ custom_apb_button #(
 );
 //------------------------------------------------------------------------------
 // APB HDMI
+// 0x4000_3000
 //------------------------------------------------------------------------------
-custom_apb_hdmi #(
-    .memory_depth (784 )
-)
-u_custom_apb_hdmi(
-    .PCLK    ( clk                ),
-    .PRESETN ( cpuresetn          ),
-    .PSEL    ( PSEL_APB_HDMI      ),
-    .PADDR   ( PADDR[11:2]        ),
-    .PENABLE ( PENABLE            ),
-    .PWRITE  ( PWRITE             ),
-    .PWDATA  ( PWDATA             ),
-    .PRDATA  ( PRDATA_APB_HDMI    ),
-    .PREDAY  ( PREADY_APB_HDMI    ),
-    .PSELVER ( PSLVERR_APB_HDMI   )
-);
+custom_apb_hdmi u_custom_apb_hdmi(
+    .PCLK         ( clk          ),
+    .PRESETN      ( cpuresetn    ),
+ 
+    .PSEL         ( PSEL_APB_HDMI    ),
+    .PADDR        ( PADDR[11:2]      ),
+    .PENABLE      ( PENABLE          ),
+    .PWRITE       ( PWRITE           ),
+    .PWDATA       ( PWDATA           ),
+    .PRDATA       ( PRDATA_APB_HDMI  ),
+    .PREDAY       ( PREADY_APB_HDMI  ),
+    .PSELVER      ( PSLVERR_APB_HDMI ),
+ 
+    .cam_pclk     ( cam_pclk     ),
+    .cam_vsync    ( cam_vsync    ),
+    .cam_href     ( cam_href     ),
+    .cam_data     ( cam_data     ),
+    .cam_rst_n    ( cam_rst_n    ),
+    .cam_pwdn     ( cam_pwdn     ),
+    .cam_scl      ( cam_scl      ),
+    .cam_sda      ( cam_sda      ),
+ 
+    .ddr3_dq      ( ddr3_dq      ),
+    .ddr3_dqs_n   ( ddr3_dqs_n   ),
+    .ddr3_dqs_p   ( ddr3_dqs_p   ),
+    .ddr3_addr    ( ddr3_addr    ),
+    .ddr3_ba      ( ddr3_ba      ),
+    .ddr3_ras_n   ( ddr3_ras_n   ),
+    .ddr3_cas_n   ( ddr3_cas_n   ),
+    .ddr3_we_n    ( ddr3_we_n    ),
+    .ddr3_reset_n ( ddr3_reset_n ),
+    .ddr3_ck_p    ( ddr3_ck_p    ),
+    .ddr3_ck_n    ( ddr3_ck_n    ),
+    .ddr3_cke     ( ddr3_cke     ),
+    .ddr3_cs_n    ( ddr3_cs_n    ),
+    .ddr3_dm      ( ddr3_dm      ),
+    .ddr3_odt     ( ddr3_odt     ),
+     
+    .tmds_clk_p   ( tmds_clk_p   ),
+    .tmds_clk_n   ( tmds_clk_n   ),
+    .tmds_data_p  ( tmds_data_p  ),
+    .tmds_data_n  ( tmds_data_n  )
+); 
+
 
 //------------------------------------------------------------------------------
 // INTERRUPT 
 //------------------------------------------------------------------------------
-assign  IRQ     =   {236'b0,KEY_IRQ,TXOVRINT|RXOVRINT,TXINT,RXINT};
+assign IRQ = {236'b0, KEY_IRQ, TXOVRINT|RXOVRINT, TXINT,RXINT};
 
 
 endmodule

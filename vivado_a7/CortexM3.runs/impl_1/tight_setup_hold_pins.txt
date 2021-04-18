@@ -1,0 +1,14 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       clk_out4_clk_wiz_0 |                clk_pll_i |                                     u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_rw/rd_load_d0_reg/D|
+|       clk_out4_clk_wiz_0 |                clk_pll_i |                              u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rd_load_d0_reg/D|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[6]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[3]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[0]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[1]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[2]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[4]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[5]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[7]/R|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

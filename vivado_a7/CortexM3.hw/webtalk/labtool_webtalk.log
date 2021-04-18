@@ -1,0 +1,9 @@
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sat Apr 17 22:29:28 2021. For additional details about this file, please refer to the WebTalk help file at E:/xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 17 22:29:28 2021...
