@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Apr 18 18:30:49 2021
+| Date             : Mon Apr 19 00:04:49 2021
 | Host             : DESKTOP-OFV538P running 64-bit major release  (build 9200)
 | Command          : report_power -file CortexM3_power_routed.rpt -pb CortexM3_power_summary_routed.pb -rpx CortexM3_power_routed.rpx
 | Design           : CortexM3
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.530        |
+| Total On-Chip Power (W)  | 1.533        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.423        |
+| Dynamic (W)              | 1.425        |
 | Device Static (W)        | 0.108        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 80.9         |
@@ -52,17 +52,17 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.055 |       37 |       --- |             --- |
-| Slice Logic              |     0.042 |    39429 |       --- |             --- |
-|   LUT as Logic           |     0.040 |    20556 |     63400 |           32.42 |
-|   Register               |    <0.001 |    12172 |    126800 |            9.60 |
-|   CARRY4                 |    <0.001 |      524 |     15850 |            3.31 |
+| Clocks                   |     0.057 |       37 |       --- |             --- |
+| Slice Logic              |     0.042 |    39710 |       --- |             --- |
+|   LUT as Logic           |     0.040 |    20615 |     63400 |           32.52 |
+|   Register               |    <0.001 |    12428 |    126800 |            9.80 |
+|   CARRY4                 |    <0.001 |      525 |     15850 |            3.31 |
 |   LUT as Distributed RAM |    <0.001 |      920 |     19000 |            4.84 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   LUT as Shift Register  |    <0.001 |       26 |     19000 |            0.14 |
-|   F7/F8 Muxes            |    <0.001 |       98 |     63400 |            0.15 |
-|   Others                 |     0.000 |      315 |       --- |             --- |
-| Signals                  |     0.051 |    34139 |       --- |             --- |
+|   LUT as Shift Register  |    <0.001 |       24 |     19000 |            0.13 |
+|   F7/F8 Muxes            |    <0.001 |      104 |     63400 |            0.16 |
+|   Others                 |     0.000 |      317 |       --- |             --- |
+| Signals                  |     0.052 |    34417 |       --- |             --- |
 | Block RAM                |     0.035 |       40 |       135 |           29.63 |
 | MMCM                     |     0.239 |        2 |         6 |           33.33 |
 | PLL                      |     0.092 |        1 |         6 |           16.67 |
@@ -71,7 +71,7 @@ Table of Contents
 | PHASER                   |     0.250 |       26 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.108 |          |           |                 |
-| Total                    |     1.530 |          |           |                 |
+| Total                    |     1.533 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -81,7 +81,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.274 |       0.256 |      0.018 |
+| Vccint    |       1.000 |     0.277 |       0.258 |      0.018 |
 | Vccaux    |       1.800 |     0.410 |       0.392 |      0.018 |
 | Vcco33    |       3.300 |     0.044 |       0.040 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -184,16 +184,16 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| CortexM3            |     1.423 |
+| CortexM3            |     1.425 |
 |   DTCM              |     0.015 |
 |   ITCM              |     0.015 |
 |   SynIOBuf.SWIOBUF  |     0.001 |
-|   u_custom_apb_hdmi |     1.313 |
-|     u_ov5640_hdmi   |     1.313 |
+|   u_custom_apb_hdmi |     1.315 |
+|     u_ov5640_hdmi   |     1.315 |
 |       u_clk_wiz_0   |     0.145 |
-|       u_ddr3_top    |     1.032 |
+|       u_ddr3_top    |     1.034 |
 |       u_hdmi_top    |     0.135 |
-|   ulogic            |     0.076 |
+|   ulogic            |     0.077 |
 +---------------------+-----------+
 
 

@@ -11,10 +11,10 @@
     |--core               m3内核
     |--peripheral         外设
     |--CortexM3           soc顶层代码
-|--picture              相关图片
 |--testbench            仿真代码
 |--vivado_a7            vivado工程
 |--xdc                  约束文件
 |--history              历史文件
+|--others               说明文件等
 ```
 

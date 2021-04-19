@@ -24,6 +24,9 @@
 module ov5640_hdmi(    
     input                 sys_clk      ,  //系统时钟
     input                 sys_rst_n    ,  //系统复位，低电平有效
+
+    input   [7:0]         threshold    ,  // 二值化阈值
+    input   [1:0]         disp_choice  ,  // 选择显示哪种视频 00 原始图像 01 灰度图 10 二值化图
     //摄像头接口                       
     input                 cam_pclk     ,  //cmos 数据像素时钟
     input                 cam_vsync    ,  //cmos 场同步信号
@@ -75,7 +78,8 @@ wire         init_calib_complete ;  //DDR3初始化完成init_calib_complete
 wire         sys_init_done       ;  //系统初始化完成(DDR初始化+摄像头初始化)
 wire         clk_200m            ;  //ddr3参考时钟
 wire         cmos_frame_vsync    ;  //输出帧有效场同步信号
-wire         cmos_frame_href     ;  //输出帧有效行同步信号  
+wire         cmos_frame_href     ;  //输出帧有效行同步信号 
+wire  [15:0] cmos_frame_data     ;  //输出数据
 wire  [12:0] h_disp              ;  //LCD屏水平分辨率
 wire  [12:0] v_disp              ;  //LCD屏垂直分辨率     
 wire  [27:0] ddr3_addr_max       ;  //存入DDR3的最大读写地址 
@@ -85,7 +89,10 @@ wire         post_frame_vsync    ;
 wire         post_frame_hsync    ;
 wire         post_frame_de       ; 
 wire  [15:0] post_rgb            ;
-
+wire         ycbcr_frame_vsync   ;
+wire         ycbcr_frame_hsync   ;
+wire         ycbcr_frame_de      ;
+wire  [15:0] img_gray            ;
 parameter x_disp = 100;               // 显示区域左上角x坐标
 parameter y_disp = 100;               // 显示区域左上角y坐标
 parameter width_disp = H_CMOS_DISP;   // 显示区域宽度
@@ -94,7 +101,9 @@ wire [10:0] pixel_xpos;               // 像素点横坐标
 wire [10:0] pixel_ypos;               // 像素点纵坐标
 wire [15:0] ddr_rd_data;              // 读ddr数据
 wire        ddr_rdata_req;            // ddr读数据请求
-
+wire        ddr_wr_load;              // 写ddr数据源更新
+wire [15:0] ddr_wr_data;              // 写ddr数据
+wire        ddr_wr_valid;             // ddr写数据请求
 //*****************************************************
 //**                    main code
 //*****************************************************
@@ -108,6 +117,13 @@ assign  sys_init_done = init_calib_complete;
 //存入DDR3的最大读写地址 
 assign  ddr3_addr_max =  V_CMOS_DISP*H_CMOS_DISP; 
 
+// 选择视频源存入ddr中并显示
+assign ddr_wr_valid = (disp_choice == 2'b00) ? cmos_frame_valid : 
+                     ((disp_choice == 2'b01) ? ycbcr_frame_de : post_frame_de);
+assign ddr_wr_data  = (disp_choice == 2'b00) ? cmos_frame_data : 
+                     ((disp_choice == 2'b01) ? img_gray : post_rgb);
+assign ddr_wr_load  = (disp_choice == 2'b00) ? cmos_frame_vsync : 
+                     ((disp_choice == 2'b01) ? ycbcr_frame_vsync : post_frame_vsync);
 // 在规定区域显示图像
 assign rd_data = ddr_rdata_en ? ddr_rd_data : 16'b0;
 assign ddr_rdata_req = (pixel_xpos >= x_disp - 1 & pixel_xpos < x_disp + width_disp - 1)
@@ -137,22 +153,28 @@ ov5640_dri u_ov5640_dri(
     .cmos_frame_vsync  ( cmos_frame_vsync    ),
     .cmos_frame_href   ( cmos_frame_href     ),
     .cmos_frame_valid  ( cmos_frame_valid    ),
-    .cmos_frame_data   ( wr_data             )
+    .cmos_frame_data   ( cmos_frame_data     )
     ); 
     
 // 图像处理
 vip u_vip(
     .clk              ( cam_pclk         ),
     .rst_n            ( rst_n            ),
-     
+
+    .threshold        ( threshold        ),
     .pre_frame_vsync  ( cmos_frame_vsync ),
     .pre_frame_hsync  ( cmos_frame_href  ),
     .pre_frame_de     ( cmos_frame_valid ),
-    .pre_rgb          ( wr_data          ),
+    .pre_rgb          ( cmos_frame_data  ),
     
     .xpos             ( pixel_xpos_w     ),
     .ypos             ( pixel_ypos_w     ),
- 
+
+    .ycbcr_frame_vsync ( ycbcr_frame_vsync ),
+    .ycbcr_frame_hsync ( ycbcr_frame_hsync ),
+    .ycbcr_frame_de    ( ycbcr_frame_de    ),
+    .img_gray          ( img_gray          ),
+
     .post_frame_vsync ( post_frame_vsync ),
     .post_frame_hsync (  ),
     .post_frame_de    ( post_frame_de    ),
@@ -191,9 +213,9 @@ ddr3_top u_ddr3_top (
     .ddr3_read_valid     (1'b1),                      //DDR3 读使能
     .ddr3_pingpang_en    (1'b1),                      //DDR3 乒乓操作使能
     .wr_clk              (cam_pclk),                  //写时钟
-    .wr_load             (post_frame_vsync),          //输入源更新信号   
-	.datain_valid        (post_frame_de),             //数据有效使能信号
-    .datain              (post_rgb),                  //有效数据 
+    .wr_load             (ddr_wr_load),          //输入源更新信号   
+	.datain_valid        (ddr_wr_valid),             //数据有效使能信号
+    .datain              (ddr_wr_data),                  //有效数据 
     
     .rd_clk              (pixel_clk),                 //读时钟 
     .rd_load             (rd_vsync),                  //输出源更新信号    

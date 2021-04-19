@@ -48,9 +48,50 @@ module custom_apb_hdmi(
 assign PREDAY = 1'b1;
 assign PSELVER = 1'b0;
 
+reg [7:0] threshold;  // 二值化阈值
+reg [1:0] disp_choice; // 选择显示哪种视频 00 原始图像 01 灰度图 10 二值化图
+
+
+wire write_en = PSEL & PWRITE & (~PENABLE);
+reg wr_en_reg;
+
+always@(posedge PCLK or negedge PRESETN) begin
+  if(~PRESETN) 
+    wr_en_reg <= 1'b0;
+  else if(write_en) 
+    wr_en_reg <= 1'b1;
+  else 
+    wr_en_reg <= 1'b0;
+end
+
+always @(posedge PCLK or negedge PRESETN) begin
+    if(~PRESETN) begin
+        threshold = 8'd68;
+    end 
+    else if(wr_en_reg & (PADDR[11:2] == 10'd00)) begin
+        threshold = PWDATA[7:0];
+    end
+    else 
+        threshold = threshold;
+end
+
+always @(posedge PCLK or negedge PRESETN) begin
+    if(~PRESETN) begin
+        disp_choice = 2'd00;
+    end 
+    else if(wr_en_reg & (PADDR[11:2] == 10'd01)) begin
+        disp_choice = PWDATA[1:0];
+    end
+    else 
+        disp_choice = disp_choice;
+end
+
 ov5640_hdmi u_ov5640_hdmi(
   .sys_clk      ( PCLK         ),
   .sys_rst_n    ( PRESETN      ),
+
+  .disp_choice  ( disp_choice  ),
+  .threshold    ( threshold    ),
 
   .cam_pclk     ( cam_pclk     ),
   .cam_vsync    ( cam_vsync    ),

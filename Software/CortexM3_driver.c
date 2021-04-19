@@ -257,13 +257,13 @@ void delay(uint32_t time)
 }
 
 
-void delay_1ms()
+void delay_1ms()// 延时1ms
 {
 	delay(50000);
 }
 
 /**************************************LED*******************************************/
-void send2LED( uint32_t cnt)
+void send2LED( uint32_t cnt) // 控制led状态
 {
 		APB_LED -> LEDS = cnt;
 }
@@ -275,6 +275,15 @@ void send2LED( uint32_t cnt)
 //}
 
 
+/**************************************ACCELERATOR**************************************/
+void change_threshold(uint32_t threshold) // 修改二值化阈值
+{
+	APB_ACC -> threshold = threshold;
+}
+void disp_choice(uint32_t disp_type) // 修改显示图像 0->原始图像 1->灰度图 2->二值化图
+{
+	APB_ACC -> disp_type = disp_type;
+}
 
 
 

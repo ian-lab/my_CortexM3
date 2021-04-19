@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Apr 18 18:30:55 2021
+| Date         : Mon Apr 19 00:04:55 2021
 | Host         : DESKTOP-OFV538P running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file CortexM3_clock_utilization_routed.rpt
 | Design       : CortexM3
@@ -60,11 +60,11 @@ Table of Contents
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------+------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock              | Driver Pin                                                                                                             | Net                                                                                                           |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------+------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 4 |        5827 |               0 |       10.000 | clk_pll_i          | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O  | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK      |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y5 | n/a          |                 5 |        5240 |               0 |       20.000 | clk                | SynClock.sys_clk/O                                                                                                     | clk                                                                                                           |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 4 |        5829 |               0 |       10.000 | clk_pll_i          | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O  | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK      |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y5 | n/a          |                 5 |        5251 |               0 |       20.000 | clk                | SynClock.sys_clk/O                                                                                                     | clk                                                                                                           |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 2 |         758 |               0 |       15.385 | clk_out4_clk_wiz_0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkout4_buf/O                                                         | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4                                                     |
-| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y6 | n/a          |                 3 |         322 |               0 |              |                    | SynClock.sw_clk/O                                                                                                      | swck                                                                                                          |
-| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 3 |         237 |               0 |       40.000 | cmos_pclk          | cam_pclk_IBUF_BUFG_inst/O                                                                                              | cam_pclk_IBUF_BUFG                                                                                            |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 3 |         478 |               0 |       40.000 | cmos_pclk          | cam_pclk_IBUF_BUFG_inst/O                                                                                              | cam_pclk_IBUF_BUFG                                                                                            |
+| g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y6 | n/a          |                 2 |         322 |               0 |              |                    | SynClock.sw_clk/O                                                                                                      | swck                                                                                                          |
 | g5        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y7 | n/a          |                 1 |          88 |               0 |              |                    | i2c_exec_reg_i_2/O                                                                                                     | u_ov5640_hdmi/u_ov5640_dri/i2c_dri_clk                                                                        |
 | g6        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 3 |          63 |               0 |        5.000 | clk_out1_clk_wiz_0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkout1_buf/O                                                         | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1                                                     |
 | g7        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y8 | n/a          |                 1 |          11 |               0 |       20.000 | clk_out2_clk_wiz_0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkout2_buf/O                                                         | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out2                                                     |
@@ -89,9 +89,9 @@ Table of Contents
 | src2      | g8        | MMCME2_ADV/CLKOUT2  | None            | MMCME2_ADV_X0Y0 | X0Y0         |           1 |               0 |               3.077 | clk_out3_clk_wiz_0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT2                                                        | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out3_clk_wiz_0                                               |
 | src2      | g2        | MMCME2_ADV/CLKOUT3  | None            | MMCME2_ADV_X0Y0 | X0Y0         |           1 |               0 |              15.385 | clk_out4_clk_wiz_0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3                                                        | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4_clk_wiz_0                                               |
 | src2      | g9        | MMCME2_ADV/CLKFBOUT | None            | MMCME2_ADV_X0Y0 | X0Y0         |           1 |               0 |              20.000 | clkfbout_clk_wiz_0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT                                                       | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkfbout_clk_wiz_0                                               |
-| src3      | g3        | IBUF/O              | IOB_X0Y188      | IOB_X0Y188      | X0Y3         |           1 |               0 |                     |                    | SWCLK_IBUF_inst/O                                                                                                             | SWCLK_IBUF                                                                                                        |
-| src4      | g4        | IBUF/O              | IOB_X0Y63       | IOB_X0Y63       | X0Y1         |           1 |               0 |              40.000 | cmos_pclk          | cam_pclk_IBUF_inst/O                                                                                                          | cam_pclk_IBUF                                                                                                     |
-| src5      | g5        | FDCE/Q              | None            | SLICE_X51Y95    | X0Y1         |           1 |               1 |                     |                    | u_custom_apb_hdmi/u_ov5640_hdmi/u_ov5640_dri/u_i2c_dr/dri_clk_reg/Q                                                           | u_custom_apb_hdmi/u_ov5640_hdmi/u_ov5640_dri/u_i2c_dr/dri_clk_reg_0                                               |
+| src3      | g3        | IBUF/O              | IOB_X0Y63       | IOB_X0Y63       | X0Y1         |           1 |               0 |              40.000 | cmos_pclk          | cam_pclk_IBUF_inst/O                                                                                                          | cam_pclk_IBUF                                                                                                     |
+| src4      | g4        | IBUF/O              | IOB_X0Y188      | IOB_X0Y188      | X0Y3         |           1 |               0 |                     |                    | SWCLK_IBUF_inst/O                                                                                                             | SWCLK_IBUF                                                                                                        |
+| src5      | g5        | FDCE/Q              | None            | SLICE_X46Y88    | X0Y1         |           1 |               1 |                     |                    | u_custom_apb_hdmi/u_ov5640_hdmi/u_ov5640_dri/u_i2c_dr/dri_clk_reg/Q                                                           | u_custom_apb_hdmi/u_ov5640_hdmi/u_ov5640_dri/u_i2c_dr/dri_clk_reg_0                                               |
 | src6      | g10       | PLLE2_ADV/CLKOUT3   | PLLE2_ADV_X1Y1  | PLLE2_ADV_X1Y1  | X1Y1         |           1 |               0 |              10.000 | pll_clk3_out       | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3          | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/pll_clk3_out |
 +-----------+-----------+---------------------+-----------------+-----------------+--------------+-------------+-----------------+---------------------+--------------------+-------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -124,12 +124,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2662 |  2600 |  634 |   600 |    0 |    20 |   10 |    10 |    0 |    20 |
-| X1Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 2415 |  1500 |  889 |   550 |    0 |    40 |   19 |    20 |    0 |    40 |
-| X0Y1              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    8 |    50 |    0 |    50 |  460 |  2000 |  141 |   600 |    0 |    20 |    3 |    10 |    0 |    20 |
-| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1754 |  1900 |  524 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
-| X0Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 1632 |  2000 |  426 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 3249 |  1900 |  984 |   650 |    0 |    60 |    8 |    30 |    0 |    40 |
+| X0Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3122 |  2600 |  682 |   600 |    0 |    20 |    9 |    10 |    0 |    20 |
+| X1Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 1550 |  1500 |  485 |   550 |    0 |    40 |   18 |    20 |    0 |    40 |
+| X0Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    8 |    50 |    0 |    50 |  844 |  2000 |  247 |   600 |    0 |    20 |    3 |    10 |    0 |    20 |
+| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2057 |  1900 |  674 |   650 |    0 |    60 |    2 |    30 |    0 |    40 |
+| X0Y2              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 |  906 |  2000 |  249 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 3949 |  1900 | 1219 |   650 |    0 |    60 |    8 |    30 |    0 |    40 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  1350 |    0 |   500 |    0 |    30 |    0 |    15 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
@@ -144,9 +144,9 @@ All Modules
 |    | X0 | X1 |
 +----+----+----+
 | Y3 |  0 |  0 |
-| Y2 |  6 |  4 |
-| Y1 |  6 |  4 |
-| Y0 |  3 |  2 |
+| Y2 |  5 |  5 |
+| Y1 |  4 |  4 |
+| Y0 |  4 |  2 |
 +----+----+----+
 
 
@@ -156,7 +156,7 @@ All Modules
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------------------------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock     | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                      |
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------------------------------------------------------------------------------+
-| g0        | BUFG/O          | n/a               | clk_pll_i |      10.000 | {0.000 5.000} |        5595 |        0 |              1 |        0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK |
+| g0        | BUFG/O          | n/a               | clk_pll_i |      10.000 | {0.000 5.000} |        5597 |        0 |              1 |        0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK |
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+----------------------------------------------------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -168,8 +168,8 @@ All Modules
 |    | X0   | X1    |
 +----+------+-------+
 | Y3 |    0 |     0 |
-| Y2 |  891 |  3142 |
-| Y1 |   27 |  1536 |
+| Y2 |  740 |  3058 |
+| Y1 |  112 |  1688 |
 | Y0 |    0 |     0 |
 +----+------+-------+
 
@@ -180,7 +180,7 @@ All Modules
 +-----------+-----------------+-------------------+-------+-------------+----------------+-------------+----------+----------------+----------+-----+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns)  | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net |
 +-----------+-----------------+-------------------+-------+-------------+----------------+-------------+----------+----------------+----------+-----+
-| g1        | BUFG/O          | n/a               | clk   |      20.000 | {0.000 10.000} |        5239 |        0 |              1 |        0 | clk |
+| g1        | BUFG/O          | n/a               | clk   |      20.000 | {0.000 10.000} |        5250 |        0 |              1 |        0 | clk |
 +-----------+-----------------+-------------------+-------+-------------+----------------+-------------+----------+----------------+----------+-----+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -192,9 +192,9 @@ All Modules
 |    | X0    | X1    |
 +----+-------+-------+
 | Y3 |     0 |     0 |
-| Y2 |     1 |     0 |
-| Y1 |   232 |   220 |
-| Y0 |  2390 |  2397 |
+| Y2 |     0 |     1 |
+| Y1 |   584 |   376 |
+| Y0 |  2836 |  1454 |
 +----+-------+-------+
 
 
@@ -212,47 +212,23 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+-----+
-|    | X0   | X1  |
-+----+------+-----+
-| Y3 |    0 |   0 |
-| Y2 |  685 |  73 |
-| Y1 |    0 |   0 |
-| Y0 |    0 |   0 |
-+----+------+-----+
++----+------+------+
+|    | X0   | X1   |
++----+------+------+
+| Y3 |    0 |    0 |
+| Y2 |  110 |  648 |
+| Y1 |    0 |    0 |
+| Y0 |    0 |    0 |
++----+------+------+
 
 
 10. Device Cell Placement Summary for Global Clock g3
 -----------------------------------------------------
 
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------+
-| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net  |
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------+
-| g3        | BUFG/O          | n/a               |       |             |               |         322 |        0 |              0 |        0 | swck |
-+-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------+
-* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
-** IO Loads column represents load cell count of IO types
-*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
-**** GT Loads column represents load cell count of GT types
-
-
-+----+------+-----+
-|    | X0   | X1  |
-+----+------+-----+
-| Y3 |    0 |   0 |
-| Y2 |    0 |   0 |
-| Y1 |    2 |   0 |
-| Y0 |  283 |  37 |
-+----+------+-----+
-
-
-11. Device Cell Placement Summary for Global Clock g4
------------------------------------------------------
-
 +-----------+-----------------+-------------------+-----------+-------------+----------------+-------------+----------+----------------+----------+--------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock     | Period (ns) | Waveform (ns)  | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                |
 +-----------+-----------------+-------------------+-----------+-------------+----------------+-------------+----------+----------------+----------+--------------------+
-| g4        | BUFG/O          | n/a               | cmos_pclk |      40.000 | {0.000 20.000} |         237 |        0 |              0 |        0 | cam_pclk_IBUF_BUFG |
+| g3        | BUFG/O          | n/a               | cmos_pclk |      40.000 | {0.000 20.000} |         478 |        0 |              0 |        0 | cam_pclk_IBUF_BUFG |
 +-----------+-----------------+-------------------+-----------+-------------+----------------+-------------+----------+----------------+----------+--------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -264,9 +240,33 @@ All Modules
 |    | X0   | X1   |
 +----+------+------+
 | Y3 |    0 |    0 |
-| Y2 |   18 |  114 |
-| Y1 |  105 |    0 |
+| Y2 |   19 |  319 |
+| Y1 |  140 |    0 |
 | Y0 |    0 |    0 |
++----+------+------+
+
+
+11. Device Cell Placement Summary for Global Clock g4
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net  |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------+
+| g4        | BUFG/O          | n/a               |       |             |               |         322 |        0 |              0 |        0 | swck |
++-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+------+
+|    | X0   | X1   |
++----+------+------+
+| Y3 |    0 |    0 |
+| Y2 |    0 |    0 |
+| Y1 |    0 |    0 |
+| Y0 |  208 |  114 |
 +----+------+------+
 
 
@@ -289,8 +289,8 @@ All Modules
 +----+-----+----+
 | Y3 |   0 |  0 |
 | Y2 |   0 |  0 |
-| Y1 |  88 |  0 |
-| Y0 |   0 |  0 |
+| Y1 |   0 |  0 |
+| Y0 |  88 |  0 |
 +----+-----+----+
 
 
@@ -420,8 +420,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------+
-| g1        | n/a   | BUFG/O          | None       |        2390 |               0 | 2379 |      0 |   10 |   0 |  0 |    1 |   0 |       0 | clk                                                                     |
-| g3        | n/a   | BUFG/O          | None       |         283 |               0 |  283 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | swck                                                                    |
+| g1        | n/a   | BUFG/O          | None       |        2836 |               0 | 2826 |      0 |    9 |   0 |  0 |    1 |   0 |       0 | clk                                                                     |
+| g4        | n/a   | BUFG/O          | None       |         208 |               0 |  208 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | swck                                                                    |
+| g5        | n/a   | BUFG/O          | None       |          88 |               0 |   88 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_ov5640_hdmi/u_ov5640_dri/i2c_dri_clk                                  |
 | g9        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkfbout_buf_clk_wiz_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -435,8 +436,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net  |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------+
-| g1        | n/a   | BUFG/O          | None       |        2397 |               0 | 2378 |      0 |   19 |   0 |  0 |    0 |   0 |       0 | clk  |
-| g3        | n/a   | BUFG/O          | None       |          37 |               0 |   37 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | swck |
+| g1        | n/a   | BUFG/O          | None       |        1454 |               0 | 1436 |      0 |   18 |   0 |  0 |    0 |   0 |       0 | clk  |
+| g4        | n/a   | BUFG/O          | None       |         114 |               0 |  114 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | swck |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -449,11 +450,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                      |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          27 |               0 |  27 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK |
-| g1        | n/a   | BUFG/O          | None       |         232 |               0 | 229 |      0 |    3 |   0 |  0 |    0 |   0 |       0 | clk                                                                                                      |
-| g3        | n/a   | BUFG/O          | None       |           2 |               0 |   2 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | swck                                                                                                     |
-| g4        | n/a   | BUFG/O          | None       |         105 |               0 | 103 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | cam_pclk_IBUF_BUFG                                                                                       |
-| g5        | n/a   | BUFG/O          | None       |          88 |               0 |  88 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_ov5640_hdmi/u_ov5640_dri/i2c_dri_clk                                                                   |
+| g0        | n/a   | BUFG/O          | None       |         112 |               0 | 112 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK |
+| g1        | n/a   | BUFG/O          | None       |         584 |               0 | 581 |      0 |    3 |   0 |  0 |    0 |   0 |       0 | clk                                                                                                      |
+| g3        | n/a   | BUFG/O          | None       |         140 |               0 | 140 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | cam_pclk_IBUF_BUFG                                                                                       |
 | g7        | n/a   | BUFG/O          | None       |          11 |               0 |  11 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out2                                                |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -467,8 +466,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                           |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1536 |               0 | 1519 |      9 |    0 |   0 |  0 |    1 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK      |
-| g1        | n/a   | BUFG/O          | None       |         220 |               0 |  220 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk                                                                                                           |
+| g0        | n/a   | BUFG/O          | None       |        1688 |               0 | 1668 |     12 |    0 |   0 |  0 |    1 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK      |
+| g1        | n/a   | BUFG/O          | None       |         376 |               0 |  374 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | clk                                                                                                           |
 | g6        | n/a   | BUFG/O          | None       |          16 |               0 |   15 |      0 |    0 |   0 |  0 |    0 |   1 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1                                                     |
 | g10       | n/a   | BUFH/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/pll_clk3 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------------------+
@@ -483,10 +482,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                      |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         891 |               0 | 891 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK |
-| g1        | n/a   | BUFG/O          | None       |           1 |               0 |   1 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk                                                                                                      |
-| g2        | n/a   | BUFG/O          | None       |         685 |               0 | 677 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4                                                |
-| g4        | n/a   | BUFG/O          | None       |          18 |               0 |  18 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | cam_pclk_IBUF_BUFG                                                                                       |
+| g0        | n/a   | BUFG/O          | None       |         740 |               0 | 740 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK |
+| g2        | n/a   | BUFG/O          | None       |         110 |               0 | 102 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4                                                |
+| g3        | n/a   | BUFG/O          | None       |          19 |               0 |  19 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | cam_pclk_IBUF_BUFG                                                                                       |
 | g6        | n/a   | BUFG/O          | None       |          46 |               0 |  45 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1                                                |
 | g8        | n/a   | BUFG/O          | None       |           8 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out3                                                |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
@@ -501,9 +499,10 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                      |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3142 |               0 | 3073 |     12 |    8 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK |
-| g2        | n/a   | BUFG/O          | None       |          73 |               0 |   68 |      1 |    4 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4                                                |
-| g4        | n/a   | BUFG/O          | None       |         114 |               0 |  108 |      2 |    4 |   0 |  0 |    0 |   0 |       0 | cam_pclk_IBUF_BUFG                                                                                       |
+| g0        | n/a   | BUFG/O          | None       |        3058 |               0 | 2992 |      9 |    8 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK |
+| g1        | n/a   | BUFG/O          | None       |           1 |               0 |    1 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk                                                                                                      |
+| g2        | n/a   | BUFG/O          | None       |         648 |               0 |  643 |      1 |    4 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4                                                |
+| g3        | n/a   | BUFG/O          | None       |         319 |               0 |  313 |      2 |    4 |   0 |  0 |    0 |   0 |       0 | cam_pclk_IBUF_BUFG                                                                                       |
 | g6        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1                                                |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -538,7 +537,7 @@ set_property LOC IOB_X0Y63 [get_ports cam_pclk]
 #startgroup
 create_pblock {CLKAG_u_ov5640_hdmi/u_ov5640_dri/i2c_dri_clk}
 add_cells_to_pblock [get_pblocks  {CLKAG_u_ov5640_hdmi/u_ov5640_dri/i2c_dri_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="u_ov5640_hdmi/u_ov5640_dri/i2c_dri_clk"}]]]
-resize_pblock [get_pblocks {CLKAG_u_ov5640_hdmi/u_ov5640_dri/i2c_dri_clk}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+resize_pblock [get_pblocks {CLKAG_u_ov5640_hdmi/u_ov5640_dri/i2c_dri_clk}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
 #endgroup
 
 # Clock net "u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK" driven by instance "u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0" located at site "BUFGCTRL_X0Y0"
@@ -580,14 +579,14 @@ resize_pblock [get_pblocks {CLKAG_u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/in
 #startgroup
 create_pblock {CLKAG_swck}
 add_cells_to_pblock [get_pblocks  {CLKAG_swck}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="swck"}]]]
-resize_pblock [get_pblocks {CLKAG_swck}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_swck}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
 # Clock net "clk" driven by instance "SynClock.sys_clk" located at site "BUFGCTRL_X0Y5"
 #startgroup
 create_pblock {CLKAG_clk}
 add_cells_to_pblock [get_pblocks  {CLKAG_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk"}]]]
-resize_pblock [get_pblocks {CLKAG_clk}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_clk}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
 # Clock net "cam_pclk_IBUF_BUFG" driven by instance "cam_pclk_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y2"

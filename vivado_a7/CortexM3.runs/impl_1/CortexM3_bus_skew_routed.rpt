@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Apr 18 18:30:56 2021
+| Date         : Mon Apr 19 00:04:56 2021
 | Host         : DESKTOP-OFV538P running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file CortexM3_bus_skew_routed.rpt -pb CortexM3_bus_skew_routed.pb -rpx CortexM3_bus_skew_routed.rpx
 | Design       : CortexM3
@@ -23,16 +23,16 @@ Id  Position  From                            To                              Co
 --  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
 1   13        [get_cells [list {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]}]]
                                               [get_cells [list {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]}]]
-                                                                              Slow             10.000       0.964      9.036
+                                                                              Slow             10.000       1.040      8.960
 2   15        [get_cells [list {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]}]]
                                               [get_cells [list {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]}]]
-                                                                              Slow             10.000       1.001      8.999
+                                                                              Slow             10.000       1.058      8.942
 3   17        [get_cells [list {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]}]]
                                               [get_cells [list {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]}]]
-                                                                              Slow             10.000       0.996      9.004
+                                                                              Slow             10.000       0.837      9.163
 4   19        [get_cells [list {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]}]]
                                               [get_cells [list {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]}]]
-                                                                              Slow             10.000       1.028      8.972
+                                                                              Slow             10.000       0.886      9.114
 
 
 2. Bus Skew Report Per Constraint
@@ -46,26 +46,26 @@ Endpoints: 9
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out4_clk_wiz_0    clk_pll_i             u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
-                                                                            u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                                                            Slow         0.964      9.036
+                                                                            u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                                                            Slow         1.040      8.960
 
 
-Slack (MET) :             9.036ns  (requirement - actual skew)
+Slack (MET) :             8.960ns  (requirement - actual skew)
   Endpoint Source:        u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
                             (rising edge-triggered cell FDRE clocked by clk_out4_clk_wiz_0)
   Endpoint Destination:   u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Source:       u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+  Reference Source:       u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by clk_out4_clk_wiz_0)
-  Reference Destination:  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Reference Destination:  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:   -0.535ns
-  Reference Relative Delay:  -1.786ns
-  Relative CRPR:              0.514ns
+  Endpoint Relative Delay:   -0.426ns
+  Reference Relative Delay:  -1.813ns
+  Relative CRPR:              0.574ns
   Uncertainty:                0.227ns
-  Actual Bus Skew:            0.964ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.040ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -77,17 +77,17 @@ Endpoint path:
     R4                   IBUF (Prop_ibuf_I_O)         0.945     0.945 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.717     2.662    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.081     2.743 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT3)
                                                      -3.344     0.948 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3
                          net (fo=1, routed)           1.714     2.662    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4_clk_wiz_0
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.081     2.743 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkout4_buf/O
-                         net (fo=758, routed)         1.354     4.097    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X54Y107        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
+                         net (fo=758, routed)         1.341     4.084    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X60Y126        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y107        FDRE (Prop_fdre_C_Q)         0.398     4.495 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.474     4.969    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[5]
-    SLICE_X55Y107        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X60Y126        FDRE (Prop_fdre_C_Q)         0.398     4.482 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]/Q
+                         net (fo=1, routed)           0.628     5.110    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[5]
+    SLICE_X60Y125        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -97,7 +97,7 @@ Endpoint path:
     R4                   IBUF (Prop_ibuf_I_O)         0.813     0.813 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.628     2.441    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.077     2.518 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.149     0.808 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.633     2.441    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1_clk_wiz_0
@@ -112,15 +112,15 @@ Endpoint path:
                                                      -2.764     2.864 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           1.381     4.245    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.322 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=7437, routed)        1.244     5.566    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X55Y107        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.140     5.706    
-    SLICE_X55Y107        FDRE (Setup_fdre_C_D)       -0.202     5.504    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+                         net (fo=7439, routed)        1.232     5.554    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X60Y125        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
+                         clock pessimism              0.140     5.694    
+    SLICE_X60Y125        FDRE (Setup_fdre_C_D)       -0.159     5.535    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
   -------------------------------------------------------------------
-                         data arrival                           4.969    
-                         clock arrival                          5.504    
+                         data arrival                           5.110    
+                         clock arrival                          5.535    
   -------------------------------------------------------------------
-                         relative delay                        -0.535    
+                         relative delay                        -0.426    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -132,17 +132,17 @@ Reference path:
     R4                   IBUF (Prop_ibuf_I_O)         0.813     0.813 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.628     2.441    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.077     2.518 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT3)
                                                      -3.149     0.808 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3
                          net (fo=1, routed)           1.633     2.441    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4_clk_wiz_0
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     2.518 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkout4_buf/O
-                         net (fo=758, routed)         1.247     3.765    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X58Y104        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=758, routed)         1.233     3.751    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X60Y126        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X58Y104        FDRE (Prop_fdre_C_Q)         0.319     4.084 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.197     4.282    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
-    SLICE_X58Y105        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X60Y126        FDRE (Prop_fdre_C_Q)         0.347     4.098 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.188     4.286    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[8]
+    SLICE_X59Y126        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -152,7 +152,7 @@ Reference path:
     R4                   IBUF (Prop_ibuf_I_O)         0.945     0.945 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.717     2.662    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.081     2.743 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.344     0.948 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.714     2.662    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1_clk_wiz_0
@@ -167,15 +167,15 @@ Reference path:
                                                      -2.941     3.230 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           1.449     4.679    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     4.760 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=7437, routed)        1.359     6.119    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X58Y105        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism             -0.140     5.979    
-    SLICE_X58Y105        FDRE (Hold_fdre_C_D)         0.089     6.068    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=7439, routed)        1.341     6.101    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X59Y126        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism             -0.140     5.961    
+    SLICE_X59Y126        FDRE (Hold_fdre_C_D)         0.138     6.099    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
   -------------------------------------------------------------------
-                         data arrival                           4.282    
-                         clock arrival                          6.068    
+                         data arrival                           4.286    
+                         clock arrival                          6.099    
   -------------------------------------------------------------------
-                         relative delay                        -1.786    
+                         relative delay                        -1.813    
 
 
 
@@ -188,10 +188,10 @@ From Clock            To Clock              Endpoint Pin                    Refe
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 cmos_pclk             clk_pll_i             u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                                                                             u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
-                                                                                                            Slow         1.001      8.999
+                                                                                                            Slow         1.058      8.942
 
 
-Slack (MET) :             8.999ns  (requirement - actual skew)
+Slack (MET) :             8.942ns  (requirement - actual skew)
   Endpoint Source:        u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by cmos_pclk)
   Endpoint Destination:   u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
@@ -202,11 +202,11 @@ Slack (MET) :             8.999ns  (requirement - actual skew)
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    0.606ns
-  Reference Relative Delay:  -1.170ns
-  Relative CRPR:              0.949ns
+  Endpoint Relative Delay:    0.680ns
+  Reference Relative Delay:  -1.173ns
+  Relative CRPR:              0.968ns
   Uncertainty:                0.174ns
-  Actual Bus Skew:            1.001ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.058ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -218,12 +218,12 @@ Endpoint path:
     U18                  IBUF (Prop_ibuf_I_O)         1.454     1.454 r  cam_pclk_IBUF_inst/O
                          net (fo=1, routed)           2.189     3.644    cam_pclk_IBUF
     BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.081     3.725 r  cam_pclk_IBUF_BUFG_inst/O
-                         net (fo=237, routed)         1.343     5.068    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X60Y122        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=478, routed)         1.363     5.088    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X65Y103        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X60Y122        FDRE (Prop_fdre_C_Q)         0.398     5.466 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.497     5.964    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
-    SLICE_X61Y122        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X65Y103        FDRE (Prop_fdre_C_Q)         0.348     5.436 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.604     6.040    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
+    SLICE_X63Y104        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -233,7 +233,7 @@ Endpoint path:
     R4                   IBUF (Prop_ibuf_I_O)         0.813     0.813 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.628     2.441    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.077     2.518 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.149     0.808 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.633     2.441    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1_clk_wiz_0
@@ -248,15 +248,15 @@ Endpoint path:
                                                      -2.764     2.864 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           1.381     4.245    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.322 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=7437, routed)        1.235     5.557    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X61Y122        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     5.557    
-    SLICE_X61Y122        FDRE (Setup_fdre_C_D)       -0.200     5.357    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=7439, routed)        1.250     5.572    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X63Y104        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     5.572    
+    SLICE_X63Y104        FDRE (Setup_fdre_C_D)       -0.212     5.360    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           5.964    
-                         clock arrival                          5.357    
+                         data arrival                           6.040    
+                         clock arrival                          5.360    
   -------------------------------------------------------------------
-                         relative delay                         0.606    
+                         relative delay                         0.680    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -268,12 +268,12 @@ Reference path:
     U18                  IBUF (Prop_ibuf_I_O)         1.388     1.388 r  cam_pclk_IBUF_inst/O
                          net (fo=1, routed)           1.880     3.268    cam_pclk_IBUF
     BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     3.345 r  cam_pclk_IBUF_BUFG_inst/O
-                         net (fo=237, routed)         1.236     4.582    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X63Y123        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                         net (fo=478, routed)         1.250     4.596    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X67Y103        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X63Y123        FDRE (Prop_fdre_C_Q)         0.304     4.886 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
-                         net (fo=1, routed)           0.188     5.073    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[6]
-    SLICE_X63Y124        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+    SLICE_X67Y103        FDRE (Prop_fdre_C_Q)         0.304     4.900 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.189     5.088    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[6]
+    SLICE_X67Y104        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_pll_i rise edge)
@@ -283,7 +283,7 @@ Reference path:
     R4                   IBUF (Prop_ibuf_I_O)         0.945     0.945 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.717     2.662    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.081     2.743 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.344     0.948 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.714     2.662    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1_clk_wiz_0
@@ -298,15 +298,15 @@ Reference path:
                                                      -2.941     3.230 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           1.449     4.679    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     4.760 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=7437, routed)        1.344     6.104    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X63Y124        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
-                         clock pessimism              0.000     6.104    
-    SLICE_X63Y124        FDRE (Hold_fdre_C_D)         0.139     6.243    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+                         net (fo=7439, routed)        1.363     6.123    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X67Y104        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.000     6.123    
+    SLICE_X67Y104        FDRE (Hold_fdre_C_D)         0.138     6.261    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
   -------------------------------------------------------------------
-                         data arrival                           5.073    
-                         clock arrival                          6.243    
+                         data arrival                           5.088    
+                         clock arrival                          6.261    
   -------------------------------------------------------------------
-                         relative delay                        -1.170    
+                         relative delay                        -1.173    
 
 
 
@@ -317,27 +317,27 @@ Endpoints: 9
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-clk_pll_i             cmos_pclk             u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                            u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
-                                                                                                            Slow         0.996      9.004
+clk_pll_i             cmos_pclk             u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                                                            Slow         0.837      9.163
 
 
-Slack (MET) :             9.004ns  (requirement - actual skew)
-  Endpoint Source:        u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+Slack (MET) :             9.163ns  (requirement - actual skew)
+  Endpoint Source:        u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Endpoint Destination:   u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  Endpoint Destination:   u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by cmos_pclk)
-  Reference Source:       u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  Reference Source:       u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Destination:  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  Reference Destination:  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
                             (rising edge-triggered cell FDRE clocked by cmos_pclk)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    2.616ns
-  Reference Relative Delay:   0.845ns
-  Relative CRPR:              0.949ns
+  Endpoint Relative Delay:    2.668ns
+  Reference Relative Delay:   1.037ns
+  Relative CRPR:              0.967ns
   Uncertainty:                0.174ns
-  Actual Bus Skew:            0.996ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.837ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -349,7 +349,7 @@ Endpoint path:
     R4                   IBUF (Prop_ibuf_I_O)         0.945     0.945 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.717     2.662    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.081     2.743 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.344     0.948 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.714     2.662    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1_clk_wiz_0
@@ -364,12 +364,12 @@ Endpoint path:
                                                      -2.941     3.230 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           1.449     4.679    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     4.760 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=7437, routed)        1.344     6.104    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X62Y124        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                         net (fo=7439, routed)        1.359     6.119    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X60Y103        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X62Y124        FDRE (Prop_fdre_C_Q)         0.433     6.537 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           0.582     7.119    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[4]
-    SLICE_X61Y125        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+    SLICE_X60Y103        FDRE (Prop_fdre_C_Q)         0.398     6.517 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.538     7.055    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[1]
+    SLICE_X55Y106        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock cmos_pclk rise edge)
@@ -379,15 +379,15 @@ Endpoint path:
     U18                  IBUF (Prop_ibuf_I_O)         1.388     1.388 r  cam_pclk_IBUF_inst/O
                          net (fo=1, routed)           1.880     3.268    cam_pclk_IBUF
     BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.077     3.345 r  cam_pclk_IBUF_BUFG_inst/O
-                         net (fo=237, routed)         1.232     4.578    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X61Y125        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism              0.000     4.578    
-    SLICE_X61Y125        FDRE (Setup_fdre_C_D)       -0.075     4.503    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+                         net (fo=478, routed)         1.244     4.590    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X55Y106        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     4.590    
+    SLICE_X55Y106        FDRE (Setup_fdre_C_D)       -0.202     4.388    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           7.119    
-                         clock arrival                          4.503    
+                         data arrival                           7.055    
+                         clock arrival                          4.388    
   -------------------------------------------------------------------
-                         relative delay                         2.616    
+                         relative delay                         2.668    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -399,7 +399,7 @@ Reference path:
     R4                   IBUF (Prop_ibuf_I_O)         0.813     0.813 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.628     2.441    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.077     2.518 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.149     0.808 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.633     2.441    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1_clk_wiz_0
@@ -414,12 +414,12 @@ Reference path:
                                                      -2.764     2.864 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           1.381     4.245    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.322 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=7437, routed)        1.236     5.558    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
-    SLICE_X62Y126        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                         net (fo=7439, routed)        1.247     5.569    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X59Y107        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X62Y126        FDRE (Prop_fdre_C_Q)         0.347     5.905 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
-                         net (fo=1, routed)           0.199     6.104    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[6]
-    SLICE_X62Y127        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+    SLICE_X59Y107        FDRE (Prop_fdre_C_Q)         0.304     5.873 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.438     6.311    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[8]
+    SLICE_X58Y107        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock cmos_pclk rise edge)
@@ -429,15 +429,15 @@ Reference path:
     U18                  IBUF (Prop_ibuf_I_O)         1.454     1.454 r  cam_pclk_IBUF_inst/O
                          net (fo=1, routed)           2.189     3.644    cam_pclk_IBUF
     BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.081     3.725 r  cam_pclk_IBUF_BUFG_inst/O
-                         net (fo=237, routed)         1.347     5.072    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
-    SLICE_X62Y127        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
-                         clock pessimism              0.000     5.072    
-    SLICE_X62Y127        FDRE (Hold_fdre_C_D)         0.187     5.259    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+                         net (fo=478, routed)         1.358     5.083    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X58Y107        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000     5.083    
+    SLICE_X58Y107        FDRE (Hold_fdre_C_D)         0.191     5.274    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
   -------------------------------------------------------------------
-                         data arrival                           6.104    
-                         clock arrival                          5.259    
+                         data arrival                           6.311    
+                         clock arrival                          5.274    
   -------------------------------------------------------------------
-                         relative delay                         0.845    
+                         relative delay                         1.037    
 
 
 
@@ -448,27 +448,27 @@ Endpoints: 9
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-clk_pll_i             clk_out4_clk_wiz_0    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                            u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
-                                                                                                            Slow         1.028      8.972
+clk_pll_i             clk_out4_clk_wiz_0    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                            u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         0.886      9.114
 
 
-Slack (MET) :             8.972ns  (requirement - actual skew)
-  Endpoint Source:        u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+Slack (MET) :             9.114ns  (requirement - actual skew)
+  Endpoint Source:        u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Endpoint Destination:   u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Endpoint Destination:   u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
                             (rising edge-triggered cell FDRE clocked by clk_out4_clk_wiz_0)
-  Reference Source:       u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
+  Reference Source:       u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
                             (rising edge-triggered cell FDRE clocked by clk_pll_i)
-  Reference Destination:  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+  Reference Destination:  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
                             (rising edge-triggered cell FDRE clocked by clk_out4_clk_wiz_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    3.350ns
-  Reference Relative Delay:   2.069ns
-  Relative CRPR:              0.514ns
+  Endpoint Relative Delay:    3.125ns
+  Reference Relative Delay:   1.926ns
+  Relative CRPR:              0.575ns
   Uncertainty:                0.262ns
-  Actual Bus Skew:            1.028ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.886ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -480,7 +480,7 @@ Endpoint path:
     R4                   IBUF (Prop_ibuf_I_O)         0.945     0.945 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.717     2.662    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.081     2.743 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.344     0.948 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.714     2.662    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1_clk_wiz_0
@@ -495,12 +495,12 @@ Endpoint path:
                                                      -2.941     3.230 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           1.449     4.679    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     4.760 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=7437, routed)        1.357     6.117    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X59Y109        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=7439, routed)        1.346     6.106    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X59Y129        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X59Y109        FDRE (Prop_fdre_C_Q)         0.348     6.465 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.623     7.088    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
-    SLICE_X58Y109        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X59Y129        FDRE (Prop_fdre_C_Q)         0.379     6.485 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.506     6.991    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[6]
+    SLICE_X58Y129        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out4_clk_wiz_0 rise edge)
@@ -510,20 +510,20 @@ Endpoint path:
     R4                   IBUF (Prop_ibuf_I_O)         0.813     0.813 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.628     2.441    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.077     2.518 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT3)
                                                      -3.149     0.808 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3
                          net (fo=1, routed)           1.633     2.441    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4_clk_wiz_0
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.077     2.518 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkout4_buf/O
-                         net (fo=758, routed)         1.246     3.764    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X58Y109        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.140     3.904    
-    SLICE_X58Y109        FDRE (Setup_fdre_C_D)       -0.166     3.738    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=758, routed)         1.237     3.755    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X58Y129        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.140     3.895    
+    SLICE_X58Y129        FDRE (Setup_fdre_C_D)       -0.029     3.866    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
   -------------------------------------------------------------------
-                         data arrival                           7.088    
-                         clock arrival                          3.738    
+                         data arrival                           6.991    
+                         clock arrival                          3.866    
   -------------------------------------------------------------------
-                         relative delay                         3.350    
+                         relative delay                         3.125    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -535,7 +535,7 @@ Reference path:
     R4                   IBUF (Prop_ibuf_I_O)         0.813     0.813 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.628     2.441    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.077     2.518 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.439     3.957    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.149     0.808 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.633     2.441    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out1_clk_wiz_0
@@ -550,12 +550,12 @@ Reference path:
                                                      -2.764     2.864 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT
                          net (fo=1, routed)           1.381     4.245    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077     4.322 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O
-                         net (fo=7437, routed)        1.244     5.566    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
-    SLICE_X56Y110        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
+                         net (fo=7439, routed)        1.237     5.559    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X59Y129        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X56Y110        FDRE (Prop_fdre_C_Q)         0.347     5.913 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]/Q
-                         net (fo=1, routed)           0.300     6.213    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[8]
-    SLICE_X54Y110        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+    SLICE_X59Y129        FDRE (Prop_fdre_C_Q)         0.304     5.863 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.197     6.060    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[4]
+    SLICE_X58Y128        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out4_clk_wiz_0 rise edge)
@@ -565,20 +565,20 @@ Reference path:
     R4                   IBUF (Prop_ibuf_I_O)         0.945     0.945 r  CLK50m_IBUF_inst/O
                          net (fo=1, routed)           1.717     2.662    CLK50m_IBUF
     BUFGCTRL_X0Y5        BUFG (Prop_bufg_I_O)         0.081     2.743 r  SynClock.sys_clk/O
-                         net (fo=5240, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
+                         net (fo=5251, routed)        1.549     4.292    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_in1
     MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT3)
                                                      -3.344     0.948 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3
                          net (fo=1, routed)           1.714     2.662    u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clk_out4_clk_wiz_0
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.081     2.743 r  u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst/clkout4_buf/O
-                         net (fo=758, routed)         1.352     4.095    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
-    SLICE_X54Y110        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
-                         clock pessimism             -0.140     3.955    
-    SLICE_X54Y110        FDRE (Hold_fdre_C_D)         0.189     4.144    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
+                         net (fo=758, routed)         1.344     4.087    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X58Y128        FDRE                                         r  u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism             -0.140     3.947    
+    SLICE_X58Y128        FDRE (Hold_fdre_C_D)         0.187     4.134    u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
   -------------------------------------------------------------------
-                         data arrival                           6.213    
-                         clock arrival                          4.144    
+                         data arrival                           6.060    
+                         clock arrival                          4.134    
   -------------------------------------------------------------------
-                         relative delay                         2.069    
+                         relative delay                         1.926    
 
 
 

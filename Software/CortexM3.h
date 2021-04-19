@@ -112,17 +112,27 @@ typedef struct
 #define  UART_BAUDDIV_Msk            (0xFFFFFul <<  UART_BAUDDIV_Pos)        /*!<  UART BAUDDIV: BAUDDIV Mask */
 
 
-
+/**************************************LED*******************************************/
 typedef struct
 {
-  volatile      uint32_t  LEDS;
+  volatile uint32_t LEDS;
 } APB_LED_TypeDef;
 
-
+/**************************************KEY*******************************************/
 typedef struct 
 {
-  volatile      uint32_t  KEYState;
+  volatile uint32_t KEYState;
 } APB_KEY_TypeDef;
+
+
+/**************************************ACCELERATOR**************************************/
+typedef struct 
+{
+  volatile uint32_t threshold; //  二值化阈值
+	volatile uint32_t disp_type; //  显示类型
+} APB_ACC_TypeDef;
+
+
 
 /******************************************************************************/
 /*                         Peripheral memory map                              */
@@ -132,14 +142,14 @@ typedef struct
 #define APB_UART_BASE    (APB_BASE)
 #define APB_LED_BASE     (APB_BASE + 0x1000UL)
 #define APB_KEY_BASE     (APB_BASE + 0x2000UL)
-
+#define APB_ACC_BASE     (APB_BASE + 0x3000UL)
 /******************************************************************************/
 /*                         Peripheral declaration                             */
 /******************************************************************************/
 #define UART             ((UART_TypeDef    *) APB_UART_BASE   )
 #define APB_LED          ((APB_LED_TypeDef *) APB_LED_BASE    )
 #define APB_KEY          ((APB_KEY_TypeDef *) APB_KEY_BASE    )
-
+#define APB_ACC          ((APB_ACC_TypeDef *) APB_ACC_BASE    )
 
 #endif
 

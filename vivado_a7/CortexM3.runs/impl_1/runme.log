@@ -13,9 +13,9 @@ Command: link_design -top CortexM3 -part xc7a100tfgg484-2
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a100tfgg484-2
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.980 . Memory (MB): peak = 674.645 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1024 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 675.910 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1031 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [c:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_custom_apb_hdmi/u_ov5640_hdmi/u_clk_wiz_0/inst'
@@ -61,7 +61,7 @@ Finished Sourcing Tcl File [E:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_
 Sourcing Tcl File [E:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
 Finished Sourcing Tcl File [E:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1432.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1434.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 268 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
@@ -72,7 +72,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 1432.055 ; gain = 1097.805
+link_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 1434.383 ; gain = 1099.961
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -84,37 +84,37 @@ WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port cam_sda expec
 INFO: [Project 1-461] DRC finished with 0 Errors, 1 Warnings
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1432.055 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1434.383 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: c23e918d
+Ending Cache Timing Information Task | Checksum: daaaa7fa
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1432.055 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1434.383 ; gain = 0.000
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1fbf8d4a4
+Phase 1 Retarget | Checksum: 1a8388ad8
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1598.082 ; gain = 2.031
-INFO: [Opt 31-389] Phase Retarget created 49 cells and removed 189 cells
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1600.637 ; gain = 2.031
+INFO: [Opt 31-389] Phase Retarget created 49 cells and removed 190 cells
 INFO: [Opt 31-1021] In phase Retarget, 49 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Phase 2 Constant propagation | Checksum: 2078351c3
+Phase 2 Constant propagation | Checksum: 21e370ebe
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1598.082 ; gain = 2.031
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1600.637 ; gain = 2.031
 INFO: [Opt 31-389] Phase Constant propagation created 19 cells and removed 130 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 12 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 15d4c6978
+Phase 3 Sweep | Checksum: 1cd477cad
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1598.082 ; gain = 2.031
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1600.637 ; gain = 2.031
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 100 cells
 INFO: [Opt 31-1021] In phase Sweep, 60 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
@@ -123,22 +123,22 @@ INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
 INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
-Phase 4 BUFG optimization | Checksum: 18b8bf6f7
+Phase 4 BUFG optimization | Checksum: 1390cd30c
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.082 ; gain = 2.031
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1600.637 ; gain = 2.031
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 18b8bf6f7
+Phase 5 Shift Register Optimization | Checksum: 1390cd30c
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1598.082 ; gain = 2.031
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1600.637 ; gain = 2.031
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 15d4c6978
+Phase 6 Post Processing Netlist | Checksum: 1cd477cad
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1598.082 ; gain = 2.031
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1600.637 ; gain = 2.031
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 23 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -148,7 +148,7 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |              49  |             189  |                                             49  |
+|  Retarget                     |              49  |             190  |                                             49  |
 |  Constant propagation         |              19  |             130  |                                             12  |
 |  Sweep                        |               0  |             100  |                                             60  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
@@ -160,17 +160,17 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 1598.082 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: b9330775
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1600.637 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 251faa128
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1598.082 ; gain = 2.031
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1600.637 ; gain = 2.031
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.843 | TNS=-902.485 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.843 | TNS=-905.295 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -180,44 +180,44 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 40 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 8 newly gated: 0 Total Ports: 80
-Ending PowerOpt Patch Enables Task | Checksum: 12e09a888
+Ending PowerOpt Patch Enables Task | Checksum: 18e44031d
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.628 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 12e09a888
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.595 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 18e44031d
 
-Time (s): cpu = 00:01:17 ; elapsed = 00:00:39 . Memory (MB): peak = 2006.867 ; gain = 408.785
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:38 . Memory (MB): peak = 2012.621 ; gain = 411.984
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 12e09a888
+Ending Final Cleanup Task | Checksum: 18e44031d
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 169a78375
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 206b4025d
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 38 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:00 . Memory (MB): peak = 2006.867 ; gain = 574.812
+opt_design: Time (s): cpu = 00:01:40 ; elapsed = 00:00:59 . Memory (MB): peak = 2012.621 ; gain = 578.238
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2006.867 ; gain = 0.000
-INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2012.621 ; gain = 0.000
 Writing placer database...
+INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.205 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.692 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/CortexM3_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2006.867 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file CortexM3_drc_opted.rpt -pb CortexM3_drc_opted.pb -rpx CortexM3_drc_opted.rpx
 Command: report_drc -file CortexM3_drc_opted.rpt -pb CortexM3_drc_opted.pb -rpx CortexM3_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/CortexM3_drc_opted.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2006.867 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2012.621 ; gain = 0.000
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -227,26 +227,26 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 2 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/pend_tran_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[25]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_write_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_l1_ahbdecoders2/data_out_port_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_l1_ahbdecoders2/data_out_port_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_l1_ahbdecoders2/data_out_port_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A13nz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A13nz6_reg_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A13nz6_reg_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A5yt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A63nz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A6ut07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A8xf07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Aa8oz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Acat07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Ad8t07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Aisoz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Albt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Anct07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Aolt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Apit07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Apnt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Arioz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Atlzz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Avlt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Axst07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port cam_sda expects both input and output buffering but the buffers are incomplete.
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 22 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
@@ -257,11 +257,11 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b11c34cd
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 18a152a37
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
@@ -274,35 +274,35 @@ WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. T
 	cam_pclk_IBUF_inst (IBUF.O) is locked to IOB_X0Y63
 	cam_pclk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2
 Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1ca539597
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1b97b7a70
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 234078e52
+Phase 1.3 Build Placer Netlist Model | Checksum: 1cbeb9704
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 234078e52
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1cbeb9704
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 234078e52
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1cbeb9704
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 27bacbadd
+Phase 2.1 Floorplanning | Checksum: 29dd8e3e0
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 2.2 Global Placement Core
 
 Phase 2.2.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1018] Found 1731 candidate LUT instances to create LUTNM shape
-INFO: [Physopt 32-775] End 1 Pass. Optimized 761 nets or cells. Created 29 new cells, deleted 732 existing cells and moved 0 existing cell
+INFO: [Physopt 32-1018] Found 1705 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 798 nets or cells. Created 77 new cells, deleted 721 existing cells and moved 0 existing cell
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -315,7 +315,7 @@ INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -324,76 +324,76 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |           29  |            732  |                   761  |           0  |           1  |  00:00:04  |
+|  LUT Combining                                    |           77  |            721  |                   798  |           0  |           1  |  00:00:04  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |           29  |            732  |                   761  |           0  |           7  |  00:00:05  |
+|  Total                                            |           77  |            721  |                   798  |           0  |           7  |  00:00:04  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2.1 Physical Synthesis In Placer | Checksum: 171822a28
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 10a48704b
 
-Time (s): cpu = 00:02:30 ; elapsed = 00:01:36 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Phase 2.2 Global Placement Core | Checksum: 17ace0419
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:34 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 142af1aa3
 
-Time (s): cpu = 00:02:35 ; elapsed = 00:01:40 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 17ace0419
+Time (s): cpu = 00:02:33 ; elapsed = 00:01:37 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 142af1aa3
 
-Time (s): cpu = 00:02:35 ; elapsed = 00:01:40 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:02:33 ; elapsed = 00:01:37 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1281b40ed
+Phase 3.1 Commit Multi Column Macros | Checksum: 140d97bf9
 
-Time (s): cpu = 00:02:44 ; elapsed = 00:01:45 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: f3d21b89
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 210f7d7be
 
-Time (s): cpu = 00:02:58 ; elapsed = 00:01:55 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:52 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 160a1115b
+Phase 3.3 Area Swap Optimization | Checksum: 1ec137e80
 
-Time (s): cpu = 00:02:59 ; elapsed = 00:01:55 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:53 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 13fc5794e
+Phase 3.4 Pipeline Register Optimization | Checksum: 22941045d
 
-Time (s): cpu = 00:02:59 ; elapsed = 00:01:55 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:53 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 12f6915c8
+Phase 3.5 Fast Optimization | Checksum: 2500647c6
 
-Time (s): cpu = 00:03:19 ; elapsed = 00:02:11 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:03:24 ; elapsed = 00:02:13 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 12e7da7e6
+Phase 3.6 Small Shape Detail Placement | Checksum: 20d088349
 
-Time (s): cpu = 00:03:45 ; elapsed = 00:02:35 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:03:47 ; elapsed = 00:02:36 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 163e6a234
+Phase 3.7 Re-assign LUT pins | Checksum: 1ed649b2c
 
-Time (s): cpu = 00:03:49 ; elapsed = 00:02:40 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:03:52 ; elapsed = 00:02:41 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: aa8c44a9
+Phase 3.8 Pipeline Register Optimization | Checksum: 1857882c0
 
-Time (s): cpu = 00:03:49 ; elapsed = 00:02:41 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:03:52 ; elapsed = 00:02:42 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: fabd54c4
+Phase 3.9 Fast Optimization | Checksum: 1bc9f9236
 
-Time (s): cpu = 00:04:12 ; elapsed = 00:02:57 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: fabd54c4
+Time (s): cpu = 00:04:23 ; elapsed = 00:03:07 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1bc9f9236
 
-Time (s): cpu = 00:04:12 ; elapsed = 00:02:57 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:04:23 ; elapsed = 00:03:07 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -401,301 +401,314 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 19890bcc6
+Post Placement Optimization Initialization | Checksum: 21e70d3e3
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Place 46-33] Processed net ulogic/Klgg07_i_2_n_0, BUFG insertion was skipped due to placement/routing conflicts.
 INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 19890bcc6
+Phase 4.1.1.1 BUFG Insertion | Checksum: 21e70d3e3
 
-Time (s): cpu = 00:04:37 ; elapsed = 00:03:13 . Memory (MB): peak = 2006.867 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.808. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: fc49aa87
+Time (s): cpu = 00:04:48 ; elapsed = 00:03:23 . Memory (MB): peak = 2012.621 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.726. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 20c1f5901
 
-Time (s): cpu = 00:06:11 ; elapsed = 00:04:53 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: fc49aa87
+Time (s): cpu = 00:06:40 ; elapsed = 00:05:21 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 20c1f5901
 
-Time (s): cpu = 00:06:11 ; elapsed = 00:04:53 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:06:40 ; elapsed = 00:05:21 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: fc49aa87
+Phase 4.2 Post Placement Cleanup | Checksum: 20c1f5901
 
-Time (s): cpu = 00:06:12 ; elapsed = 00:04:54 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:06:41 ; elapsed = 00:05:22 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: fc49aa87
+Phase 4.3 Placer Reporting | Checksum: 20c1f5901
 
-Time (s): cpu = 00:06:12 ; elapsed = 00:04:54 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:06:41 ; elapsed = 00:05:22 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Phase 4.4 Final Placement Cleanup | Checksum: 1268b0e0c
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 27a65366e
 
-Time (s): cpu = 00:06:13 ; elapsed = 00:04:55 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1268b0e0c
+Time (s): cpu = 00:06:42 ; elapsed = 00:05:22 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 27a65366e
 
-Time (s): cpu = 00:06:13 ; elapsed = 00:04:55 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Ending Placer Task | Checksum: c539ae14
+Time (s): cpu = 00:06:42 ; elapsed = 00:05:23 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Ending Placer Task | Checksum: 1c3903f14
 
-Time (s): cpu = 00:06:13 ; elapsed = 00:04:55 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:06:42 ; elapsed = 00:05:23 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 72 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:06:22 ; elapsed = 00:05:00 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2006.867 ; gain = 0.000
+place_design: Time (s): cpu = 00:06:50 ; elapsed = 00:05:27 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/CortexM3_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 2006.867 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_io -file CortexM3_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.214 . Memory (MB): peak = 2006.867 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.317 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file CortexM3_utilization_placed.rpt -pb CortexM3_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file CortexM3_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.258 . Memory (MB): peak = 2006.867 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 2012.621 ; gain = 0.000
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.808 | TNS=-1075.613 |
-Phase 1 Physical Synthesis Initialization | Checksum: 2733856e8
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.920 | TNS=-1063.274 |
+Phase 1 Physical Synthesis Initialization | Checksum: b5770732
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2006.867 ; gain = 0.000
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.808 | TNS=-1075.613 |
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2012.621 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.920 | TNS=-1063.274 |
 
 Phase 2 DSP Register Optimization
 INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Phase 2 DSP Register Optimization | Checksum: 2733856e8
+Phase 2 DSP Register Optimization | Checksum: b5770732
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.808 | TNS=-1075.613 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.920 | TNS=-1063.274 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[1].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[1]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.920 | TNS=-1063.167 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[2].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[2]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.920 | TNS=-1063.060 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[3].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[3]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.920 | TNS=-1063.259 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[4].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[4]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.919 | TNS=-1063.192 |
 INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]
 INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.885 | TNS=-1093.601 |
 INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg
-INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25] was not replicated.
+INFO: [Physopt 32-81] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.865 | TNS=-1087.240 |
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg_replica
+INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/init_calib_complete_reg.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/i___4_i_3
 INFO: [Physopt 32-710] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0. Critical path length was reduced through logic transformation on cell u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_comp.
 INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/init_calib_complete_reg. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.706 | TNS=-1069.385 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[1].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[1]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[1]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.706 | TNS=-1069.289 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[2].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[2]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[2]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.706 | TNS=-1069.193 |
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.800 | TNS=-1083.257 |
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[3].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[3]
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[3]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/init_calib_complete_reg.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/i___4_i_3
 INFO: [Physopt 32-710] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0. Critical path length was reduced through logic transformation on cell u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_comp.
 INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/init_calib_complete_reg. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.606 | TNS=-1067.001 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[6].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[102]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.606 | TNS=-1066.737 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[14].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[110]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[14]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.606 | TNS=-1066.475 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[13].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[173]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[13]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.606 | TNS=-1066.249 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data0[12].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[252]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data0[12]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.606 | TNS=-1066.022 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[15].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[47]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[15]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.606 | TNS=-1065.874 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[4].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[4]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[4]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.606 | TNS=-1065.725 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data10[1].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[81]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data10[1]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.606 | TNS=-1065.575 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data10[12].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[92]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data10[12]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.603 | TNS=-1065.427 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[0].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[0]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[0]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.603 | TNS=-1065.285 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[4].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[116]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[4]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.603 | TNS=-1065.158 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.660 | TNS=-1080.307 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[7].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[103]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.660 | TNS=-1080.033 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[8].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[104]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.660 | TNS=-1079.759 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[9].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[105]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.660 | TNS=-1079.519 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[10].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[106]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.660 | TNS=-1079.245 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[11].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[107]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.660 | TNS=-1079.005 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[12].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[108]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.660 | TNS=-1078.731 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[13].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[109]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.660 | TNS=-1078.491 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[9].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[9]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.658 | TNS=-1078.251 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/ddr_rd_data[7].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/pic_data_reg[7]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/ddr_rd_data[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.656 | TNS=-1077.935 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[2].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[130]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.656 | TNS=-1077.671 |
 INFO: [Physopt 32-601] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0. Net driver u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_comp was replaced.
 INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1026.500 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[5].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[117]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[5]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1026.394 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[14].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[14]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[14]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1026.288 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data2[11].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[219]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data2[11]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1026.182 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data2[12].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[220]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data2[12]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1026.076 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data2[13].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[221]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data2[13]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1025.970 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data10[2].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[82]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data10[2]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1025.864 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[5].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[133]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[5]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1025.747 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[6].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[134]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1025.630 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[0].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[32]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[0]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1025.520 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.509 | TNS=-1025.327 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[9].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[9]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[9]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.459 | TNS=-1025.134 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data12[3].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[51]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data12[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.459 | TNS=-1024.980 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data11[0].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[64]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data11[0]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.459 | TNS=-1024.826 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[6].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[6]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.459 | TNS=-1024.672 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data11[14].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[78]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data11[14]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.459 | TNS=-1024.518 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data10[3].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[83]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data10[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1024.364 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[12].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[172]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[12]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1024.212 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[0].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[176]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[0]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1024.177 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[10].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[186]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[10]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1024.142 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data2[4].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[212]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data2[4]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1024.107 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data1[10].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[234]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data1[10]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1023.999 |
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1044.858 |
+INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
 INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_comp
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1043.948 |
+INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_comp
+INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1023.999 |
-Phase 3 Critical Path Optimization | Checksum: 2733856e8
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_rw/rd_load_d0.  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_rw/rd_load_d0_reg
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_rw/rd_load_d0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1043.823 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rd_load_d0.  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rd_load_d0_reg
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rd_load_d0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1043.804 |
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rd_load_d0.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rd_load_d0_reg
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rd_load_d0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/rd_load_d0_i_2_n_0.  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/rd_load_d0_i_2
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/rd_load_d0_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1043.677 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[10].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[138]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1043.413 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[13].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[45]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1043.149 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[14].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[46]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1042.918 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[15].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[47]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data13[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1042.688 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data12[0].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[48]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data12[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1042.425 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data12[1].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[49]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data12[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1042.195 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[4].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[4]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1041.965 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data12[2].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[50]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data12[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1041.774 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data11[9].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[73]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data11[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.536 | TNS=-1041.583 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/ddr_rd_data[11].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/pic_data_reg[11]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/ddr_rd_data[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.535 | TNS=-1041.342 |
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg_replica
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_comp
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.535 | TNS=-1041.342 |
+Phase 3 Critical Path Optimization | Checksum: b5770732
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:31 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:44 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1023.999 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data0[4].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[244]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data0[4]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1023.891 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data14[12].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[28]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data14[12]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.457 | TNS=-1023.783 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[1].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[97]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data9[1]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.709 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[2].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[114]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[2]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.637 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[6].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[118]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.565 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[7].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[119]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[7]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.532 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[11].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[123]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[11]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.503 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[13].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[125]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data8[13]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.474 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[13].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[13]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg_n_0_[13]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.445 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.535 | TNS=-1041.342 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/ddr_rd_data[13].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/pic_data_reg[13]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/ddr_rd_data[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.535 | TNS=-1041.212 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/ddr_rd_data[5].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/pic_data_reg[5]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/ddr_rd_data[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.532 | TNS=-1041.094 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[11].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[139]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.532 | TNS=-1040.907 |
 INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[13].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[141]
 INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[13]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.416 |
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg
-INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25] was not replicated.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.532 | TNS=-1040.720 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[0].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[144]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.532 | TNS=-1040.533 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[7].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[151]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.532 | TNS=-1040.346 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[1].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[177]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.532 | TNS=-1040.159 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data3[9].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[201]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data3[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.531 | TNS=-1039.971 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[1].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[129]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data7[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.531 | TNS=-1039.895 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[14].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[174]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.531 | TNS=-1039.818 |
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg_replica
+INFO: [Physopt 32-81] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.507 | TNS=-1032.537 |
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN_1.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg_replica_1
+INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN_1 was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0 was not replicated.
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0 was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_comp
-INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0 was not replicated.
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_comp
+INFO: [Physopt 32-572] Net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0 was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[4].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[148]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[4]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.387 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[5].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[149]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[5]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.358 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[6].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[150]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data6[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.329 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[6].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[166]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.300 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[11].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[171]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[11]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.272 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data1[12].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[236]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data1[12]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.244 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data1[15].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[239]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data1[15]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.216 |
-INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data0[3].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[243]
-INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data0[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.188 |
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data0[5].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[245]
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data0[5]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rst1.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/i[4]_i_2
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rst1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[0].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[176]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.507 | TNS=-1032.460 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[2].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[178]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.507 | TNS=-1032.383 |
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_1.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_1_reg
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN_1.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg_replica_1
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/phy_dout[25]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/init_calib_complete_reg.  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/i___4_i_3
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/init_calib_complete_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1032.175 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[2].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[162]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data5[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1032.102 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[3].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[179]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1032.029 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data14[1].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[17]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data14[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1031.956 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[4].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[180]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1031.883 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[5].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[181]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1031.818 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[7].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[183]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1031.753 |
+INFO: [Physopt 32-663] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[8].  Re-placed instance u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data_reg[184]
+INFO: [Physopt 32-735] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/data4[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1031.688 |
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_comp
+INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___5_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8].  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0.  Did not re-place instance u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_comp
-INFO: [Physopt 32-702] Processed net u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/i___4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.455 | TNS=-1023.188 |
-Phase 4 Critical Path Optimization | Checksum: 2733856e8
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.503 | TNS=-1031.688 |
+Phase 4 Critical Path Optimization | Checksum: b5770732
 
-Time (s): cpu = 00:01:25 ; elapsed = 00:00:50 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 2006.867 ; gain = 0.000
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-3.455 | TNS=-1023.188 |
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:49 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 2012.621 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-3.503 | TNS=-1031.688 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -705,28 +718,28 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          0.353  |         52.426  |            0  |              0  |                    54  |           0  |           2  |  00:00:40  |
-|  Total          |          0.353  |         52.426  |            0  |              0  |                    54  |           0  |           3  |  00:00:40  |
+|  Critical Path  |          0.417  |         31.586  |            2  |              0  |                    54  |           0  |           2  |  00:00:42  |
+|  Total          |          0.417  |         31.586  |            2  |              0  |                    54  |           0  |           3  |  00:00:42  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Ending Physical Synthesis Task | Checksum: 2733856e8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: b5770732
 
-Time (s): cpu = 00:01:25 ; elapsed = 00:00:50 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:50 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-288 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+297 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-phys_opt_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:02 . Memory (MB): peak = 2006.867 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2006.867 ; gain = 0.000
+phys_opt_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:00 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 2006.867 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 2012.621 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/CortexM3_physopt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2006.867 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2012.621 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -753,53 +766,53 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 44bf5803 ConstDB: 0 ShapeSum: e347895b RouteDB: 0
+Checksum: PlaceDB: cab0176 ConstDB: 0 ShapeSum: ff5751fc RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 1799b367b
+Phase 1 Build RT Design | Checksum: 1106b7e06
 
-Time (s): cpu = 00:01:14 ; elapsed = 00:00:56 . Memory (MB): peak = 2008.770 ; gain = 1.902
-Post Restoration Checksum: NetGraph: e28b8d14 NumContArr: 970fa967 Constraints: 0 Timing: 0
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:54 . Memory (MB): peak = 2012.621 ; gain = 0.000
+Post Restoration Checksum: NetGraph: a333ded6 NumContArr: 6d379f30 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 1799b367b
+Phase 2.1 Create Timer | Checksum: 1106b7e06
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:00:57 . Memory (MB): peak = 2008.770 ; gain = 1.902
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:55 . Memory (MB): peak = 2012.621 ; gain = 0.000
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 1799b367b
+Phase 2.2 Fix Topology Constraints | Checksum: 1106b7e06
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:00:57 . Memory (MB): peak = 2014.289 ; gain = 7.422
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:56 . Memory (MB): peak = 2013.762 ; gain = 1.141
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 1799b367b
+Phase 2.3 Pre Route Cleanup | Checksum: 1106b7e06
 
-Time (s): cpu = 00:01:15 ; elapsed = 00:00:57 . Memory (MB): peak = 2014.289 ; gain = 7.422
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:56 . Memory (MB): peak = 2013.762 ; gain = 1.141
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 15f37e8ac
+Phase 2.4 Update Timing | Checksum: fc100557
 
-Time (s): cpu = 00:01:46 ; elapsed = 00:01:18 . Memory (MB): peak = 2054.125 ; gain = 47.258
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.326 | TNS=-962.079| WHS=-1.357 | THS=-881.171|
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:16 . Memory (MB): peak = 2057.492 ; gain = 44.871
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.343 | TNS=-981.339| WHS=-1.358 | THS=-914.212|
 
 
 Phase 2.5 Update Timing for Bus Skew
 
 Phase 2.5.1 Update Timing
-Phase 2.5.1 Update Timing | Checksum: 1136abf5d
+Phase 2.5.1 Update Timing | Checksum: 1f1a977a3
 
-Time (s): cpu = 00:02:05 ; elapsed = 00:01:29 . Memory (MB): peak = 2103.352 ; gain = 96.484
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.326 | TNS=-961.966| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:27 . Memory (MB): peak = 2109.238 ; gain = 96.617
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.343 | TNS=-981.308| WHS=N/A    | THS=N/A    |
 
-Phase 2.5 Update Timing for Bus Skew | Checksum: 13e50f49e
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1ec9c826e
 
-Time (s): cpu = 00:02:05 ; elapsed = 00:01:30 . Memory (MB): peak = 2104.824 ; gain = 97.957
-Phase 2 Router Initialization | Checksum: 18aaf7e61
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:27 . Memory (MB): peak = 2110.719 ; gain = 98.098
+Phase 2 Router Initialization | Checksum: 110ea247a
 
-Time (s): cpu = 00:02:05 ; elapsed = 00:01:30 . Memory (MB): peak = 2104.824 ; gain = 97.957
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:27 . Memory (MB): peak = 2110.719 ; gain = 98.098
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0.00935718 %
@@ -807,18 +820,18 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 34135
+  Number of Failed Nets               = 34413
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 34135
+  Number of Unrouted Nets             = 34413
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 16421da39
+Phase 3 Initial Routing | Checksum: 1694d37b5
 
-Time (s): cpu = 00:03:01 ; elapsed = 00:02:00 . Memory (MB): peak = 2139.648 ; gain = 132.781
-INFO: [Route 35-580] Design has 10 pins with tight setup and hold constraints.
+Time (s): cpu = 00:02:55 ; elapsed = 00:01:56 . Memory (MB): peak = 2147.145 ; gain = 134.523
+INFO: [Route 35-580] Design has 23 pins with tight setup and hold constraints.
 
 The top 5 pins with tight setup and hold constraints:
 
@@ -827,9 +840,9 @@ The top 5 pins with tight setup and hold constraints:
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       clk_out4_clk_wiz_0 |                clk_pll_i |                                     u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_rw/rd_load_d0_reg/D|
 |       clk_out4_clk_wiz_0 |                clk_pll_i |                              u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/rd_load_d0_reg/D|
-|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[6]/R|
-|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[3]/R|
-|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_v_reg[0]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[0]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[2]/R|
+|                clk_pll_i |       clk_out4_clk_wiz_0 |                                  u_custom_apb_hdmi/u_ov5640_hdmi/u_hdmi_top/u_video_driver/cnt_h_reg[5]/R|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 
 File with complete list of pins: tight_setup_hold_pins.txt
@@ -838,85 +851,80 @@ File with complete list of pins: tight_setup_hold_pins.txt
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 9468
- Number of Nodes with overlaps = 1390
- Number of Nodes with overlaps = 337
- Number of Nodes with overlaps = 110
- Number of Nodes with overlaps = 40
- Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 8997
+ Number of Nodes with overlaps = 2111
+ Number of Nodes with overlaps = 563
+ Number of Nodes with overlaps = 191
+ Number of Nodes with overlaps = 65
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.829 | TNS=-1102.892| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.834 | TNS=-1101.307| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: bcf6447a
+Phase 4.1 Global Iteration 0 | Checksum: 111349c3e
 
-Time (s): cpu = 00:05:06 ; elapsed = 00:03:16 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:18 ; elapsed = 00:03:24 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 3
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.569 | TNS=-1030.059| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.840 | TNS=-1106.148| WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 167b787a0
+Phase 4.2 Global Iteration 1 | Checksum: 1dad6c461
 
-Time (s): cpu = 00:05:12 ; elapsed = 00:03:22 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:20 ; elapsed = 00:03:26 . Memory (MB): peak = 2147.145 ; gain = 134.523
+Phase 4 Rip-up And Reroute | Checksum: 1dad6c461
 
-Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.569 | TNS=-1030.059| WHS=N/A    | THS=N/A    |
-
-Phase 4.3 Global Iteration 2 | Checksum: 247efda07
-
-Time (s): cpu = 00:05:14 ; elapsed = 00:03:24 . Memory (MB): peak = 2139.648 ; gain = 132.781
-Phase 4 Rip-up And Reroute | Checksum: 247efda07
-
-Time (s): cpu = 00:05:14 ; elapsed = 00:03:24 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:20 ; elapsed = 00:03:27 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 2457e9812
+Phase 5.1.1 Update Timing | Checksum: 1504a1d16
 
-Time (s): cpu = 00:05:20 ; elapsed = 00:03:28 . Memory (MB): peak = 2139.648 ; gain = 132.781
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.569 | TNS=-1030.059| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:05:26 ; elapsed = 00:03:30 . Memory (MB): peak = 2147.145 ; gain = 134.523
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.834 | TNS=-1101.307| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 20f8eefe0
+Phase 5.1 Delay CleanUp | Checksum: 1b9ab27d8
 
-Time (s): cpu = 00:05:22 ; elapsed = 00:03:29 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:27 ; elapsed = 00:03:31 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 20f8eefe0
+Phase 5.2 Clock Skew Optimization | Checksum: 1b9ab27d8
 
-Time (s): cpu = 00:05:22 ; elapsed = 00:03:29 . Memory (MB): peak = 2139.648 ; gain = 132.781
-Phase 5 Delay and Skew Optimization | Checksum: 20f8eefe0
+Time (s): cpu = 00:05:27 ; elapsed = 00:03:31 . Memory (MB): peak = 2147.145 ; gain = 134.523
+Phase 5 Delay and Skew Optimization | Checksum: 1b9ab27d8
 
-Time (s): cpu = 00:05:22 ; elapsed = 00:03:29 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:27 ; elapsed = 00:03:32 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 20357b612
+Phase 6.1.1 Update Timing | Checksum: 1bf0bf726
 
-Time (s): cpu = 00:05:29 ; elapsed = 00:03:34 . Memory (MB): peak = 2139.648 ; gain = 132.781
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.569 | TNS=-1030.059| WHS=0.045  | THS=0.000  |
+Time (s): cpu = 00:05:34 ; elapsed = 00:03:36 . Memory (MB): peak = 2147.145 ; gain = 134.523
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.804 | TNS=-1105.256| WHS=0.015  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1fc64cbd1
+Phase 6.1 Hold Fix Iter | Checksum: 1a25d2f42
 
-Time (s): cpu = 00:05:29 ; elapsed = 00:03:34 . Memory (MB): peak = 2139.648 ; gain = 132.781
-Phase 6 Post Hold Fix | Checksum: 1fc64cbd1
+Time (s): cpu = 00:05:34 ; elapsed = 00:03:36 . Memory (MB): peak = 2147.145 ; gain = 134.523
+Phase 6 Post Hold Fix | Checksum: 1a25d2f42
 
-Time (s): cpu = 00:05:29 ; elapsed = 00:03:34 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:35 ; elapsed = 00:03:36 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 8.15846 %
-  Global Horizontal Routing Utilization  = 10.8669 %
+  Global Vertical Routing Utilization    = 8.50659 %
+  Global Horizontal Routing Utilization  = 11.02 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -927,18 +935,13 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 79.2793%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 82.8829%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
-   INT_R_X21Y29 -> INT_R_X21Y29
-   INT_L_X26Y22 -> INT_L_X26Y22
-   INT_L_X26Y21 -> INT_L_X26Y21
-   INT_L_X28Y17 -> INT_L_X28Y17
-   INT_L_X32Y12 -> INT_L_X32Y12
-West Dir 1x1 Area, Max Cong = 92.6471%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
-   INT_L_X38Y119 -> INT_L_X38Y119
-   INT_L_X38Y118 -> INT_L_X38Y118
-   INT_L_X42Y14 -> INT_L_X42Y14
+North Dir 1x1 Area, Max Cong = 88.2883%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X33Y46 -> INT_R_X33Y46
+South Dir 1x1 Area, Max Cong = 68.4685%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 82.3529%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 85.2941%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X41Y44 -> INT_R_X41Y44
+   INT_L_X40Y26 -> INT_L_X40Y26
 
 ------------------------------
 Reporting congestion hotspots
@@ -946,7 +949,7 @@ Reporting congestion hotspots
 Direction: North
 ----------------
 Congested clusters found at Level 0
-Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
 Direction: South
 ----------------
 Congested clusters found at Level 0
@@ -954,68 +957,68 @@ Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 Direction: East
 ----------------
 Congested clusters found at Level 0
-Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 Direction: West
 ----------------
 Congested clusters found at Level 0
 Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 0.5
 
-Phase 7 Route finalize | Checksum: 2141ab64c
+Phase 7 Route finalize | Checksum: 1dcb4bc4c
 
-Time (s): cpu = 00:05:30 ; elapsed = 00:03:35 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:35 ; elapsed = 00:03:37 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 2141ab64c
+Phase 8 Verifying routed nets | Checksum: 1dcb4bc4c
 
-Time (s): cpu = 00:05:30 ; elapsed = 00:03:35 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:35 ; elapsed = 00:03:37 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1ff4772f3
+Phase 9 Depositing Routes | Checksum: 12d62c70c
 
-Time (s): cpu = 00:05:39 ; elapsed = 00:03:49 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:44 ; elapsed = 00:03:50 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.569 | TNS=-1030.059| WHS=0.045  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.804 | TNS=-1105.256| WHS=0.015  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 1ff4772f3
+Phase 10 Post Router Timing | Checksum: 12d62c70c
 
-Time (s): cpu = 00:05:40 ; elapsed = 00:03:49 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:45 ; elapsed = 00:03:50 . Memory (MB): peak = 2147.145 ; gain = 134.523
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:05:40 ; elapsed = 00:03:49 . Memory (MB): peak = 2139.648 ; gain = 132.781
+Time (s): cpu = 00:05:45 ; elapsed = 00:03:50 . Memory (MB): peak = 2147.145 ; gain = 134.523
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-309 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+317 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:05:52 ; elapsed = 00:03:56 . Memory (MB): peak = 2139.648 ; gain = 132.781
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2139.648 ; gain = 0.000
+route_design: Time (s): cpu = 00:05:57 ; elapsed = 00:03:57 . Memory (MB): peak = 2147.145 ; gain = 134.523
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2147.145 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 2139.648 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 2147.145 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/CortexM3_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 2139.648 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 2147.145 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file CortexM3_drc_routed.rpt -pb CortexM3_drc_routed.pb -rpx CortexM3_drc_routed.rpx
 Command: report_drc -file CortexM3_drc_routed.rpt -pb CortexM3_drc_routed.pb -rpx CortexM3_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/CortexM3_drc_routed.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 2139.648 ; gain = 0.000
+report_drc: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 2147.145 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_methodology -file CortexM3_methodology_drc_routed.rpt -pb CortexM3_methodology_drc_routed.pb -rpx CortexM3_methodology_drc_routed.rpx
 Command: report_methodology -file CortexM3_methodology_drc_routed.rpt -pb CortexM3_methodology_drc_routed.pb -rpx CortexM3_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/CortexM3_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:49 ; elapsed = 00:00:27 . Memory (MB): peak = 2197.262 ; gain = 57.613
+report_methodology: Time (s): cpu = 00:00:49 ; elapsed = 00:00:27 . Memory (MB): peak = 2211.406 ; gain = 64.262
 INFO: [runtcl-4] Executing : report_power -file CortexM3_power_routed.rpt -pb CortexM3_power_summary_routed.pb -rpx CortexM3_power_routed.rpx
 Command: report_power -file CortexM3_power_routed.rpt -pb CortexM3_power_summary_routed.pb -rpx CortexM3_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -1024,9 +1027,9 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-321 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+329 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:51 ; elapsed = 00:00:33 . Memory (MB): peak = 2215.805 ; gain = 18.543
+report_power: Time (s): cpu = 00:00:57 ; elapsed = 00:00:36 . Memory (MB): peak = 2222.633 ; gain = 11.227
 INFO: [runtcl-4] Executing : report_route_status -file CortexM3_route_status.rpt -pb CortexM3_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file CortexM3_timing_summary_routed.rpt -pb CortexM3_timing_summary_routed.pb -rpx CortexM3_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
@@ -1072,26 +1075,26 @@ WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ulogic/Glym17 multiplier stage
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ulogic/Glym17__0 multiplier stage ulogic/Glym17__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP ulogic/Glym17__1 multiplier stage ulogic/Glym17__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC REQP-1709] Clock output buffering: PLLE2_ADV connectivity violation. The signal u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/pll_clk3_out on the u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/pend_tran_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[25]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_addr_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_L1_AHBInputstg_2/reg_write_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_l1_ahbdecoders2/data_out_port_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_l1_ahbdecoders2/data_out_port_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (u_L1_AHBMatrix/u_l1_ahbdecoders2/data_out_port_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A13nz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A13nz6_reg_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A13nz6_reg_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A5yt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A63nz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A6ut07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/A8xf07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Aa8oz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Acat07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Ad8t07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Aisoz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Albt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Anct07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Aolt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Apit07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Apnt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Arioz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Atlzz6_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Avlt07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 DTCM/BRAM_reg_0_0 has an input control pin DTCM/BRAM_reg_0_0/ADDRARDADDR[14] (net: DTCM/ADDRARDADDR[13]) which is driven by a register (ulogic/Axst07_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC RTSTAT-10] No routable loads: 22 net(s) have no routable loads. The problem bus(es) and/or net(s) are u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2:0], and u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2:0].
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 40 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
@@ -1105,9 +1108,9 @@ Creating bitstream...
 Writing bitstream ./CortexM3.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun Apr 18 18:31:56 2021. For additional details about this file, please refer to the WebTalk help file at E:/xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Apr 19 00:05:57 2021. For additional details about this file, please refer to the WebTalk help file at E:/xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-341 Infos, 70 Warnings, 1 Critical Warnings and 0 Errors encountered.
+349 Infos, 70 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:01:20 ; elapsed = 00:01:00 . Memory (MB): peak = 2668.691 ; gain = 452.887
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 18 18:31:56 2021...
+write_bitstream: Time (s): cpu = 00:01:20 ; elapsed = 00:01:01 . Memory (MB): peak = 2675.309 ; gain = 452.676
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 19 00:05:57 2021...

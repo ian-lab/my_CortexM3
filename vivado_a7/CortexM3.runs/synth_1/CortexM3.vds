@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Apr 18 17:41:48 2021
-# Process ID: 17140
+# Start of session at: Sun Apr 18 23:18:00 2021
+# Process ID: 18304
 # Current directory: C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/synth_1
 # Command line: vivado.exe -log CortexM3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CortexM3.tcl
 # Log file: C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/synth_1/CortexM3.vds
@@ -16,7 +16,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tfgg484-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10844 
+INFO: Helper process launched with PID 5032 
 WARNING: [Synth 8-2306] macro TRN_IDLE redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:113]
 WARNING: [Synth 8-2306] macro TRN_BUSY redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:114]
 WARNING: [Synth 8-2306] macro TRN_NONSEQ redefined [C:/Users/84308/Desktop/my_CortexM3/my_rtl/bus/ahb/L1_AHBMatrix/L1_AHBInputstg.v:115]
@@ -35,7 +35,7 @@ WARNING: [Synth 8-2654] second declaration of wr_load_d0 ignored [C:/Users/84308
 INFO: [Synth 8-994] wr_load_d0 is declared here [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ddr3/ddr3_fifo_ctrl.v:59]
 WARNING: [Synth 8-2611] redeclaration of ansi port app_addr is not allowed [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ddr3/ddr3_rw.v:59]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 913.953 ; gain = 293.797
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 915.027 ; gain = 291.934
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'CortexM3' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/CortexM3.v:1]
 	Parameter SimPresent bound to: 0 - type: integer 
@@ -189,7 +189,7 @@ INFO: [Synth 8-6157] synthesizing module 'cmos_capture_data' [C:/Users/84308/Des
 	Parameter WAIT_FRAME bound to: 4'b1010 
 INFO: [Synth 8-6155] done synthesizing module 'cmos_capture_data' (27#1) [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640/cmos_capture_data.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'ov5640_dri' (28#1) [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640/ov5640_dri.v:24]
-WARNING: [Synth 8-7023] instance 'u_ov5640_dri' of module 'ov5640_dri' has 20 connections declared, but only 19 given [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:119]
+WARNING: [Synth 8-7023] instance 'u_ov5640_dri' of module 'ov5640_dri' has 20 connections declared, but only 19 given [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:135]
 INFO: [Synth 8-6157] synthesizing module 'vip' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/vip/vip.v:18]
 INFO: [Synth 8-6157] synthesizing module 'rgb2ycbcr' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/vip/rgb2ycbcr.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'rgb2ycbcr' (29#1) [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/vip/rgb2ycbcr.v:12]
@@ -4921,10 +4921,10 @@ WARNING: [Synth 8-689] width (11) of port connection 'rd_data_count' does not ma
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-WARNING: [Synth 8-689] width (13) of port connection 'h_disp' does not match port width (11) of module 'hdmi_top' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:230]
-WARNING: [Synth 8-689] width (13) of port connection 'v_disp' does not match port width (11) of module 'hdmi_top' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:231]
-WARNING: [Synth 8-3848] Net pixel_xpos_w in module/entity ov5640_hdmi does not have driver. [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:82]
-WARNING: [Synth 8-3848] Net pixel_ypos_w in module/entity ov5640_hdmi does not have driver. [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:83]
+WARNING: [Synth 8-689] width (13) of port connection 'h_disp' does not match port width (11) of module 'hdmi_top' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:252]
+WARNING: [Synth 8-689] width (13) of port connection 'v_disp' does not match port width (11) of module 'hdmi_top' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:253]
+WARNING: [Synth 8-3848] Net pixel_xpos_w in module/entity ov5640_hdmi does not have driver. [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:86]
+WARNING: [Synth 8-3848] Net pixel_ypos_w in module/entity ov5640_hdmi does not have driver. [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/vip/ov5640_hdmi.v:87]
 WARNING: [Synth 8-3848] Net PRDATA in module/entity custom_apb_hdmi does not have driver. [C:/Users/84308/Desktop/my_CortexM3/my_rtl/peripheral/hdmi/custom_apb_hdmi.v:13]
 WARNING: [Synth 8-3331] design output_blk has unconnected port ALMOST_FULL_I
 WARNING: [Synth 8-3331] design output_blk has unconnected port PROG_FULL_I
@@ -5028,7 +5028,7 @@ WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[4]
 WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:50 ; elapsed = 00:02:59 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished RTL Elaboration : Time (s): cpu = 00:02:54 ; elapsed = 00:03:02 . Memory (MB): peak = 2451.352 ; gain = 1828.258
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -5041,14 +5041,14 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:18 ; elapsed = 00:03:30 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:24 ; elapsed = 00:03:35 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:18 ; elapsed = 00:03:30 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:24 ; elapsed = 00:03:35 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2446.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2464.695 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 267 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -5115,7 +5115,7 @@ Sourcing Tcl File [E:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_
 Finished Sourcing Tcl File [E:/xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2446.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2464.695 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 133 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
@@ -5123,9 +5123,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 32 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 96 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.996 . Memory (MB): peak = 2446.965 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.968 . Memory (MB): peak = 2464.695 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:04:25 ; elapsed = 00:04:41 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Constraint Validation : Time (s): cpu = 00:04:33 ; elapsed = 00:04:42 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -5133,7 +5133,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:04:25 ; elapsed = 00:04:41 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:33 ; elapsed = 00:04:43 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -5160,7 +5160,7 @@ Applied set_property DONT_TOUCH = true for u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr
 Applied set_property DONT_TOUCH = true for u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_rd_fifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl/u_wr_fifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:26 ; elapsed = 00:04:42 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:34 ; elapsed = 00:04:44 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'Et2nz6_reg' into 'Er2nz6_reg' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v:7214]
 INFO: [Synth 8-4471] merging register 'Hs2nz6_reg' into 'Su2nz6_reg' [C:/Users/84308/Desktop/my_CortexM3/my_rtl/core/cortexm3ds_logic.v:7213]
@@ -5444,7 +5444,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'cal1_state_r_reg' using en
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'tempmon_state_reg' in module 'mig_7series_v4_2_ddr_phy_tempmon'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:09:33 ; elapsed = 00:10:03 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:09:48 ; elapsed = 00:10:09 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 RAM Pipeline Warning: Read Address Register Found For RAM BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
@@ -5466,8 +5466,9 @@ Report RTL Partitions:
 |11    |ddr3_top__GC0                                        |           1|      5864|
 |12    |dvi_transmitter_top__GC0                             |           1|      1242|
 |13    |video_driver                                         |           1|       295|
-|14    |ov5640_hdmi__GC0                                     |           1|      8580|
-|15    |CortexM3__GC0                                        |           1|      4740|
+|14    |ov5640_hdmi__GC0                                     |           1|      8654|
+|15    |custom_apb_hdmi__GC0                                 |           1|        44|
+|16    |CortexM3__GC0                                        |           1|      4740|
 +------+-----------------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -5546,14 +5547,14 @@ Detailed RTL Component Info :
 	               11 Bit    Registers := 3     
 	               10 Bit    Registers := 8     
 	                9 Bit    Registers := 49    
-	                8 Bit    Registers := 55    
+	                8 Bit    Registers := 56    
 	                7 Bit    Registers := 7     
 	                6 Bit    Registers := 119   
 	                5 Bit    Registers := 86    
 	                4 Bit    Registers := 111   
 	                3 Bit    Registers := 86    
-	                2 Bit    Registers := 83    
-	                1 Bit    Registers := 7769  
+	                2 Bit    Registers := 84    
+	                1 Bit    Registers := 7770  
 +---RAMs : 
 	             512K Bit         RAMs := 2     
 +---Muxes : 
@@ -5576,7 +5577,7 @@ Detailed RTL Component Info :
 	   2 Input     21 Bit        Muxes := 8     
 	   2 Input     20 Bit        Muxes := 2     
 	   3 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 6     
 	   3 Input     14 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 10    
 	   4 Input     14 Bit        Muxes := 1     
@@ -5644,7 +5645,7 @@ Detailed RTL Component Info :
 	  24 Input      2 Bit        Muxes := 1     
 	  23 Input      2 Bit        Muxes := 6     
 	   5 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 2999  
+	   2 Input      1 Bit        Muxes := 3003  
 	   3 Input      1 Bit        Muxes := 43    
 	   4 Input      1 Bit        Muxes := 143   
 	   8 Input      1 Bit        Muxes := 8     
@@ -7143,7 +7144,14 @@ Detailed RTL Component Info :
 Module ov5640_hdmi 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module custom_apb_hdmi 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 Module L1_AHBInputstg__1 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -7586,8 +7594,8 @@ WARNING: [Synth 8-3332] Sequential element (FSM_onehot_cal1_state_r_reg[25]) is 
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0 /u_memc_ui_top_stdi_5/\u_ui_top/ui_cmd0/app_sz_r1_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_rgb2dvi_0i_4/\encoder_g/c0_q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_rgb2dvi_0i_4/\encoder_g/c0_q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ov5640_hdmii_5/\u_vip/u_rgb2ycbcr/rgb_g_m0_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ov5640_hdmii_5/\u_ov5640_dri/u_i2c_cfg/i2c_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ov5640_hdmii_5/\u_vip/u_rgb2ycbcr/rgb_b_m0_reg[15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u_custom_apb_button/btn_reg_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u_L1_AHBMatrix/u_L1_AHBInputstg_0/reg_mastlock_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u_L1_AHBMatrix/u_l1_ahboutputstgm0_0/u_output_arb/i_addr_in_port_reg[1] )
@@ -7629,7 +7637,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_rgb2dvi
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_rgb2dvi_0i_4/\encoder_b/din_q_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_rgb2dvi_0i_4/\encoder_b/n1q_m_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:30:10 ; elapsed = 00:30:57 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:27:55 ; elapsed = 00:28:38 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7707,24 +7715,25 @@ Report RTL Partitions:
 |8     |mig_7series_v4_2_mc                                  |           1|      2828|
 |9     |mig_7series_v4_2_memc_ui_top_std__GC0                |           1|      3063|
 |10    |mig_7series_0_mig__GC0                               |           1|       302|
-|11    |ddr3_top__GC0                                        |           1|      2929|
+|11    |ddr3_top__GC0                                        |           1|      3169|
 |12    |dvi_transmitter_top__GC0                             |           1|       813|
 |13    |video_driver                                         |           1|       189|
-|14    |ov5640_hdmi__GC0                                     |           1|      1860|
-|15    |CortexM3__GC0                                        |           1|      2189|
+|14    |ov5640_hdmi__GC0                                     |           1|      1893|
+|15    |custom_apb_hdmi__GC0                                 |           1|        27|
+|16    |CortexM3__GC0                                        |           1|      2167|
 +------+-----------------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 504 of c:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc. [c:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:504]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:30:34 ; elapsed = 00:31:22 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:28:19 ; elapsed = 00:29:03 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:31:25 ; elapsed = 00:32:13 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Timing Optimization : Time (s): cpu = 00:29:02 ; elapsed = 00:29:46 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7774,10 +7783,11 @@ Report RTL Partitions:
 |8     |mig_7series_v4_2_mc                                  |           1|      2828|
 |9     |mig_7series_v4_2_memc_ui_top_std__GC0                |           1|      3063|
 |10    |mig_7series_0_mig__GC0                               |           1|       302|
-|11    |ddr3_top__GC0                                        |           1|      2929|
+|11    |ddr3_top__GC0                                        |           1|      3169|
 |12    |dvi_transmitter_top__GC0                             |           1|       813|
 |13    |video_driver                                         |           1|       189|
-|14    |CortexM3_GT0                                         |           1|      4045|
+|14    |custom_apb_hdmi__GC0                                 |           1|        27|
+|15    |CortexM3_GT0                                         |           1|      4056|
 +------+-----------------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -7816,7 +7826,7 @@ INFO: [Synth 8-7053] The timing for the instance DTCM/BRAM_reg_3_1 (implemented 
 INFO: [Synth 8-7053] The timing for the instance DTCM/BRAM_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance DTCM/BRAM_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:32:07 ; elapsed = 00:32:56 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Technology Mapping : Time (s): cpu = 00:29:42 ; elapsed = 00:30:27 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7869,13 +7879,13 @@ WARNING: [Synth 8-3295] tying undriven pin u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr
 WARNING: [Synth 8-3295] tying undriven pin u_custom_apb_hdmi/u_ov5640_hdmi/u_ddr3_top/u_mig_7series_0:app_zq_req to constant 0
 WARNING: [Synth 8-5396] Clock pin CLKIN1 has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:306]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:32:19 ; elapsed = 00:33:09 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished IO Insertion : Time (s): cpu = 00:29:54 ; elapsed = 00:30:39 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:32:20 ; elapsed = 00:33:09 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Renaming Generated Instances : Time (s): cpu = 00:29:54 ; elapsed = 00:30:39 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7894,25 +7904,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:32:29 ; elapsed = 00:33:19 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:30:03 ; elapsed = 00:30:48 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:32:29 ; elapsed = 00:33:19 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Renaming Generated Ports : Time (s): cpu = 00:30:03 ; elapsed = 00:30:48 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:32:32 ; elapsed = 00:33:22 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Handling Custom Attributes : Time (s): cpu = 00:30:06 ; elapsed = 00:30:51 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:32:32 ; elapsed = 00:33:22 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Renaming Generated Nets : Time (s): cpu = 00:30:06 ; elapsed = 00:30:52 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7938,8 +7948,6 @@ Static Shift Register Report:
 |mig_7series_0          | u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/reset_if_r9_reg                                                                                                              | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 |fifo_generator_v13_2_5 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/SAFETY_CKT_GEN.ENA_NO_REG.ENA_dly_D_reg | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
 |fifo_generator_v13_2_5 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4]     | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
-|CortexM3               | u_custom_apb_hdmi/u_ov5640_hdmi/u_vip/u_ycbcr2bin/pre_frame_vsync_reg_reg                                                                                                                                  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|CortexM3               | u_custom_apb_hdmi/u_ov5640_hdmi/u_vip/u_ycbcr2bin/pre_frame_de_reg_reg                                                                                                                                     | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -7962,23 +7970,23 @@ Report Cell Usage:
 |1     |BUFG                           |    12|
 |2     |BUFH                           |     1|
 |3     |BUFIO                          |     2|
-|4     |CARRY4                         |   514|
+|4     |CARRY4                         |   515|
 |5     |DSP48E1                        |     3|
 |6     |IDDR                           |     4|
 |7     |IDELAYCTRL                     |     1|
 |8     |IDELAYE2                       |    32|
 |9     |IN_FIFO                        |     4|
 |10    |ISERDESE2                      |    32|
-|11    |LUT1                           |   656|
-|12    |LUT2                           |  2036|
-|13    |LUT3                           |  3127|
-|14    |LUT4                           |  3809|
-|15    |LUT5                           |  4721|
-|16    |LUT6                           | 10304|
+|11    |LUT1                           |   657|
+|12    |LUT2                           |  2050|
+|13    |LUT3                           |  3135|
+|14    |LUT4                           |  3801|
+|15    |LUT5                           |  4746|
+|16    |LUT6                           | 10283|
 |17    |MMCME2_ADV                     |     2|
 |18    |MUXCY                          |    40|
-|19    |MUXF7                          |    76|
-|20    |MUXF8                          |    22|
+|19    |MUXF7                          |    83|
+|20    |MUXF8                          |    21|
 |21    |ODDR                           |     9|
 |22    |OSERDESE2                      |    23|
 |23    |OSERDESE2_1                    |     4|
@@ -8011,12 +8019,12 @@ Report Cell Usage:
 |50    |RAMB36E1_7                     |     2|
 |51    |RAMB36E1_8                     |     2|
 |52    |RAMB36E1_9                     |     2|
-|53    |SRL16E                         |    25|
+|53    |SRL16E                         |    23|
 |54    |SRLC32E                        |     1|
 |55    |XADC                           |     1|
-|56    |FDCE                           |  3900|
-|57    |FDPE                           |   175|
-|58    |FDRE                           |  7995|
+|56    |FDCE                           |  4154|
+|57    |FDPE                           |   177|
+|58    |FDRE                           |  7993|
 |59    |FDSE                           |   237|
 |60    |IBUF                           |    16|
 |61    |IOBUF                          |     1|
@@ -8031,7 +8039,7 @@ Report Instance Areas:
 +------+----------------------------------------------------------------------------------------------+----------------------------------------------------+------+
 |      |Instance                                                                                      |Module                                              |Cells |
 +------+----------------------------------------------------------------------------------------------+----------------------------------------------------+------+
-|1     |top                                                                                           |                                                    | 38200|
+|1     |top                                                                                           |                                                    | 38478|
 |2     |  AhbDtcm                                                                                     |cmsdk_ahb_to_sram                                   |   134|
 |3     |  AhbItcm                                                                                     |cmsdk_ahb_to_sram_0                                 |   163|
 |4     |  DTCM                                                                                        |cmsdk_fpga_sram                                     |    17|
@@ -8052,17 +8060,17 @@ Report Instance Areas:
 |19    |      u_output_arb                                                                            |L1_AHBArbiterM1                                     |     5|
 |20    |    u_l1_ahboutputstgm2_2                                                                     |L1_AHBOutputStgM2                                   |    11|
 |21    |      u_output_arb                                                                            |L1_AHBArbiterM2                                     |     8|
-|22    |  u_cmsdk_ahb_to_apb                                                                          |cmsdk_ahb_to_apb                                    |   154|
+|22    |  u_cmsdk_ahb_to_apb                                                                          |cmsdk_ahb_to_apb                                    |   163|
 |23    |  u_cmsdk_apb3_eg_slave_led                                                                   |cmsdk_apb3_eg_slave_led                             |    47|
 |24    |    u_apb_eg_slave_interface_led                                                              |cmsdk_apb3_eg_slave_interface_led                   |    43|
 |25    |    u_custom_apb_led                                                                          |custom_apb_led                                      |     4|
-|26    |  u_cmsdk_apb_uart                                                                            |cmsdk_apb_uart                                      |   215|
+|26    |  u_cmsdk_apb_uart                                                                            |cmsdk_apb_uart                                      |   216|
 |27    |  u_custom_apb_button                                                                         |custom_apb_button                                   |    60|
-|28    |  u_custom_apb_hdmi                                                                           |custom_apb_hdmi                                     | 15459|
-|29    |    u_ov5640_hdmi                                                                             |ov5640_hdmi                                         | 15459|
+|28    |  u_custom_apb_hdmi                                                                           |custom_apb_hdmi                                     | 15727|
+|29    |    u_ov5640_hdmi                                                                             |ov5640_hdmi                                         | 15716|
 |30    |      u_clk_wiz_0                                                                             |clk_wiz_0                                           |     6|
 |31    |        inst                                                                                  |clk_wiz_0_clk_wiz                                   |     6|
-|32    |      u_ddr3_top                                                                              |ddr3_top                                            | 14323|
+|32    |      u_ddr3_top                                                                              |ddr3_top                                            | 14563|
 |33    |        u_mig_7series_0                                                                       |mig_7series_0                                       | 12191|
 |34    |          u_mig_7series_0_mig                                                                 |mig_7series_0_mig                                   | 12187|
 |35    |            \temp_mon_enabled.u_tempmon                                                       |mig_7series_v4_2_tempmon                            |   169|
@@ -8152,7 +8160,7 @@ Report Instance Areas:
 |119   |                ui_cmd0                                                                       |mig_7series_v4_2_ui_cmd                             |   112|
 |120   |                ui_rd_data0                                                                   |mig_7series_v4_2_ui_rd_data                         |   373|
 |121   |                ui_wr_data0                                                                   |mig_7series_v4_2_ui_wr_data                         |  1008|
-|122   |        u_ddr3_fifo_ctrl                                                                      |ddr3_fifo_ctrl                                      |  1689|
+|122   |        u_ddr3_fifo_ctrl                                                                      |ddr3_fifo_ctrl                                      |  1929|
 |123   |          u_rd_fifo                                                                           |rd_fifo                                             |   598|
 |124   |            U0                                                                                |fifo_generator_v13_2_5__xdcDup__1                   |   598|
 |125   |              inst_fifo_gen                                                                   |fifo_generator_v13_2_5_synth__xdcDup__1             |   598|
@@ -8243,28 +8251,28 @@ Report Instance Areas:
 |210   |          serializer_g                                                                        |serializer_10_to_1_5                                |     2|
 |211   |          serializer_r                                                                        |serializer_10_to_1_6                                |     2|
 |212   |        u_video_driver                                                                        |video_driver                                        |   117|
-|213   |      u_ov5640_dri                                                                            |ov5640_dri                                          |   572|
-|214   |        u_cmos_capture_data                                                                   |cmos_capture_data                                   |   165|
-|215   |        u_i2c_cfg                                                                             |i2c_ov5640_rgb565_cfg                               |   257|
+|213   |      u_ov5640_dri                                                                            |ov5640_dri                                          |   565|
+|214   |        u_cmos_capture_data                                                                   |cmos_capture_data                                   |   175|
+|215   |        u_i2c_cfg                                                                             |i2c_ov5640_rgb565_cfg                               |   240|
 |216   |        u_i2c_dr                                                                              |i2c_dri                                             |   150|
-|217   |      u_vip                                                                                   |vip                                                 |   127|
-|218   |        u_rgb2ycbcr                                                                           |rgb2ycbcr                                           |   124|
-|219   |        u_ycbcr2bin                                                                           |ycbcr2bin                                           |     3|
+|217   |      u_vip                                                                                   |vip                                                 |   151|
+|218   |        u_rgb2ycbcr                                                                           |rgb2ycbcr                                           |   145|
+|219   |        u_ycbcr2bin                                                                           |ycbcr2bin                                           |     6|
 |220   |  ulogic                                                                                      |cortexm3ds_logic                                    | 21539|
 +------+----------------------------------------------------------------------------------------------+----------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:32:32 ; elapsed = 00:33:22 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Finished Writing Synthesis Report : Time (s): cpu = 00:30:06 ; elapsed = 00:30:52 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:28:29 ; elapsed = 00:32:45 . Memory (MB): peak = 2446.965 ; gain = 1826.809
-Synthesis Optimization Complete : Time (s): cpu = 00:32:33 ; elapsed = 00:33:32 . Memory (MB): peak = 2446.965 ; gain = 1826.809
+Synthesis Optimization Runtime : Time (s): cpu = 00:25:54 ; elapsed = 00:30:13 . Memory (MB): peak = 2464.695 ; gain = 1841.602
+Synthesis Optimization Complete : Time (s): cpu = 00:30:07 ; elapsed = 00:30:59 . Memory (MB): peak = 2464.695 ; gain = 1841.602
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2446.965 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1048 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2464.695 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1055 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 4 inverter(s) to 32 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2446.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2464.695 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 284 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 16 instances
@@ -8277,11 +8285,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 711 Infos, 351 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:33:00 ; elapsed = 00:34:11 . Memory (MB): peak = 2446.965 ; gain = 2113.973
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2446.965 ; gain = 0.000
+synth_design: Time (s): cpu = 00:30:31 ; elapsed = 00:31:34 . Memory (MB): peak = 2464.695 ; gain = 2130.328
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2464.695 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/84308/Desktop/my_CortexM3/vivado_a7/CortexM3.runs/synth_1/CortexM3.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2446.965 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2464.695 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file CortexM3_utilization_synth.rpt -pb CortexM3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 18 18:16:22 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 18 23:49:56 2021...

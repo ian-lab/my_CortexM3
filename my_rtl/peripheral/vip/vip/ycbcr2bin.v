@@ -11,10 +11,11 @@ module ycbcr2bin(
     input               rst_n           ,   // 复位信号
 
     //图像处理前的数据接口
+    input       [7:0]   threshold       ,
     input               pre_frame_vsync ,   // vsync信号
     input               pre_frame_hsync ,   // hsync信号
     input               pre_frame_de    ,   // data enable信号
-    input       [7:0]   img_y         ,   // 输入图像Y数据
+    input       [7:0]   img_y           ,   // 输入图像Y数据
 
     //图像处理后的数据接口
     output              post_frame_vsync,   // vsync信号
@@ -38,7 +39,7 @@ always @(posedge clk or negedge rst_n) begin
         img_bin <= 8'd0;
     end 
     else begin
-        img_bin <= (img_y > 125) ? 8'd255 : 8'd0;
+        img_bin <= (img_y > threshold) ? 8'd255 : 8'd0;
     end
 end
 // 控制信号 打一拍
