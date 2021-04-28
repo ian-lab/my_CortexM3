@@ -102,6 +102,7 @@ extern void send2LED( uint32_t cnt);
 //extern int getKEY();
 
 /**************************************ACCELERATOR**************************************/
+extern char disp_flag;
 extern void change_threshold(uint32_t threshold);//修改二值化阈值 0-255
 extern void disp_choice(uint32_t disp_type); // 修改显示图像 0->原始图像 1->灰度图 2->二值化图
 

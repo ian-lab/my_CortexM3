@@ -329,11 +329,10 @@ Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ARM Macro Assembler    Page 6 
 
 
-ork --depend=.\startup_cm3ds.d -o.\startup_cm3ds.o -IC:\Users\84308\AppData\Loc
-al\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.7.0\Device\CMSDK_CM3\Include -IC:\software
-\keil5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION
-_VERSION SETA 533" --predefine="CMSDK_CM3 SETA 1" --list=.\listings\startup_cm3
-ds.lst ..\Software\startup_CM3DS.s
+ork --depend=.\startup_cm3ds.d -o.\startup_cm3ds.o -IC:\software\Keil\Keil\V2M-
+MPS2_CMx_BSP\1.7.1\Device\CMSDK_CM3\Include --predefine="__MICROLIB SETA 1" --p
+redefine="__UVISION_VERSION SETA 534" --predefine="CMSDK_CM3 SETA 1" --list=.\l
+istings\startup_cm3ds.lst ..\Software\startup_CM3DS.s
 
 
 

@@ -2,6 +2,8 @@
 #include "CortexM3_driver.h"
 // 1 led¡¡ 0 led√
 
+char disp_flag = 0;
+
 int main(void) 
 {	
 	printf("***********************\n");
@@ -13,10 +15,11 @@ int main(void)
 	send2LED(0x00);
 	
 	change_threshold(40);
-	disp_choice(2);
+	disp_choice(disp_flag);
 	
 	while(1) 
 	{
+		disp_choice(disp_flag);
 		for(int i = 0; i<1000;i++)//º∆ ±1s
 			delay_1ms();
 		send2LED(0x01);

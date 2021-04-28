@@ -124,6 +124,7 @@ assign ddr_wr_data  = (disp_choice == 2'b00) ? cmos_frame_data :
                      ((disp_choice == 2'b01) ? img_gray : post_rgb);
 assign ddr_wr_load  = (disp_choice == 2'b00) ? cmos_frame_vsync : 
                      ((disp_choice == 2'b01) ? ycbcr_frame_vsync : post_frame_vsync);
+
 // 在规定区域显示图像
 assign rd_data = ddr_rdata_en ? ddr_rd_data : 16'b0;
 assign ddr_rdata_req = (pixel_xpos >= x_disp - 1 & pixel_xpos < x_disp + width_disp - 1)
@@ -213,9 +214,9 @@ ddr3_top u_ddr3_top (
     .ddr3_read_valid     (1'b1),                      //DDR3 读使能
     .ddr3_pingpang_en    (1'b1),                      //DDR3 乒乓操作使能
     .wr_clk              (cam_pclk),                  //写时钟
-    .wr_load             (ddr_wr_load),          //输入源更新信号   
-	.datain_valid        (ddr_wr_valid),             //数据有效使能信号
-    .datain              (ddr_wr_data),                  //有效数据 
+    .wr_load             (ddr_wr_load),               //输入源更新信号   
+	.datain_valid        (ddr_wr_valid),              //数据有效使能信号
+    .datain              (ddr_wr_data),               //有效数据 
     
     .rd_clk              (pixel_clk),                 //读时钟 
     .rd_load             (rd_vsync),                  //输出源更新信号    

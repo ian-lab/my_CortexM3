@@ -1,0 +1,1 @@
+-wto "324b53cb4a0d4ef095811b26a2ac3767" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "fifo_generator_v13_2_5" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_CortexM3_behav" "xil_defaultlib.tb_CortexM3" "xil_defaultlib.glbl" -log "elaborate.log" 

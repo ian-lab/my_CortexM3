@@ -52,4 +52,8 @@ void UARTOVRHandler(void) {
 
 void KEYHandler(void) {
     printf("***** KEY IRQ *****\n");
+		if (disp_flag >= 2)
+			disp_flag = 0;
+		else 
+			disp_flag += 1;
 }
